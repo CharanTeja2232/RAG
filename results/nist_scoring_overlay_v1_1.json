@@ -1,0 +1,421 @@
+{
+ "overlay_version": "1.1",
+ "created": "2026-10-18 16:02 IST",
+ "supersedes": {
+  "version": "1.0",
+  "overlay_sha256": "c99f3cfe7cd7ec5898982fa499e9457dd2f2ed364a6a839c2424d7cd55d1a2ef",
+  "file": "results/nist_scoring_overlay_v1.json",
+  "file_sha256": "f7d45f69a4deaaa0359f320c06ec9806ee4316afe2d3b927419ec7d50a56c3c9"
+ },
+ "parents": {
+  "source_pdf_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+  "corpus_sha256": "795fb2a6e043a28dc39d01e2db30d4b05d74ca1535df4ca7519d386b15f0fc92",
+  "preregistration_sha256": "cb7a05a13b16fd0aacbe310e7903df4f5ee34137d3cac3ebf85714ec197ace33",
+  "preregistration_file": "results/nist_preregistration.json",
+  "review_sheet_file": "results/nist_prereg_review_sheet.md",
+  "review_sheet_sha256": "4f4007b70f8660270c02e6db410aae91d72094a129526a53aff6d6e6fd576e52",
+  "overlay_v1_sha256": "c99f3cfe7cd7ec5898982fa499e9457dd2f2ed364a6a839c2424d7cd55d1a2ef"
+ },
+ "principles": [
+  "The preregistered gold labels, question wording, order and the lenient any-of rule are never changed. The overlay adds a second, stricter scoring computed from the SAME retrieval.",
+  "A chunk earns strict credit alone only if it is independently sufficient to answer the question.",
+  "A fragment that cannot answer by itself never earns strict credit alone. Where an answer is split across chunks, strict credit requires every member of a declared joint set to be in the context.",
+  "Alternative evidence is admitted only if the frozen text of that chunk contains the answer; the supporting passage is recorded and was asserted to be an exact substring of the chunk.",
+  "Chunks that answer a different question are listed as not_evidence and never count.",
+  "The frozen corpus and the preregistration are not modified.",
+  "A chunk whose key sentence depends on an antecedent or referent that occurs only in another chunk is a fragment (for example an overlap sentence): it cannot earn strict credit on its own. This is applied identically to every question."
+ ],
+ "scoring_semantics": {
+  "context": "The first 3 chunks (K_FINAL = 3) of a pipeline's ranked list.",
+  "lenient_success": "Any preregistered gold chunk is in the Top 3 (the original rule, unchanged).",
+  "strict_success": "Any sufficient_single chunk is in the Top 3, OR every member of at least one joint set is in the Top 3.",
+  "strict_partial": "Reported separately and never counted as success: some but not all members of a joint set are in the Top 3, or the only preregistered gold chunks in the Top 3 are excluded_from_strict fragments.",
+  "strict_retrieval_stumble": "Not strict success, but a sufficient_single chunk is within the Top 10, or every member of a joint set is within the Top 10.",
+  "strict_candidate_pool_miss": "None of the above within the Top 10.",
+  "strict_gold_rank": "Smallest rank among sufficient_single chunks; for a joint set, the largest rank among its members; overall the smallest over all options.",
+  "unchanged_questions": "For the questions listed in unchanged_questions the strict rule equals the preregistered any-of gold set.",
+  "roles": "primary metric = the preregistered LENIENT rule; the strict rule of this overlay is a SECONDARY sensitivity analysis; both are reported in the per-query table.",
+  "strict_top3_evidence": "'sufficient' (= strict success), 'partial' (some members of a joint set, or only excluded fragments, in the Top 3; NEVER strict success) or 'none'.",
+  "strict_outcome": "success if top-3 evidence is sufficient; otherwise stumble if sufficient evidence (a single chunk, or a complete joint set) lies within the Top 10; otherwise miss. The partial flag is reported alongside and never counts as success."
+ },
+ "entries": [
+  {
+   "question_id": "A5",
+   "category": "keyword trap",
+   "original_gold": [
+    "nt-043",
+    "nt-044"
+   ],
+   "change": "Gold set widened to the two further chunks that each state the contrast on their own (nt-042, nt-144); nt-043 dropped from strict credit; the optional joint set nt-145 + nt-146 was REMOVED in v1.1.",
+   "strict_rule": {
+    "sufficient_single": [
+     {
+      "chunk": "nt-044",
+      "pdf_page": [
+       19,
+       20
+      ],
+      "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+      "passage": "First, organizations assess the likelihood that threat events will be initiated (for adversarial threat events) or will occur (for non-adversarial threat events). Second, organizations assess the likelihood that the threat events once initiated or occurring, will result in adverse impacts or harm to organizational operations and assets, individuals, other organizations, or the Nation."
+     },
+     {
+      "chunk": "nt-042",
+      "pdf_page": 19,
+      "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+      "passage": "The likelihood risk factor combines an estimate of the likelihood that the threat event will be initiated with an estimate of the likelihood of impact (i.e., the likelihood that the threat event results in adverse impacts)."
+     },
+     {
+      "chunk": "nt-144",
+      "pdf_page": 42,
+      "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+      "passage": "First, organizations assess the likelihood that threat events will be initiated (for adversarial threat events) or will occur (for non-adversarial threat events). Second, organizations assess the likelihood that threat events once initiated or occurring, will result in adverse impacts to organizational operations and assets, individuals, other organizations, or the Nation."
+     }
+    ],
+    "joint_sets": [],
+    "excluded_from_strict": [
+     {
+      "chunk": "nt-043",
+      "reason": "Defines only the likelihood of impact ('regardless of the magnitude of harm'); it contains no statement of the initiation side, so by itself it cannot show the difference the question asks about.",
+      "passage": "The likelihood of impact addresses the probability (or possibility) that the threat event will result in an adverse impact, regardless of the magnitude of harm that can be expected."
+     }
+    ],
+    "not_evidence": [
+     {
+      "chunk": "nt-145",
+      "reason": "Describes how the likelihood of INITIATION is assessed (threat-source capability, intent, targeting). It does not state how that chance differs from the chance of harm, and it needs nt-146 plus an inference to do so; removed from strict credit in v1.1."
+     },
+     {
+      "chunk": "nt-146",
+      "reason": "Describes how the likelihood of ADVERSE IMPACT is assessed (vulnerabilities and predisposing conditions); same reason."
+     },
+     {
+      "chunk": "nt-148",
+      "reason": "Lists table G-2 and G-4 as scales for two likelihoods but does not explain how they differ."
+     },
+     {
+      "chunk": "nt-149",
+      "reason": "Same: an index of tables G-2 to G-5, no explanation."
+     }
+    ]
+   },
+   "reason": "The preregistered gold set was under-inclusive (two chunks that state the contrast explicitly were missing) and contained one partial chunk (nt-043).",
+   "residual": "nt-042 and nt-144 can only raise strict success relative to the preregistered rule; each was verified to contain the answer independently."
+  },
+  {
+   "question_id": "E1",
+   "category": "exception",
+   "original_gold": [
+    "nt-053",
+    "nt-054",
+    "nt-153"
+   ],
+   "change": "nt-054 removed from strict credit (fragment); nt-053 and nt-153 remain as independently sufficient evidence.",
+   "strict_rule": {
+    "sufficient_single": [
+     {
+      "chunk": "nt-053",
+      "pdf_page": 22,
+      "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Aggregation",
+      "passage": "In general, for discrete risks (e.g., the risk associated with a single information system supporting a well-defined mission/business process), the worst-case impact establishes an upper bound for the overall risk to organizational operations, assets, and individuals. One issue for risk aggregation is that this upper bound for risk may fail to apply."
+     },
+     {
+      "chunk": "nt-153",
+      "pdf_page": 44,
+      "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-6",
+      "passage": "In general, the risk level is typically not higher than the impact level, and likelihood can serve to reduce risk below that impact level. However, when addressing organization-wide risk management issues with a large number of missions/business functions, mission/business processes, and supporting information systems, impact as an upper bound on risk may not hold."
+     }
+    ],
+    "joint_sets": [],
+    "excluded_from_strict": [
+     {
+      "chunk": "nt-054",
+      "reason": "Its first sentence is the repeated overlap copy of nt-053's last sentence; its remaining sentences explain WHY the bound can fail (multiple risks materialize concurrently or repeatedly, so overall impact can exceed what was assessed for each risk). The chunk never states the rule or identifies the bound: neither 'worst-case impact' nor 'establishes an upper bound' occurs in it (verified by search). The referent of 'this upper bound for risk' is only in nt-053. This is the same defect as nt-147 (E2) and nt-162 (N4).",
+      "passage": "For example, it may be advantageous for organizations to assess risk at the organization level when multiple risks materialize concurrently or when the same risk materializes repeatedly over a period of time."
+     }
+    ],
+    "not_evidence": []
+   },
+   "what_nt054_contributes": "Supporting explanation of the exception (why aggregated risk can exceed the originally assessed impact). It supports the 'No' but cannot establish the 'always capped?' rule by itself. If nt-054 is the only gold chunk in the Top 3 the case is reported as partial, never as strict success.",
+   "reason": "Consistency: v1.0 excluded overlap-only fragments for E2 and N4 but kept nt-054 for E1, which applied the rule unequally.",
+   "residual": "nt-053 states the rule and the exception without the worked reason; that is sufficient for the yes/no the question asks."
+  },
+  {
+   "question_id": "E2",
+   "category": "exception",
+   "original_gold": [
+    "nt-146",
+    "nt-147"
+   ],
+   "change": "nt-147 removed from strict credit (overlap-only).",
+   "strict_rule": {
+    "sufficient_single": [
+     {
+      "chunk": "nt-146",
+      "pdf_page": 42,
+      "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+      "passage": "Threat events for which no vulnerabilities or predisposing conditions are identified, have a very low likelihood of resulting in adverse impacts. Such threat events can be highlighted and moved to the end of the table (or to a separate table), so that they can be tracked for consideration in follow-on risk assessments. However, no further consideration during the current assessment is warranted."
+     }
+    ],
+    "joint_sets": [],
+    "excluded_from_strict": [
+     {
+      "chunk": "nt-147",
+      "reason": "Contains only the repeated closing sentence; the condition ('no vulnerabilities or predisposing conditions are identified') does not occur in this chunk (verified by search), so the sentence has no antecedent.",
+      "passage": "However, no further consideration during the current assessment is warranted."
+     }
+    ],
+    "not_evidence": [
+     {
+      "chunk": "nt-136",
+      "reason": "Different rule: threat events deemed irrelevant need no further consideration; it does not address events with no identified vulnerabilities."
+     },
+     {
+      "chunk": "nt-137",
+      "reason": "Starts with the 'irrelevant events' sentence of nt-136 (overlap); same different rule."
+     }
+    ]
+   },
+   "reason": "A chunk that cannot answer on its own must not earn strict credit.",
+   "residual": "None beyond the wording gap already noted in the review sheet ('weaknesses' omits 'predisposing conditions')."
+  },
+  {
+   "question_id": "E4",
+   "category": "exception",
+   "original_gold": [
+    "nt-163",
+    "nt-164"
+   ],
+   "change": "Strict credit requires BOTH chunks (joint evidence).",
+   "strict_rule": {
+    "sufficient_single": [],
+    "joint_sets": [
+     {
+      "members": [
+       {
+        "chunk": "nt-163",
+        "pdf_page": 48,
+        "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-2",
+        "passage": "If significant changes (as defined by organizational policies, direction, or guidance) have occurred since the risk assessment was conducted, organizations can revisit the purpose, scope, assumptions, and constraints of the assessment to determine whether all tasks in the risk assessment process need to be repeated."
+       },
+       {
+        "chunk": "nt-164",
+        "pdf_page": 48,
+        "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-2",
+        "passage": "Otherwise, the updates constitute subsequent risk assessments, identifying and assessing only how selected risk factors have changed,"
+       }
+      ],
+      "why_jointly": "nt-163 gives the 'significant changes' branch; nt-164 starts with 'Otherwise,' and gives the other branch, whose condition is stated only in nt-163. Neither chunk answers 'must every task be redone?' by itself."
+     }
+    ],
+    "excluded_from_strict": [],
+    "not_evidence": []
+   },
+   "reason": "The answer is split across a chunk boundary; counting either half alone would credit a fragment.",
+   "residual": "The question says 'conditions have changed' while the source says 'significant changes'; this wording gap is unchanged."
+  },
+  {
+   "question_id": "N4",
+   "category": "negation/constraint",
+   "original_gold": [
+    "nt-161",
+    "nt-162"
+   ],
+   "change": "nt-162 removed from strict credit (overlap-only).",
+   "strict_rule": {
+    "sufficient_single": [
+     {
+      "chunk": "nt-161",
+      "pdf_page": 47,
+      "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-1",
+      "passage": "For example, it is expected to be quite common for the security posture of information systems (that is, the risk factors measured within those systems) to reflect only a part of the organizational risk response, with response actions at the organization level or mission/business process level providing a significant portion of that response. In such situations, monitoring only the security posture of information systems would likely not provide sufficient information to determine the overall risk being incurred by organizations."
+     }
+    ],
+    "joint_sets": [],
+    "excluded_from_strict": [
+     {
+      "chunk": "nt-162",
+      "reason": "Begins with the repeated sentence whose 'such situations' has no antecedent in this chunk (the 'quite common' context occurs only in nt-161, verified by search).",
+      "passage": "In such situations, monitoring only the security posture of information systems would likely not provide sufficient information to determine the overall risk being incurred by organizations."
+     }
+    ],
+    "not_evidence": []
+   },
+   "reason": "A chunk that cannot answer on its own must not earn strict credit.",
+   "residual": "The source answer is hedged ('would likely not'); the question asks in general terms."
+  },
+  {
+   "question_id": "O2",
+   "category": "other (buried detail)",
+   "original_gold": [
+    "nt-061"
+   ],
+   "change": "No change to the gold chunk. The intended in-scope answer is defined explicitly; a possible wording correction is recorded but NOT adopted.",
+   "strict_rule": {
+    "sufficient_single": [
+     {
+      "chunk": "nt-061",
+      "pdf_page": 23,
+      "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+      "passage": "The bins (e.g., 0-15, 16-35, 36-70, 71-85, 86-100) or scales (e.g., 1-10) translate easily into qualitative terms"
+     }
+    ],
+    "joint_sets": [],
+    "excluded_from_strict": [],
+    "not_evidence": [
+     {
+      "chunk": "nt-125",
+      "reason": "Mentions a 0-100 scale only, without bins."
+     },
+     {
+      "chunk": "(outside the frozen corpus)",
+      "reason": "The appendix tables give other semi-quantitative bins (for example 'Very High 96-100', 'High 80-95', 'Moderate 21-79', read from PDF page 67). They are excluded from the corpus by the documented scope rule, so no retrievable chunk contains them."
+     }
+    ]
+   },
+   "intended_in_scope_answer": "The example bins 0-15, 16-35, 36-70, 71-85 and 86-100 (and the example scale 1-10) given in the discussion of semi-quantitative assessments in Section 2.3. These are the only bin ranges in the frozen corpus (a pattern search found nt-061 as the sole chunk that lists bin ranges).",
+   "answer_level_rule": "When generated answers are judged later: an answer is correct in scope only if it gives the Section 2.3 bins. An answer that gives the appendix bins is recorded separately as 'accurate for the full PDF but not supported by the frozen corpus'.",
+   "wording_correction_proposal_not_adopted": "In its discussion of semi-quantitative assessments (Section 2.3), what example score ranges does the guide give for translating scores into qualitative terms?",
+   "reason": "The question does not say which of the guide's two sets of example bins it means; the retrieval label is correct, so the ambiguity is resolved in the scoring definition and not by rewriting the question.",
+   "residual": "If you prefer a reworded question, it must be a separately dated and hashed registration made before any retrieval."
+  },
+  {
+   "question_id": "O3",
+   "category": "other (buried detail)",
+   "original_gold": [
+    "nt-121",
+    "nt-122"
+   ],
+   "change": "Strict credit requires BOTH chunks (joint evidence). The corpus is NOT modified.",
+   "strict_rule": {
+    "sufficient_single": [],
+    "joint_sets": [
+     {
+      "members": [
+       {
+        "chunk": "nt-121",
+        "pdf_page": 36,
+        "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+        "passage": "External sources of threat information can include cross-community organizations (e.g., US Computer Emergency Readiness Team [US-CERT], sector partners (e.g., Defense Industrial Base [DIB] using the DoD-Defense Industrial Base Collaborative Information"
+       },
+       {
+        "chunk": "nt-122",
+        "pdf_page": 37,
+        "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+        "passage": "Sharing Environment [DCISE], Information Sharing and Analysis Centers [ISACs] for critical infrastructure sectors), research and nongovernmental organizations (e.g. Carnegie Mellon University, Software Engineering Institute-CERT), and security service providers)."
+       }
+      ],
+      "why_jointly": "One sentence is split mid-phrase across the two chunks. nt-121 names US-CERT and starts the DIB/DCISE name; nt-122 completes it and names the ISACs, the research organizations and security service providers."
+     }
+    ],
+    "excluded_from_strict": [],
+    "not_evidence": []
+   },
+   "extraction_defect": {
+    "description": "A paragraph that crosses a PDF page break was left unjoined: the sentence runs from the last line of PDF page 36 ('...Collaborative Information') to the first line of PDF page 37 ('Sharing Environment [DCISE], ...').",
+    "cause": "The stitching rule joined page-break continuations only when the next paragraph began with a lowercase letter; this one begins with a capital letter ('Sharing'). The chunker then kept the two pieces as separate blocks, and the chunk boundary fell inside the sentence.",
+    "verified_against_pdf": "PDF p.36 last body line: 'sector partners (e.g., Defense Industrial Base [DIB] using the DoD-Defense Industrial Base Collaborative Information'; PDF p.37 first body line: 'Sharing Environment [DCISE], Information Sharing and Analysis Centers [ISACs] for critical infrastructure sectors),'.",
+    "scope": "A corpus-wide scan of consecutive same-section chunk pairs found exactly two whose earlier chunk ends without terminal punctuation: nt-121/nt-122 (this defect) and nt-154/nt-155 (a list item continuing in the next bullet, not a gold passage).",
+    "treatments": [
+     {
+      "option": "T1 strict joint rule, corpus untouched",
+      "disruption": "none",
+      "recommended": true,
+      "note": "Both chunks must be in the context for strict credit; lenient credit is unchanged; the defect is disclosed."
+     },
+     {
+      "option": "T2 fix the stitcher, re-chunk, re-freeze, re-register",
+      "disruption": "high",
+      "recommended": false,
+      "note": "Changes the corpus hash and shifts chunk ids, so every preregistered gold id would have to be re-derived and re-registered. Not recommended before any retrieval, and not done without approval."
+     },
+     {
+      "option": "T3 drop or replace the question",
+      "disruption": "n/a",
+      "recommended": false,
+      "note": "Not allowed: it would be an after-the-fact change to the question set."
+     }
+    ]
+   },
+   "reason": "Neither chunk can list the organizations alone; the defect is documented and handled in scoring, not by editing the frozen corpus.",
+   "residual": "The defect remains in the corpus and must be disclosed in the report."
+  },
+  {
+   "question_id": "O5",
+   "category": "other (buried detail)",
+   "original_gold": [
+    "nt-301"
+   ],
+   "change": "Strict credit requires BOTH nt-300 (scope) and nt-301 (fact).",
+   "strict_rule": {
+    "sufficient_single": [],
+    "joint_sets": [
+     {
+      "members": [
+       {
+        "chunk": "nt-300",
+        "pdf_page": 92,
+        "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Executive Summary",
+        "passage": "Executive Summary\n• List the date of the risk assessment."
+       },
+       {
+        "chunk": "nt-301",
+        "pdf_page": 92,
+        "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Executive Summary",
+        "passage": "Describe the overall level of risk (e.g., Very Low, Low, Moderate, High, or Very High)."
+       }
+      ],
+      "also_in_nt301": {
+       "chunk": "nt-301",
+       "pdf_page": 92,
+       "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Executive Summary",
+       "passage": "List the number of risks identified for each level of risk (e.g., Very Low, Low, Moderate, High, or Very High)."
+      },
+      "why_jointly": "The requested fact is in nt-301 but nothing in its text says these bullets belong to the executive summary: the heading 'Executive Summary' occurs only in nt-300 (verified by search of the whole corpus). nt-300 alone has the heading but not the fact."
+     }
+    ],
+    "excluded_from_strict": [],
+    "not_evidence": [
+     {
+      "chunk": "nt-299",
+      "reason": "Appendix K introduction: names the three report sections but does not connect any bullet to them."
+     }
+    ]
+   },
+   "reason": "The scope word in the question ('executive summary') is supported only by nt-300; the content only by nt-301.",
+   "residual": "If only nt-301 is retrieved the case is reported as 'fact without scope' (partial), never as strict success."
+  }
+ ],
+ "unchanged_questions": {
+  "ids": [
+   "A1",
+   "A2",
+   "A3",
+   "A4",
+   "A6",
+   "E3",
+   "E5",
+   "E6",
+   "N1",
+   "N2",
+   "N3",
+   "N5",
+   "N6",
+   "O1",
+   "O4",
+   "O6"
+  ],
+  "strict_rule": "same as the preregistered any-of gold set"
+ },
+ "changes_from_v1_0": [
+  {
+   "question_id": "A5",
+   "change": "optional joint set nt-145 + nt-146 removed (not independently justified by the question and source); nt-042 and nt-144 retained (each independently supports the answer)"
+  },
+  {
+   "question_id": "E1",
+   "change": "added: nt-054 excluded from strict credit; nt-053 and nt-153 are the strict evidence"
+  }
+ ],
+ "status": "PROPOSED, to be pinned before retrieval (not part of the hash)",
+ "overlay_sha256": "180c80dee8cf63207866cea103ec3c7c0e5dbeb80c9fd10d06b7e0460b8ab9ea"
+}

@@ -1,0 +1,3086 @@
+{
+ "source": {
+  "title": "NIST SP 800-30 Rev. 1, Guide for Conducting Risk Assessments (Sept. 2012)",
+  "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf",
+  "sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+  "pages": 95
+ },
+ "scope": {
+  "first_page": 9,
+  "last_page": 95,
+  "excluded_pages": [
+   49,
+   50,
+   64
+  ],
+  "glossary_pages": [
+   51,
+   63
+  ],
+  "rules": "body typeface only; tables/figures/footnotes/headers excluded; glossary parsed per entry"
+ },
+ "parameters": {
+  "embed_model_tokenizer": "sentence-transformers/all-MiniLM-L6-v2",
+  "model_max_seq_length": 256,
+  "max_chunk_tokens": 200,
+  "hard_limit_tokens": 240,
+  "entry_max_tokens": 240,
+  "min_tokens": 30,
+  "overlap_sentences": 1,
+  "extractor": "PyMuPDF 1.28.2"
+ },
+ "corpus_sha256": "795fb2a6e043a28dc39d01e2db30d4b05d74ca1535df4ca7519d386b15f0fc92",
+ "n_chunks": 305,
+ "chunks": [
+  {
+   "chunk_id": "nt-001",
+   "section": "CAUTIONARY NOTES — SCOPE AND APPLICABILITY OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 9,
+   "page_end": 9,
+   "n_tokens": 126,
+   "has_overlap": false,
+   "text_sha256": "a845505cf417c6966b90cd30d24b3053583af5d069a2d38c8ce094cdeadf92a9"
+  },
+  {
+   "chunk_id": "nt-002",
+   "section": "CAUTIONARY NOTES — SCOPE AND APPLICABILITY OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 9,
+   "page_end": 9,
+   "n_tokens": 195,
+   "has_overlap": false,
+   "text_sha256": "37a0094bb83f16039fd79b5127e11f4ddb0db65b2979ac8fa6e5e938dbfed983"
+  },
+  {
+   "chunk_id": "nt-003",
+   "section": "CAUTIONARY NOTES — SCOPE AND APPLICABILITY OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 9,
+   "page_end": 9,
+   "n_tokens": 50,
+   "has_overlap": false,
+   "text_sha256": "e8e0f4a71dc610012175459a5cd66454461e0bbc2f8f9f022e3ba32be0a0dca5"
+  },
+  {
+   "chunk_id": "nt-004",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT",
+   "entry": null,
+   "page_start": 10,
+   "page_end": 10,
+   "n_tokens": 187,
+   "has_overlap": false,
+   "text_sha256": "b3ec8dec72904793fd8e25ed186565862282d5a357db5e616dfc143c94f58d04"
+  },
+  {
+   "chunk_id": "nt-005",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT",
+   "entry": null,
+   "page_start": 10,
+   "page_end": 10,
+   "n_tokens": 52,
+   "has_overlap": false,
+   "text_sha256": "df28d951e1038241b7f12e0118b9163c95abf91bb10f568b277c075ca4cbe6b5"
+  },
+  {
+   "chunk_id": "nt-006",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT",
+   "entry": null,
+   "page_start": 10,
+   "page_end": 10,
+   "n_tokens": 197,
+   "has_overlap": false,
+   "text_sha256": "8b758caddbd4ecd875eaf0a810d4a5b96d066275db5bb2cde5a80609f0efb117"
+  },
+  {
+   "chunk_id": "nt-007",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT",
+   "entry": null,
+   "page_start": 10,
+   "page_end": 10,
+   "n_tokens": 173,
+   "has_overlap": true,
+   "text_sha256": "618dc497c8673ca62aab0a93314baf67ab361092badfac954eb68b7f83a1403e"
+  },
+  {
+   "chunk_id": "nt-008",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.1 PURPOSE AND APPLICABILITY",
+   "entry": null,
+   "page_start": 11,
+   "page_end": 11,
+   "n_tokens": 153,
+   "has_overlap": false,
+   "text_sha256": "9ba62849b8b67d0d941738848ceeb07f3f86f176a3623f79ade2787d66f3ffec"
+  },
+  {
+   "chunk_id": "nt-009",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.1 PURPOSE AND APPLICABILITY",
+   "entry": null,
+   "page_start": 11,
+   "page_end": 11,
+   "n_tokens": 56,
+   "has_overlap": false,
+   "text_sha256": "5d1567a9f1deb0233edee95a669dd569e05ae730642f0d7a0bff69bd801d10ae"
+  },
+  {
+   "chunk_id": "nt-010",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.1 PURPOSE AND APPLICABILITY",
+   "entry": null,
+   "page_start": 11,
+   "page_end": 11,
+   "n_tokens": 151,
+   "has_overlap": false,
+   "text_sha256": "8b421087946ef5551bab932abe5b80e99a27dc12461e6810f49b3f3a6f19d925"
+  },
+  {
+   "chunk_id": "nt-011",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.2 TARGET AUDIENCE",
+   "entry": null,
+   "page_start": 11,
+   "page_end": 11,
+   "n_tokens": 163,
+   "has_overlap": false,
+   "text_sha256": "a3cc080b4b6904a6e536e9b81f5bc22ce3fbfe6e4c6f68ecfed2aeccdcabf46d"
+  },
+  {
+   "chunk_id": "nt-012",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.2 TARGET AUDIENCE",
+   "entry": null,
+   "page_start": 11,
+   "page_end": 12,
+   "n_tokens": 94,
+   "has_overlap": false,
+   "text_sha256": "641e18a315b8cefc7117aff316ac608e224da0466b64a7cb6a6c0f0c6aa7cdf6"
+  },
+  {
+   "chunk_id": "nt-013",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.3 RELATED PUBLICATIONS",
+   "entry": null,
+   "page_start": 12,
+   "page_end": 12,
+   "n_tokens": 152,
+   "has_overlap": false,
+   "text_sha256": "ae6cc9784ed6d44061efead6053f1925319b5cd5dfd74ef1c5b32d69ce312537"
+  },
+  {
+   "chunk_id": "nt-014",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.3 RELATED PUBLICATIONS",
+   "entry": null,
+   "page_start": 12,
+   "page_end": 12,
+   "n_tokens": 121,
+   "has_overlap": true,
+   "text_sha256": "965c7904e0276489f1a9505ae054ebd901927c0ddc3023232eac72e2e3f82022"
+  },
+  {
+   "chunk_id": "nt-015",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.4 ORGANIZATION OF THIS SPECIAL PUBLICATION",
+   "entry": null,
+   "page_start": 12,
+   "page_end": 12,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "4f6e23614a2a06a2a0eac53d969293704f0b9dc3072066d79f9f2cc62d932d54"
+  },
+  {
+   "chunk_id": "nt-016",
+   "section": "CHAPTER ONE — INTRODUCTION — THE NEED FOR RISK ASSESSMENTS TO SUPPORT ENTERPRISE-WIDE RISK MANAGEMENT > 1.4 ORGANIZATION OF THIS SPECIAL PUBLICATION",
+   "entry": null,
+   "page_start": 12,
+   "page_end": 12,
+   "n_tokens": 110,
+   "has_overlap": false,
+   "text_sha256": "efc8e88ed96ceb235e685805283e6c8472f6bf1832ed0f29e8a3923a2499ea5a"
+  },
+  {
+   "chunk_id": "nt-017",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 13,
+   "page_end": 13,
+   "n_tokens": 86,
+   "has_overlap": false,
+   "text_sha256": "f48675b00d8ca25c83fef60b9c43929bed96fecb3840ab311a16089f1b9db6d6"
+  },
+  {
+   "chunk_id": "nt-018",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.1 RISK MANAGEMENT PROCESS",
+   "entry": null,
+   "page_start": 13,
+   "page_end": 13,
+   "n_tokens": 112,
+   "has_overlap": false,
+   "text_sha256": "ec46f28540a54a6ef9c4061d9f0186ad28bc090bcfe696c95c4904fdbc5ae03d"
+  },
+  {
+   "chunk_id": "nt-019",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.1 RISK MANAGEMENT PROCESS",
+   "entry": null,
+   "page_start": 13,
+   "page_end": 13,
+   "n_tokens": 139,
+   "has_overlap": true,
+   "text_sha256": "715e2e37c29ba97c84d50174e166571d91b9b7c3612e3597c54687aae34dfe36"
+  },
+  {
+   "chunk_id": "nt-020",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.1 RISK MANAGEMENT PROCESS",
+   "entry": null,
+   "page_start": 13,
+   "page_end": 14,
+   "n_tokens": 170,
+   "has_overlap": true,
+   "text_sha256": "c28368e6b5ce3084cd4ad7c8346b3a88b19f040131a9af8f008f2e6f6cab9e17"
+  },
+  {
+   "chunk_id": "nt-021",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.1 RISK MANAGEMENT PROCESS",
+   "entry": null,
+   "page_start": 14,
+   "page_end": 14,
+   "n_tokens": 136,
+   "has_overlap": true,
+   "text_sha256": "1570a6e835c2bed9ff7efd59d3c0f1ae6d2a0c8cf64291f8627ec018c16bcabb"
+  },
+  {
+   "chunk_id": "nt-022",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.1 RISK MANAGEMENT PROCESS",
+   "entry": null,
+   "page_start": 14,
+   "page_end": 14,
+   "n_tokens": 111,
+   "has_overlap": false,
+   "text_sha256": "20072eecbd17466e6f752fb564d15df99b580e9a288da9212e9ef1ce967a6267"
+  },
+  {
+   "chunk_id": "nt-023",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.2 RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 14,
+   "page_end": 14,
+   "n_tokens": 165,
+   "has_overlap": false,
+   "text_sha256": "992d2f23a6814adf7bd69d5166149f22f860bee432c1596a1309a331fa1e1dfa"
+  },
+  {
+   "chunk_id": "nt-024",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.2 RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 15,
+   "n_tokens": 197,
+   "has_overlap": false,
+   "text_sha256": "bcef48808b0dd1ff1ec9eddbce2d5cdea7bc8f99a612da4fba780e89802f3025"
+  },
+  {
+   "chunk_id": "nt-025",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.2 RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 15,
+   "n_tokens": 163,
+   "has_overlap": true,
+   "text_sha256": "27e6187315b8f1b223b0d28f1505dfb12edcddeeb6d1bbd509856b9c87e1f733"
+  },
+  {
+   "chunk_id": "nt-026",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.2 RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 15,
+   "n_tokens": 68,
+   "has_overlap": true,
+   "text_sha256": "0b28292086fa18ad75ea4b04d79ea043a566eb5f488077c7d66cb7706f166eb4"
+  },
+  {
+   "chunk_id": "nt-027",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 15,
+   "n_tokens": 177,
+   "has_overlap": false,
+   "text_sha256": "47fb1197f78e493548fdb4a85becd76258528b97e9e5fc07c6e95dea026dfa16"
+  },
+  {
+   "chunk_id": "nt-028",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 15,
+   "n_tokens": 196,
+   "has_overlap": false,
+   "text_sha256": "bd86616442275b23a5e80ae53ef686e0e96b4c9cbd5e7038d26e4dc2749fc183"
+  },
+  {
+   "chunk_id": "nt-029",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 15,
+   "n_tokens": 48,
+   "has_overlap": true,
+   "text_sha256": "4d9728e7fbfc7309e91a2604b760da476996f65629cac552756fe596098b2a55"
+  },
+  {
+   "chunk_id": "nt-030",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS",
+   "entry": null,
+   "page_start": 15,
+   "page_end": 16,
+   "n_tokens": 175,
+   "has_overlap": true,
+   "text_sha256": "7294ca1a0c0a4b9677fe915edb0f65f8383d46ad937e65168843cde5a7a6e999"
+  },
+  {
+   "chunk_id": "nt-031",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS",
+   "entry": null,
+   "page_start": 17,
+   "page_end": 17,
+   "n_tokens": 153,
+   "has_overlap": false,
+   "text_sha256": "49f497de6dc1bdf5f510fb2fb7931c55cd9e48ccb2adf1af12d2af9958dcc7fe"
+  },
+  {
+   "chunk_id": "nt-032",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Threats",
+   "entry": null,
+   "page_start": 17,
+   "page_end": 17,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "fc704f21426e5dac8dfd8354cb559188cd69438204888800adc9f2ce678554b7"
+  },
+  {
+   "chunk_id": "nt-033",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Threats",
+   "entry": null,
+   "page_start": 17,
+   "page_end": 17,
+   "n_tokens": 87,
+   "has_overlap": true,
+   "text_sha256": "63730bd8d49a337fbf8a1ada079ba5aa59b3d8e560719f205f96eecffcb11ed1"
+  },
+  {
+   "chunk_id": "nt-034",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Threats",
+   "entry": null,
+   "page_start": 17,
+   "page_end": 17,
+   "n_tokens": 140,
+   "has_overlap": false,
+   "text_sha256": "7142e4a75a2378c69b4d43392c9028347ee36f14a8facc34f673d003d03347b5"
+  },
+  {
+   "chunk_id": "nt-035",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Threats",
+   "entry": null,
+   "page_start": 18,
+   "page_end": 18,
+   "n_tokens": 184,
+   "has_overlap": false,
+   "text_sha256": "d5378b00ac090ad50f29b2447c014eabc5362ed5dfb0fb2679a77893bbf87d6d"
+  },
+  {
+   "chunk_id": "nt-036",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Threats",
+   "entry": null,
+   "page_start": 18,
+   "page_end": 18,
+   "n_tokens": 113,
+   "has_overlap": false,
+   "text_sha256": "d0524ad5b74456efb65ae9e44a39664707f1692948f1b3d4e778b87385ebe6e9"
+  },
+  {
+   "chunk_id": "nt-037",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 18,
+   "page_end": 18,
+   "n_tokens": 200,
+   "has_overlap": false,
+   "text_sha256": "bd18d7bea002985b88537b50b7e621cd70c279b0d58e2f693cb7229d37d509f8"
+  },
+  {
+   "chunk_id": "nt-038",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 18,
+   "page_end": 18,
+   "n_tokens": 173,
+   "has_overlap": false,
+   "text_sha256": "ecba58c67c42cf405caedbfa5bff061fcfb0960f48bd24e2d46540a695f6adc4"
+  },
+  {
+   "chunk_id": "nt-039",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 19,
+   "page_end": 19,
+   "n_tokens": 150,
+   "has_overlap": false,
+   "text_sha256": "22be68920de524ff33d7650cb4a5295c62223d7c61b67c6ccc69872d9bdb0005"
+  },
+  {
+   "chunk_id": "nt-040",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 19,
+   "page_end": 19,
+   "n_tokens": 179,
+   "has_overlap": true,
+   "text_sha256": "754183844e9f49cccec16e28ebe31276f839be83b2c93aa2dae4cc6463136c75"
+  },
+  {
+   "chunk_id": "nt-041",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 19,
+   "page_end": 19,
+   "n_tokens": 117,
+   "has_overlap": false,
+   "text_sha256": "925065d4710f9d590bd300d371a491354af3940670f21f1dfb6519ce52fbb9dc"
+  },
+  {
+   "chunk_id": "nt-042",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+   "entry": null,
+   "page_start": 19,
+   "page_end": 19,
+   "n_tokens": 197,
+   "has_overlap": false,
+   "text_sha256": "9ccfccea5033d612b7fb58ebaab61f55275c7e4be1f0bfd436fdfd1ca6292474"
+  },
+  {
+   "chunk_id": "nt-043",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+   "entry": null,
+   "page_start": 19,
+   "page_end": 19,
+   "n_tokens": 161,
+   "has_overlap": false,
+   "text_sha256": "8e8c7ca5b5c1f2e2fff14c6e59df743d0cb47d4cb66232b106f605cbeb944f17"
+  },
+  {
+   "chunk_id": "nt-044",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+   "entry": null,
+   "page_start": 19,
+   "page_end": 20,
+   "n_tokens": 149,
+   "has_overlap": true,
+   "text_sha256": "f79bf383d938f6667249d45a800c12f798fef4110d4c73dbcad4ab57be1a29b0"
+  },
+  {
+   "chunk_id": "nt-045",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+   "entry": null,
+   "page_start": 20,
+   "page_end": 20,
+   "n_tokens": 198,
+   "has_overlap": false,
+   "text_sha256": "6ad3552eec560eb703d07283252588ae7b6c3d813f1808a8a7cfd169064c1029"
+  },
+  {
+   "chunk_id": "nt-046",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Likelihood",
+   "entry": null,
+   "page_start": 20,
+   "page_end": 20,
+   "n_tokens": 69,
+   "has_overlap": false,
+   "text_sha256": "b9d80bcc708575dc266b0c6e80ce569bd0d0d57f836bd12093febf20115d5565"
+  },
+  {
+   "chunk_id": "nt-047",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Impact",
+   "entry": null,
+   "page_start": 20,
+   "page_end": 20,
+   "n_tokens": 197,
+   "has_overlap": false,
+   "text_sha256": "0cb9d17a40f6738edb712485e974aa12b43eab1cecf720256355cb65d07c39c6"
+  },
+  {
+   "chunk_id": "nt-048",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Impact",
+   "entry": null,
+   "page_start": 20,
+   "page_end": 20,
+   "n_tokens": 122,
+   "has_overlap": false,
+   "text_sha256": "7dc83bf4d264d66e4f434e0cb509949ade0ccc9e9bcdf4d4cec1df695467d3d7"
+  },
+  {
+   "chunk_id": "nt-049",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Impact",
+   "entry": null,
+   "page_start": 21,
+   "page_end": 21,
+   "n_tokens": 104,
+   "has_overlap": false,
+   "text_sha256": "5959a6ec4a0d34ac4a5ac51ac48f3fc230a20c5a5fde3ecb512d0ba19ae9157b"
+  },
+  {
+   "chunk_id": "nt-050",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Risk",
+   "entry": null,
+   "page_start": 21,
+   "page_end": 21,
+   "n_tokens": 42,
+   "has_overlap": false,
+   "text_sha256": "ec3294919be0553213a05ea87211d45d07e3bd7aa5a2399614ea2166b41d88c5"
+  },
+  {
+   "chunk_id": "nt-051",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Risk",
+   "entry": null,
+   "page_start": 21,
+   "page_end": 21,
+   "n_tokens": 183,
+   "has_overlap": true,
+   "text_sha256": "04a3c4178ad2ab830d8046e676bbd8e36073e31699a5f5e917efd359947edbd5"
+  },
+  {
+   "chunk_id": "nt-052",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Risk",
+   "entry": null,
+   "page_start": 21,
+   "page_end": 21,
+   "n_tokens": 73,
+   "has_overlap": false,
+   "text_sha256": "1b0145381eeabb2cfd9fc4fa963e98cd4c62f3ee8361cecd07ece79615acdf62"
+  },
+  {
+   "chunk_id": "nt-053",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Aggregation",
+   "entry": null,
+   "page_start": 22,
+   "page_end": 22,
+   "n_tokens": 173,
+   "has_overlap": false,
+   "text_sha256": "8f47dbb5fc4a08181c47309551e91bf2973796200f1e52a56b369e4c55739e21"
+  },
+  {
+   "chunk_id": "nt-054",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Aggregation",
+   "entry": null,
+   "page_start": 22,
+   "page_end": 22,
+   "n_tokens": 113,
+   "has_overlap": true,
+   "text_sha256": "964c967a5fb23c0f197d0d613f733224e22faf3d11cc80f4f88615b8b7f8d448"
+  },
+  {
+   "chunk_id": "nt-055",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Aggregation",
+   "entry": null,
+   "page_start": 22,
+   "page_end": 22,
+   "n_tokens": 129,
+   "has_overlap": false,
+   "text_sha256": "64e1fbf82d8bb3a9508f9120c659eadd60396a0febdbb2f4ac21b73d5d14c915"
+  },
+  {
+   "chunk_id": "nt-056",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 22,
+   "page_end": 22,
+   "n_tokens": 191,
+   "has_overlap": false,
+   "text_sha256": "a026b0de6b33e82a3285535f65b9bce929d6c89ae81ade89a70eecff0c91dfdb"
+  },
+  {
+   "chunk_id": "nt-057",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 22,
+   "page_end": 22,
+   "n_tokens": 101,
+   "has_overlap": false,
+   "text_sha256": "b63c14a2192fc640bb30b70436647521a47b71026c4a1dfae1d5026a9bd6bab4"
+  },
+  {
+   "chunk_id": "nt-058",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 23,
+   "page_end": 23,
+   "n_tokens": 174,
+   "has_overlap": false,
+   "text_sha256": "474544f4f0a35e7844941b9e02484e0a8f5f2b340d8f5173a186c5a24e03ead7"
+  },
+  {
+   "chunk_id": "nt-059",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 23,
+   "page_end": 23,
+   "n_tokens": 162,
+   "has_overlap": true,
+   "text_sha256": "7ab6b280874db6253247e7c6ae756546695d9f63cd7943f5d02846f31e8c919c"
+  },
+  {
+   "chunk_id": "nt-060",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 23,
+   "page_end": 23,
+   "n_tokens": 188,
+   "has_overlap": false,
+   "text_sha256": "b1bab6afc2eae43c1cd716c3c4bb9cc4515e33f5d2448d7272c0c6598681ba82"
+  },
+  {
+   "chunk_id": "nt-061",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 23,
+   "page_end": 23,
+   "n_tokens": 182,
+   "has_overlap": false,
+   "text_sha256": "19a38d1a803c2f686154697be97cd14236e4785dc979709175db858d1bd7ba0e"
+  },
+  {
+   "chunk_id": "nt-062",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 23,
+   "page_end": 23,
+   "n_tokens": 166,
+   "has_overlap": false,
+   "text_sha256": "0de3a7409ee49c3ff54aae0ec3159eb36ab3db8e83671f17d0e0919e4415bedb"
+  },
+  {
+   "chunk_id": "nt-063",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 23,
+   "page_end": 24,
+   "n_tokens": 194,
+   "has_overlap": true,
+   "text_sha256": "6503cc4904babff99eeec572edd042082b8ed74fd77d70cf1922e47373660c86"
+  },
+  {
+   "chunk_id": "nt-064",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 24,
+   "page_end": 24,
+   "n_tokens": 156,
+   "has_overlap": false,
+   "text_sha256": "2f8031cd9499339e2a2187b01f093ad93de64143d71d5f7ec2d31da2b6116db1"
+  },
+  {
+   "chunk_id": "nt-065",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 24,
+   "page_end": 24,
+   "n_tokens": 166,
+   "has_overlap": false,
+   "text_sha256": "062140023fcef8294c4292513327bab2cb2da2a5cda5790ea7422766979ebff1"
+  },
+  {
+   "chunk_id": "nt-066",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 24,
+   "page_end": 24,
+   "n_tokens": 74,
+   "has_overlap": false,
+   "text_sha256": "c37348ec8a4a36bab54d8ae6efe2720b630c7dc8af0c73805db9f1578956f7e6"
+  },
+  {
+   "chunk_id": "nt-067",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.3 KEY RISK CONCEPTS > Uncertainty",
+   "entry": null,
+   "page_start": 25,
+   "page_end": 25,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "cb1dab0de20e14be1dfb84721a4e7aa9cac7ba12f3fc7c80a6f1245fa3a29ca2"
+  },
+  {
+   "chunk_id": "nt-068",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 26,
+   "page_end": 26,
+   "n_tokens": 151,
+   "has_overlap": false,
+   "text_sha256": "6bea0c96e305245da7509c07e99b56bd0fd7cfbdf77c5e23f491d2fe5832eb8b"
+  },
+  {
+   "chunk_id": "nt-069",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 26,
+   "page_end": 26,
+   "n_tokens": 134,
+   "has_overlap": false,
+   "text_sha256": "c5fa5b4ff3aaceab723bce908a673ec71f95ebecb04312a27e8763549f5d5807"
+  },
+  {
+   "chunk_id": "nt-070",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 26,
+   "page_end": 26,
+   "n_tokens": 190,
+   "has_overlap": false,
+   "text_sha256": "bbfeb82ade006f3ca155e270b604fa40fe986829e1cac0041a19455a5ce90756"
+  },
+  {
+   "chunk_id": "nt-071",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 178,
+   "has_overlap": false,
+   "text_sha256": "767e8be685e121c07a35af26caf5a74c1acc211cffbbe51014ed6d5d72f10f02"
+  },
+  {
+   "chunk_id": "nt-072",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 63,
+   "has_overlap": false,
+   "text_sha256": "ebcce9a744c3c9afde0cec69433aac16f5479191c25c3bdd8e0718329ee287ac"
+  },
+  {
+   "chunk_id": "nt-073",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 189,
+   "has_overlap": false,
+   "text_sha256": "8bb43437b14b730fd4df25b2ec5fe8c3ace26f1d028bcb784e989c6b1956ea9f"
+  },
+  {
+   "chunk_id": "nt-074",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 96,
+   "has_overlap": true,
+   "text_sha256": "a3111d6196b47fb0207718cfe020f381597b12a51ed84b09ef7b081fce4c7b37"
+  },
+  {
+   "chunk_id": "nt-075",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 173,
+   "has_overlap": false,
+   "text_sha256": "9c9d9ba16bfd27a7be2a16b13f273b3981a62273928eb3d4e37d77cc1a56bb91"
+  },
+  {
+   "chunk_id": "nt-076",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 182,
+   "has_overlap": false,
+   "text_sha256": "5ee7166014ef6fb094bda7cc1ed5287e83af5339f0bf577d3c744724071e9a70"
+  },
+  {
+   "chunk_id": "nt-077",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 27,
+   "n_tokens": 93,
+   "has_overlap": true,
+   "text_sha256": "62510c85e1b8fc41d45cbc3ac92bb474b71f9e89070b3857f7ded22c3476e245"
+  },
+  {
+   "chunk_id": "nt-078",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 27,
+   "page_end": 28,
+   "n_tokens": 188,
+   "has_overlap": true,
+   "text_sha256": "91e7277483edfc80a88ec022eca80d5666625c825b52ebbb15288fe549192817"
+  },
+  {
+   "chunk_id": "nt-079",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 28,
+   "page_end": 28,
+   "n_tokens": 164,
+   "has_overlap": true,
+   "text_sha256": "7b936e0fbb772e28becc893d32f76d7394cfcae82691ee6cb681c1010908d9bc"
+  },
+  {
+   "chunk_id": "nt-080",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 28,
+   "page_end": 28,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "6238156a185d4d89a8e0151fef8ea39eaa0984670d2d6a848c2eedd7386973d2"
+  },
+  {
+   "chunk_id": "nt-081",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 28,
+   "page_end": 28,
+   "n_tokens": 134,
+   "has_overlap": true,
+   "text_sha256": "56b4757ec4546959406d0af010674a78cadda43e21222521f694e1f5698bed80"
+  },
+  {
+   "chunk_id": "nt-082",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS",
+   "entry": null,
+   "page_start": 28,
+   "page_end": 29,
+   "n_tokens": 196,
+   "has_overlap": true,
+   "text_sha256": "a9806b82122c732e42567d3de22590f31440d38099cc469358ba73259c07f2be"
+  },
+  {
+   "chunk_id": "nt-083",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 1 – Categorize",
+   "entry": null,
+   "page_start": 29,
+   "page_end": 29,
+   "n_tokens": 152,
+   "has_overlap": false,
+   "text_sha256": "86e3e35ec5070dbc346952be94525fcdce057ed537a37c226b0d832b0ef17251"
+  },
+  {
+   "chunk_id": "nt-084",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 2 – Select",
+   "entry": null,
+   "page_start": 29,
+   "page_end": 29,
+   "n_tokens": 196,
+   "has_overlap": false,
+   "text_sha256": "383337326cb6021daa4d813c6e440281246a87ada49a7f6b17a68ca9630eb61f"
+  },
+  {
+   "chunk_id": "nt-085",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 2 – Select",
+   "entry": null,
+   "page_start": 29,
+   "page_end": 29,
+   "n_tokens": 62,
+   "has_overlap": true,
+   "text_sha256": "ccb0d1a1ccf81922dd15ea5b40a3716380cf6c53dff8576e1ba20d70c680eb14"
+  },
+  {
+   "chunk_id": "nt-086",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 3 – Implement",
+   "entry": null,
+   "page_start": 30,
+   "page_end": 30,
+   "n_tokens": 192,
+   "has_overlap": false,
+   "text_sha256": "95b79f64f66f3ce6dcfc61bc9968e19b45796a22288dd88b0c472e6a7a4ccc5a"
+  },
+  {
+   "chunk_id": "nt-087",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 3 – Implement",
+   "entry": null,
+   "page_start": 30,
+   "page_end": 30,
+   "n_tokens": 31,
+   "has_overlap": false,
+   "text_sha256": "82acd671a8376d2c28f73b597be4c05d77fe02a3444483fbdb00ddd180ada64d"
+  },
+  {
+   "chunk_id": "nt-088",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 4 – Assess",
+   "entry": null,
+   "page_start": 30,
+   "page_end": 30,
+   "n_tokens": 129,
+   "has_overlap": false,
+   "text_sha256": "6fade22f3eb36f618385d2d516d5405e0ee650d2409e921606a9bfa28b543a28"
+  },
+  {
+   "chunk_id": "nt-089",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 5 – Authorize",
+   "entry": null,
+   "page_start": 30,
+   "page_end": 30,
+   "n_tokens": 109,
+   "has_overlap": false,
+   "text_sha256": "e155be671576f00796757d93475feff9a7b722bbba292fe88b707ac3c6896366"
+  },
+  {
+   "chunk_id": "nt-090",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 6 – Monitor",
+   "entry": null,
+   "page_start": 30,
+   "page_end": 30,
+   "n_tokens": 126,
+   "has_overlap": false,
+   "text_sha256": "51e5bb4822866068b009af18be00aac70edc96b9e22d1057c216db3c7d59449e"
+  },
+  {
+   "chunk_id": "nt-091",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 6 – Monitor",
+   "entry": null,
+   "page_start": 31,
+   "page_end": 31,
+   "n_tokens": 174,
+   "has_overlap": false,
+   "text_sha256": "374e380267408775ffa1d9b828eff2ddacc5db8dd711581143dd15c2fb8032b5"
+  },
+  {
+   "chunk_id": "nt-092",
+   "section": "CHAPTER TWO — THE FUNDAMENTALS — BASIC CONCEPTS ASSOCIATED WITH RISK ASSESSMENTS > 2.4 APPLICATION OF RISK ASSESSMENTS > RMF Step 6 – Monitor",
+   "entry": null,
+   "page_start": 31,
+   "page_end": 31,
+   "n_tokens": 89,
+   "has_overlap": false,
+   "text_sha256": "c9ebb0b724a5fb665a78779abab93b693f7469fecbfee8924490342b9bff8453"
+  },
+  {
+   "chunk_id": "nt-093",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS",
+   "entry": null,
+   "page_start": 32,
+   "page_end": 32,
+   "n_tokens": 213,
+   "has_overlap": false,
+   "text_sha256": "6972c0c2dee73c8c95c641d50bd929c4ddc4b1309d69fc8e09088654573ba255"
+  },
+  {
+   "chunk_id": "nt-094",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.1 PREPARING FOR THE RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 33,
+   "page_end": 33,
+   "n_tokens": 226,
+   "has_overlap": false,
+   "text_sha256": "5714c05d416eaee0035583964ee6c6101e15f014464cf6b6d03644eeec29cce4"
+  },
+  {
+   "chunk_id": "nt-095",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-1",
+   "entry": null,
+   "page_start": 33,
+   "page_end": 33,
+   "n_tokens": 184,
+   "has_overlap": false,
+   "text_sha256": "4ed32204521464c273ea578ab9293be503ec886783a6cc7944cde74976ba3f48"
+  },
+  {
+   "chunk_id": "nt-096",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-1",
+   "entry": null,
+   "page_start": 33,
+   "page_end": 33,
+   "n_tokens": 161,
+   "has_overlap": false,
+   "text_sha256": "846acb90627df2418f53085299e8d04a4fb84a33db46670dca0c7e9ba5369e6f"
+  },
+  {
+   "chunk_id": "nt-097",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-1",
+   "entry": null,
+   "page_start": 33,
+   "page_end": 33,
+   "n_tokens": 127,
+   "has_overlap": true,
+   "text_sha256": "27f39d31853345f7ada4a1b8e3ddc7c4c7d9d0f7e4825bf6474c5ec434124da3"
+  },
+  {
+   "chunk_id": "nt-098",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-1",
+   "entry": null,
+   "page_start": 33,
+   "page_end": 33,
+   "n_tokens": 181,
+   "has_overlap": true,
+   "text_sha256": "60242e24ffcd788e470ff8d7b0c20ed02e9a0d8486723a17f4ee6430c904e72d"
+  },
+  {
+   "chunk_id": "nt-099",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-1",
+   "entry": null,
+   "page_start": 33,
+   "page_end": 33,
+   "n_tokens": 159,
+   "has_overlap": false,
+   "text_sha256": "5b9f4b7a5bd354740181732e11d504a8456db9af6f461c719a2db566ffe61b0f"
+  },
+  {
+   "chunk_id": "nt-100",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-2",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 192,
+   "has_overlap": false,
+   "text_sha256": "cf0028cffa5ed354657f00a273fa91da24751938530e2957138380468c7b99e8"
+  },
+  {
+   "chunk_id": "nt-101",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-2",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 86,
+   "has_overlap": true,
+   "text_sha256": "c6c9b89914bf524810818efa5f721ddc58d28ff9bfe7e38f8dd7e53014291153"
+  },
+  {
+   "chunk_id": "nt-102",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Organizational Applicability",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 189,
+   "has_overlap": false,
+   "text_sha256": "29851fbc3a95f8dd5add87a2de4e1151648acf7231d03fc2aeceb572aaa26217"
+  },
+  {
+   "chunk_id": "nt-103",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Effectiveness Time Frame",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 163,
+   "has_overlap": false,
+   "text_sha256": "6fad92ef959268e878be02c6d3ea062e32bacd87f3ed34e03a346e4d5dc2c828"
+  },
+  {
+   "chunk_id": "nt-104",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Effectiveness Time Frame",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 74,
+   "has_overlap": true,
+   "text_sha256": "0b56ae3d59b30ed4b136fae13ee2beb7e582abe6347792fe7ebad12745f6905d"
+  },
+  {
+   "chunk_id": "nt-105",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Architectural/Technology Considerations",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 168,
+   "has_overlap": false,
+   "text_sha256": "da5a9689197002b654b920e6c684fae4183e377468d7e784ad5b44097bffd322"
+  },
+  {
+   "chunk_id": "nt-106",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-3",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 168,
+   "has_overlap": false,
+   "text_sha256": "87fc69dd8531d020d8ee722b5e11ba42583d370740ab0cd63a465785bc3ae84f"
+  },
+  {
+   "chunk_id": "nt-107",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-3",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 184,
+   "has_overlap": false,
+   "text_sha256": "9668c56c38d505e7219a8f96dc95599b36bacf06bd0312e5ceb920d0566233a7"
+  },
+  {
+   "chunk_id": "nt-108",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-3",
+   "entry": null,
+   "page_start": 34,
+   "page_end": 34,
+   "n_tokens": 60,
+   "has_overlap": true,
+   "text_sha256": "16b446a7e7bb92ad9a8e2cb1b4db5fe4ece058dcecc4ae22ce872ccd1889e728"
+  },
+  {
+   "chunk_id": "nt-109",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Threat Sources",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 150,
+   "has_overlap": false,
+   "text_sha256": "400ec69757683f3045928371078265e4f2be1e2c4d370bf3fb0012358bc32592"
+  },
+  {
+   "chunk_id": "nt-110",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Threat Events",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 187,
+   "has_overlap": false,
+   "text_sha256": "e8086a6f20832604480947cc2b5e739d4196cb9571685858302c6508df21dbf6"
+  },
+  {
+   "chunk_id": "nt-111",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Threat Events",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 123,
+   "has_overlap": true,
+   "text_sha256": "0a9a1c6c455e271067471ede9e647e9d7cfc0998c954c8691c72013b2eb3c8f4"
+  },
+  {
+   "chunk_id": "nt-112",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 198,
+   "has_overlap": false,
+   "text_sha256": "3afc35d40329f97398f79eda0287d6e4812863ee3547e5d233000b545682cf22"
+  },
+  {
+   "chunk_id": "nt-113",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Vulnerabilities and Predisposing Conditions",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 80,
+   "has_overlap": true,
+   "text_sha256": "fb57451770a1a061fef7ba1a88472cb08594ee46ffd8c29c31128049ffae4017"
+  },
+  {
+   "chunk_id": "nt-114",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Likelihood",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 70,
+   "has_overlap": false,
+   "text_sha256": "56459be5bf7d747dfcf67b520cc2dd02bbf0e176bc8c899172deddc8eca1ad27"
+  },
+  {
+   "chunk_id": "nt-115",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Impacts",
+   "entry": null,
+   "page_start": 35,
+   "page_end": 35,
+   "n_tokens": 200,
+   "has_overlap": false,
+   "text_sha256": "5f0cd86044c1252f3faf5f89b297a4fffbe40285d03a0b407395c11cd3c3d247"
+  },
+  {
+   "chunk_id": "nt-116",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Risk Tolerance and Uncertainty",
+   "entry": null,
+   "page_start": 36,
+   "page_end": 36,
+   "n_tokens": 198,
+   "has_overlap": false,
+   "text_sha256": "f2480bf7ba9b77273ae713644298b1073f7bdc4929f9a85b26c3197cdb99dec4"
+  },
+  {
+   "chunk_id": "nt-117",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Analytic Approach",
+   "entry": null,
+   "page_start": 36,
+   "page_end": 36,
+   "n_tokens": 185,
+   "has_overlap": false,
+   "text_sha256": "ca2a5f84781eb6cd4b2ea47f6fd58611e979920f1e80dfa1a469a4e227214260"
+  },
+  {
+   "chunk_id": "nt-118",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > Analytic Approach",
+   "entry": null,
+   "page_start": 36,
+   "page_end": 36,
+   "n_tokens": 88,
+   "has_overlap": false,
+   "text_sha256": "9c4ed3c224995dfa17ff52c2083fde10d5817e3050cc8c7503e37ab617c3cd15"
+  },
+  {
+   "chunk_id": "nt-119",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+   "entry": null,
+   "page_start": 36,
+   "page_end": 36,
+   "n_tokens": 185,
+   "has_overlap": false,
+   "text_sha256": "85c331fa1e65c18fff1224cdb3fa0004dc46ef582ff385e4f5a71a4f841c9985"
+  },
+  {
+   "chunk_id": "nt-120",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+   "entry": null,
+   "page_start": 36,
+   "page_end": 36,
+   "n_tokens": 145,
+   "has_overlap": false,
+   "text_sha256": "8f5a8a19ab2244a3eaab25add8447916f13af8ef3c875673837c2e6a2f19dd85"
+  },
+  {
+   "chunk_id": "nt-121",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+   "entry": null,
+   "page_start": 36,
+   "page_end": 36,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "d755e0dd0e22a5fe6c9bec6e1f0d8853943bc1c4977663fa6a1337b123e92556"
+  },
+  {
+   "chunk_id": "nt-122",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+   "entry": null,
+   "page_start": 37,
+   "page_end": 37,
+   "n_tokens": 177,
+   "has_overlap": false,
+   "text_sha256": "b56236a04817b5cd52c7f122e86627aae3336a8ffab9cd186291aef56a7535c5"
+  },
+  {
+   "chunk_id": "nt-123",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4",
+   "entry": null,
+   "page_start": 37,
+   "page_end": 37,
+   "n_tokens": 169,
+   "has_overlap": false,
+   "text_sha256": "47b57da0bb189b2b3f81c3e9d077c37d4261c6b341f36d766abc056963301c1f"
+  },
+  {
+   "chunk_id": "nt-124",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-5",
+   "entry": null,
+   "page_start": 37,
+   "page_end": 37,
+   "n_tokens": 172,
+   "has_overlap": false,
+   "text_sha256": "1d8d86b8dac2aaa2d698bc052880ee984332908dfe8a3b6743c18610ddefb510"
+  },
+  {
+   "chunk_id": "nt-125",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-5",
+   "entry": null,
+   "page_start": 37,
+   "page_end": 37,
+   "n_tokens": 192,
+   "has_overlap": false,
+   "text_sha256": "273c9795ac72cb2fa0a3db2dee146d1265cf1385d3d7d5e6e91d0ac0ac8c3158"
+  },
+  {
+   "chunk_id": "nt-126",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-5",
+   "entry": null,
+   "page_start": 37,
+   "page_end": 37,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "bb90c3269c0deab9f14ba90a75118bceca08c2d518a88ebf9875c684ace5fb00"
+  },
+  {
+   "chunk_id": "nt-127",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-5",
+   "entry": null,
+   "page_start": 37,
+   "page_end": 37,
+   "n_tokens": 46,
+   "has_overlap": false,
+   "text_sha256": "8b0022018a8193f51a559fbd305b48ed39c0fa67a1513ff89d2116e0d311ec2f"
+  },
+  {
+   "chunk_id": "nt-128",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.2 CONDUCTING THE RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 38,
+   "page_end": 38,
+   "n_tokens": 147,
+   "has_overlap": false,
+   "text_sha256": "de790a32c0e03eb3b8c204d5008585d2619bf6f4d995a6ccea137cd6a3106972"
+  },
+  {
+   "chunk_id": "nt-129",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.2 CONDUCTING THE RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 38,
+   "page_end": 38,
+   "n_tokens": 174,
+   "has_overlap": true,
+   "text_sha256": "9ee29ece6e70f2d4d460d4f5a314dc99e8b7af64b8a329fd3a3abfd94b9a7800"
+  },
+  {
+   "chunk_id": "nt-130",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.2 CONDUCTING THE RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 38,
+   "page_end": 38,
+   "n_tokens": 102,
+   "has_overlap": true,
+   "text_sha256": "179c1d4b728c5936c9d89ea70389526a96dfcc68cf26b65c017ce43e13470a96"
+  },
+  {
+   "chunk_id": "nt-131",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.2 CONDUCTING THE RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 38,
+   "page_end": 38,
+   "n_tokens": 176,
+   "has_overlap": false,
+   "text_sha256": "d6b7ca08ec6333dcf45ef44facce135f9169457845478af67fba0653502e8195"
+  },
+  {
+   "chunk_id": "nt-132",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-1",
+   "entry": null,
+   "page_start": 39,
+   "page_end": 39,
+   "n_tokens": 190,
+   "has_overlap": false,
+   "text_sha256": "c9af3b9fee165da12d9711e2fee8fee20a7b45595a9e56aa9c605d98c01d4703"
+  },
+  {
+   "chunk_id": "nt-133",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-1",
+   "entry": null,
+   "page_start": 39,
+   "page_end": 39,
+   "n_tokens": 176,
+   "has_overlap": false,
+   "text_sha256": "0d8fd1f259b255ce7045136d18f7bde8fd19d4941a4f4c56ec360ca61614d31f"
+  },
+  {
+   "chunk_id": "nt-134",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-1",
+   "entry": null,
+   "page_start": 39,
+   "page_end": 39,
+   "n_tokens": 191,
+   "has_overlap": true,
+   "text_sha256": "046f29451ef6faa53e5449f42cd22e787ec620cad17b06d13900b4e623acf814"
+  },
+  {
+   "chunk_id": "nt-135",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-2",
+   "entry": null,
+   "page_start": 40,
+   "page_end": 40,
+   "n_tokens": 183,
+   "has_overlap": false,
+   "text_sha256": "9c1f0c563f03e1f72798614f8813f3e2768337c3f04d345746d3f002cfef4389"
+  },
+  {
+   "chunk_id": "nt-136",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-2",
+   "entry": null,
+   "page_start": 40,
+   "page_end": 40,
+   "n_tokens": 191,
+   "has_overlap": false,
+   "text_sha256": "047d7dac04b2c862c8fd87293cf56253d99c04890e19a32b00643eac909d75ef"
+  },
+  {
+   "chunk_id": "nt-137",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-2",
+   "entry": null,
+   "page_start": 40,
+   "page_end": 40,
+   "n_tokens": 220,
+   "has_overlap": true,
+   "text_sha256": "c0d6e85e1cdd74e0e5c89e24657b6f4000dcdda26ff6957482d08edd7708de5a"
+  },
+  {
+   "chunk_id": "nt-138",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-3",
+   "entry": null,
+   "page_start": 41,
+   "page_end": 41,
+   "n_tokens": 193,
+   "has_overlap": false,
+   "text_sha256": "5f815d52092927e732fce585bebe5604070b009c0e809a72978d9040f4f1d96c"
+  },
+  {
+   "chunk_id": "nt-139",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-3",
+   "entry": null,
+   "page_start": 41,
+   "page_end": 41,
+   "n_tokens": 193,
+   "has_overlap": false,
+   "text_sha256": "349560fcef024f7fde11c3c4534dbebf6fa70ec11101e1f6a7ee69f166b23e5c"
+  },
+  {
+   "chunk_id": "nt-140",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-3",
+   "entry": null,
+   "page_start": 41,
+   "page_end": 41,
+   "n_tokens": 64,
+   "has_overlap": false,
+   "text_sha256": "d1465a3003fffab5dcaaff53f9308947fe7816bb7d0b0943bfb3fa0af334d260"
+  },
+  {
+   "chunk_id": "nt-141",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-3",
+   "entry": null,
+   "page_start": 41,
+   "page_end": 41,
+   "n_tokens": 166,
+   "has_overlap": false,
+   "text_sha256": "8f42f1737d0fc8dd54882c1b789a3c72c28bbeabdcafe7787eb222b570b289c9"
+  },
+  {
+   "chunk_id": "nt-142",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-3",
+   "entry": null,
+   "page_start": 41,
+   "page_end": 41,
+   "n_tokens": 187,
+   "has_overlap": true,
+   "text_sha256": "e1846f9eb44770e1eabcf8483b7f66b4516fe599d7ea540654b02b31ecdc717a"
+  },
+  {
+   "chunk_id": "nt-143",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-3",
+   "entry": null,
+   "page_start": 41,
+   "page_end": 41,
+   "n_tokens": 187,
+   "has_overlap": true,
+   "text_sha256": "bce540c588402c3049b3b061f6c80cc7a53a47e78422cc94e08ff51d16335b94"
+  },
+  {
+   "chunk_id": "nt-144",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+   "entry": null,
+   "page_start": 42,
+   "page_end": 42,
+   "n_tokens": 194,
+   "has_overlap": false,
+   "text_sha256": "0ee054c93e708060d0f7810c89721cfe60f631d141fc4759067e493c781e623f"
+  },
+  {
+   "chunk_id": "nt-145",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+   "entry": null,
+   "page_start": 42,
+   "page_end": 42,
+   "n_tokens": 199,
+   "has_overlap": false,
+   "text_sha256": "c878da42e14ce5f5fa234f258c4fbc0f1fa4e2d35d160c596200b5b88586b783"
+  },
+  {
+   "chunk_id": "nt-146",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+   "entry": null,
+   "page_start": 42,
+   "page_end": 42,
+   "n_tokens": 196,
+   "has_overlap": false,
+   "text_sha256": "02a158deaf01c1019d5a7e514c56e83a19f78efe927bdf99d7b15d70345e9ebb"
+  },
+  {
+   "chunk_id": "nt-147",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+   "entry": null,
+   "page_start": 42,
+   "page_end": 43,
+   "n_tokens": 157,
+   "has_overlap": true,
+   "text_sha256": "51e69645fe5e95da8a2f755c0aa19cde93e8b7d2252ebdc0e8f2f7a5d74d13da"
+  },
+  {
+   "chunk_id": "nt-148",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+   "entry": null,
+   "page_start": 43,
+   "page_end": 43,
+   "n_tokens": 182,
+   "has_overlap": false,
+   "text_sha256": "6d647c37e114d7dd18afcab1273adca834365a6e8baecd6acda79eb7067f462f"
+  },
+  {
+   "chunk_id": "nt-149",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-4",
+   "entry": null,
+   "page_start": 43,
+   "page_end": 43,
+   "n_tokens": 155,
+   "has_overlap": true,
+   "text_sha256": "b59a2a8f53ca895797351aa007e1c6d6ede60e402015c5df23c4310b7f589406"
+  },
+  {
+   "chunk_id": "nt-150",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-5",
+   "entry": null,
+   "page_start": 43,
+   "page_end": 43,
+   "n_tokens": 196,
+   "has_overlap": false,
+   "text_sha256": "94d6a811dc06dd4c7bb564aac26fb10505280d4c725655c9c46334af6ca3a1b5"
+  },
+  {
+   "chunk_id": "nt-151",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-5",
+   "entry": null,
+   "page_start": 43,
+   "page_end": 44,
+   "n_tokens": 194,
+   "has_overlap": false,
+   "text_sha256": "64dd389494e4c596b804d985355b53830aef466c32501bb482181c14f57a94bd"
+  },
+  {
+   "chunk_id": "nt-152",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-6",
+   "entry": null,
+   "page_start": 44,
+   "page_end": 44,
+   "n_tokens": 180,
+   "has_overlap": false,
+   "text_sha256": "54732305de5ed09c51f46c963f9245df17e2971c15659f22a3725365a574c94c"
+  },
+  {
+   "chunk_id": "nt-153",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-6",
+   "entry": null,
+   "page_start": 44,
+   "page_end": 44,
+   "n_tokens": 184,
+   "has_overlap": false,
+   "text_sha256": "b75b539bc315402cc7036e6db55eaa7f9602ff47ee0ff18daf38cd204f821cbd"
+  },
+  {
+   "chunk_id": "nt-154",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-6",
+   "entry": null,
+   "page_start": 44,
+   "page_end": 45,
+   "n_tokens": 169,
+   "has_overlap": true,
+   "text_sha256": "6a88481af5462d1112f49f232c60844cf6f3f251039a69c330578031bccd5eb2"
+  },
+  {
+   "chunk_id": "nt-155",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 2: CONDUCT THE ASSESSMENT > TASK 2-6",
+   "entry": null,
+   "page_start": 45,
+   "page_end": 45,
+   "n_tokens": 64,
+   "has_overlap": false,
+   "text_sha256": "76060efeb8fbac8c6a867a3dbf5fb3986d923cc220d5cad92b90649217c1711b"
+  },
+  {
+   "chunk_id": "nt-156",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.3 COMMUNICATING AND SHARING RISK ASSESSMENT INFORMATION",
+   "entry": null,
+   "page_start": 46,
+   "page_end": 46,
+   "n_tokens": 99,
+   "has_overlap": false,
+   "text_sha256": "d4e12a11c9eadfafa068b8364bd4d4d5e42f564670830e02abaa6c9090ce9a24"
+  },
+  {
+   "chunk_id": "nt-157",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 3: COMMUNICATE AND SHARE RISK ASSESSMENT RESULTS > TASK 3-1",
+   "entry": null,
+   "page_start": 46,
+   "page_end": 46,
+   "n_tokens": 166,
+   "has_overlap": false,
+   "text_sha256": "44f661b7164356cbf33bf663cc3af47c15ffe339a4ffb6e530dc608541f8848d"
+  },
+  {
+   "chunk_id": "nt-158",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 3: COMMUNICATE AND SHARE RISK ASSESSMENT RESULTS > TASK 3-2",
+   "entry": null,
+   "page_start": 46,
+   "page_end": 46,
+   "n_tokens": 130,
+   "has_overlap": false,
+   "text_sha256": "c8c702c71eddfc191ad7adc7be6be74e5ba0d833eb778aac8fe41df6599b10ae"
+  },
+  {
+   "chunk_id": "nt-159",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > 3.4 MAINTAINING THE RISK ASSESSMENT",
+   "entry": null,
+   "page_start": 47,
+   "page_end": 47,
+   "n_tokens": 200,
+   "has_overlap": false,
+   "text_sha256": "068d8c8adf4681b7e4be817a79305e9c396c9a8898005eef9f45652277bd0461"
+  },
+  {
+   "chunk_id": "nt-160",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-1",
+   "entry": null,
+   "page_start": 47,
+   "page_end": 47,
+   "n_tokens": 189,
+   "has_overlap": false,
+   "text_sha256": "e3cc8641cad2869bd2f32343e3159e413f00264d03ffa27adf5d891abd81bda5"
+  },
+  {
+   "chunk_id": "nt-161",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-1",
+   "entry": null,
+   "page_start": 47,
+   "page_end": 47,
+   "n_tokens": 190,
+   "has_overlap": false,
+   "text_sha256": "bcc393d40477a8ddcdca7eb8bc6a701521bc56a9f55f5f55a822dc2931f2e164"
+  },
+  {
+   "chunk_id": "nt-162",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-1",
+   "entry": null,
+   "page_start": 47,
+   "page_end": 47,
+   "n_tokens": 122,
+   "has_overlap": true,
+   "text_sha256": "97ebc7e1fb8a39f9891d5127e2e4cfa1f53c66a35398ab592fa434bb6193aabe"
+  },
+  {
+   "chunk_id": "nt-163",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-2",
+   "entry": null,
+   "page_start": 48,
+   "page_end": 48,
+   "n_tokens": 123,
+   "has_overlap": false,
+   "text_sha256": "066ed4ce7387bf1b1e995e45815619b850f30bbb550f50b68ae1c58ff426a9fa"
+  },
+  {
+   "chunk_id": "nt-164",
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 4: MAINTAIN THE ASSESSMENT > TASK 4-2",
+   "entry": null,
+   "page_start": 48,
+   "page_end": 48,
+   "n_tokens": 126,
+   "has_overlap": false,
+   "text_sha256": "9999bf3ddeb6e7d8bedf61969c592481cba0c5a43837920749f5388cbd40a9e6"
+  },
+  {
+   "chunk_id": "nt-165",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS",
+   "entry": null,
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 90,
+   "has_overlap": false,
+   "text_sha256": "d70976c15f97b94917d98da9ade7a91c09e1a3044ee4fb2b93879fcf95c61e78"
+  },
+  {
+   "chunk_id": "nt-166",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Adequate Security",
+   "entry": "Adequate Security",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 44,
+   "has_overlap": false,
+   "text_sha256": "6725965f8426cb292ea37505f74fd404e9ea61d5ae3a3f8c52d073fb77aac6e8"
+  },
+  {
+   "chunk_id": "nt-167",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Advanced Persistent Threat",
+   "entry": "Advanced Persistent Threat",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 156,
+   "has_overlap": false,
+   "text_sha256": "85181b4ae0378a4a21d5b80ef89065133de4718f9a8b51b49a0e3f2d7c982a79"
+  },
+  {
+   "chunk_id": "nt-168",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Adversary",
+   "entry": "Adversary",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 29,
+   "has_overlap": false,
+   "text_sha256": "f5c72dc77b8fe167a1ebd9090fb749d587025cee303b1306cc528b2c2f470c28"
+  },
+  {
+   "chunk_id": "nt-169",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Agency",
+   "entry": "Agency",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 7,
+   "has_overlap": false,
+   "text_sha256": "a552b4f4716d487c7984d595cc277e6f5916711d7fae329b888893af1726fbb1"
+  },
+  {
+   "chunk_id": "nt-170",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Analysis Approach",
+   "entry": "Analysis Approach",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 38,
+   "has_overlap": false,
+   "text_sha256": "b750a3af5ad9baa43a163107bde473598440e4e6a89c61d74658fb22d05e0623"
+  },
+  {
+   "chunk_id": "nt-171",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Assessment",
+   "entry": "Assessment",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 11,
+   "has_overlap": false,
+   "text_sha256": "637288ba69af7230ab4456cb4876a2c0a081c0e03cff9d7bc26fbe1a2a602897"
+  },
+  {
+   "chunk_id": "nt-172",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Assessment Approach",
+   "entry": "Assessment Approach",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 31,
+   "has_overlap": false,
+   "text_sha256": "a4266bd1dd0e64b6faaa78f201f1b5316263bbbdec7a5abea0db3a536aed2361"
+  },
+  {
+   "chunk_id": "nt-173",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Assessor",
+   "entry": "Assessor",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 14,
+   "has_overlap": false,
+   "text_sha256": "04b5849bc7ce3d24289607d4bae6ba6a7c324cf3fdbf725e24411e98eb5255b4"
+  },
+  {
+   "chunk_id": "nt-174",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Attack",
+   "entry": "Attack",
+   "page_start": 51,
+   "page_end": 51,
+   "n_tokens": 38,
+   "has_overlap": false,
+   "text_sha256": "4fb7a0592f784e1e86453c9cfa595c9853fc2e1832fee8be962265367b2f0e98"
+  },
+  {
+   "chunk_id": "nt-175",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Authentication",
+   "entry": "Authentication",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 37,
+   "has_overlap": false,
+   "text_sha256": "c72e5bd0a44ebd925a59ee40fb535fb5fd70de8da5cd1c4e6973cd1ef529304c"
+  },
+  {
+   "chunk_id": "nt-176",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Authenticity",
+   "entry": "Authenticity",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 44,
+   "has_overlap": false,
+   "text_sha256": "53edd7eda64f02322680018ca84b81a7a20195755439e32485536500c109aa1a"
+  },
+  {
+   "chunk_id": "nt-177",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Authorization (to operate)",
+   "entry": "Authorization (to operate)",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 79,
+   "has_overlap": false,
+   "text_sha256": "2c435fabf88419703bca61c9b45b1d09d7410830e16c02db1883a87da45de57e"
+  },
+  {
+   "chunk_id": "nt-178",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Authorization Boundary",
+   "entry": "Authorization Boundary",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 43,
+   "has_overlap": false,
+   "text_sha256": "9e8b105b7f5f0abcd5103f36e23f1f0fa37a2db40fa023d08efe7ed7deab40e5"
+  },
+  {
+   "chunk_id": "nt-179",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Authorizing Official",
+   "entry": "Authorizing Official",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 65,
+   "has_overlap": false,
+   "text_sha256": "d8b1a25c1a88e0da3786e00dbfad7bce53ec49aa80d9d944f7f6e107728f229e"
+  },
+  {
+   "chunk_id": "nt-180",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Availability",
+   "entry": "Availability",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 28,
+   "has_overlap": false,
+   "text_sha256": "65e190623b42d65e50fd3c2d9a8eb6892836467dc5c89b1590a318d31d4a5807"
+  },
+  {
+   "chunk_id": "nt-181",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Chief Information Officer",
+   "entry": "Chief Information Officer",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 143,
+   "has_overlap": false,
+   "text_sha256": "8a137c631cd63f66b6a111a6c76bad80813183c5e52c5adf3040aad463a9207e"
+  },
+  {
+   "chunk_id": "nt-182",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Chief Information Security Officer",
+   "entry": "Chief Information Security Officer",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 13,
+   "has_overlap": false,
+   "text_sha256": "4f04a39fc5a8356b7a0906da7f526b8ddd870e07de9769f9de5d5f52abf405cf"
+  },
+  {
+   "chunk_id": "nt-183",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Common Control",
+   "entry": "Common Control",
+   "page_start": 52,
+   "page_end": 52,
+   "n_tokens": 31,
+   "has_overlap": false,
+   "text_sha256": "7cafa160ceb2aeeb25339bd465026db98afe219026c71be788a4c2f5301536ea"
+  },
+  {
+   "chunk_id": "nt-184",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Common Control Provider",
+   "entry": "Common Control Provider",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 44,
+   "has_overlap": false,
+   "text_sha256": "79890d08de9df1126f2c968ffd87635de1108b1e122d5a489fc5cdc574edb679"
+  },
+  {
+   "chunk_id": "nt-185",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Compensating Security Control",
+   "entry": "Compensating Security Control",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 71,
+   "has_overlap": false,
+   "text_sha256": "f1050066a79e8c435298b86560270734bea2d1fc35d23796ba1f440a23feec7c"
+  },
+  {
+   "chunk_id": "nt-186",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Confidentiality",
+   "entry": "Confidentiality",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 37,
+   "has_overlap": false,
+   "text_sha256": "5a26ef7033c5fad16dfed9ed677b9dfb61fe7072d70f4fd914729a8db45979f1"
+  },
+  {
+   "chunk_id": "nt-187",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Course of Action",
+   "entry": "Course of Action",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 31,
+   "has_overlap": false,
+   "text_sha256": "c741d3698eb661932d96ab46aeefe4b739cda3f69465f0387c0b4afc7079247e"
+  },
+  {
+   "chunk_id": "nt-188",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Critical Infrastructure",
+   "entry": "Critical Infrastructure",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 58,
+   "has_overlap": false,
+   "text_sha256": "68997a629915683dfad61c7309c29e0bc5f992c6c6342ba680c242a6ae5d9b88"
+  },
+  {
+   "chunk_id": "nt-189",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Critical Infrastructure Sectors",
+   "entry": "Critical Infrastructure Sectors",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 47,
+   "has_overlap": false,
+   "text_sha256": "8b9a416da3f25545e6a373b7fedeac2e96e0c585142117553714a80acce01256"
+  },
+  {
+   "chunk_id": "nt-190",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Criticality",
+   "entry": "Criticality",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 40,
+   "has_overlap": false,
+   "text_sha256": "0c2b147100721ecffafef35a764c4232d140cf1e6f0a1d1a983bce6214f04b50"
+  },
+  {
+   "chunk_id": "nt-191",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Cyber Attack",
+   "entry": "Cyber Attack",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 63,
+   "has_overlap": false,
+   "text_sha256": "19881f5bf4bf239bc40c1851b20cf86cd8d8ad2b7e9a2a8f20cd7cbe89493842"
+  },
+  {
+   "chunk_id": "nt-192",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Cyber Security",
+   "entry": "Cyber Security",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 27,
+   "has_overlap": false,
+   "text_sha256": "286d2a7977d3b3f0a13ed04194d67d32d8da80d252db6feeb9a8321dc7ea39dc"
+  },
+  {
+   "chunk_id": "nt-193",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Cyberspace",
+   "entry": "Cyberspace",
+   "page_start": 53,
+   "page_end": 53,
+   "n_tokens": 48,
+   "has_overlap": false,
+   "text_sha256": "8003f1043f0bf8788c7946584a3b678c7d7989596199ea101b74a9a09cf7ca5c"
+  },
+  {
+   "chunk_id": "nt-194",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Defense-in-Breadth",
+   "entry": "Defense-in-Breadth",
+   "page_start": 54,
+   "page_end": 54,
+   "n_tokens": 90,
+   "has_overlap": false,
+   "text_sha256": "4d7a93827f5f0a69e5015d70c1b2cd89e814d221e242f93df14846abe0a7e346"
+  },
+  {
+   "chunk_id": "nt-195",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Defense-in-Depth",
+   "entry": "Defense-in-Depth",
+   "page_start": 54,
+   "page_end": 54,
+   "n_tokens": 39,
+   "has_overlap": false,
+   "text_sha256": "e78941f38d3ccba40f7e16eae6e800fed117b86eb79a97e7ee10048eb9e98392"
+  },
+  {
+   "chunk_id": "nt-196",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Enterprise",
+   "entry": "Enterprise",
+   "page_start": 54,
+   "page_end": 54,
+   "n_tokens": 90,
+   "has_overlap": false,
+   "text_sha256": "72cebdd3781f3af67715b641df92789a15ee23a416dc8ca843dda7d2b7c7a455"
+  },
+  {
+   "chunk_id": "nt-197",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Enterprise Architecture",
+   "entry": "Enterprise Architecture",
+   "page_start": 54,
+   "page_end": 54,
+   "n_tokens": 72,
+   "has_overlap": false,
+   "text_sha256": "562c93d7a291810274aaadb9a71b350cc2f47da741756a87b8a23f7c761cef68"
+  },
+  {
+   "chunk_id": "nt-198",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Environment of Operation",
+   "entry": "Environment of Operation",
+   "page_start": 54,
+   "page_end": 54,
+   "n_tokens": 93,
+   "has_overlap": false,
+   "text_sha256": "ba2f2190cc8a8faf6ec3ead6a75caaf069068205b48d6ffd356514d3a3ed7968"
+  },
+  {
+   "chunk_id": "nt-199",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Executive Agency",
+   "entry": "Executive Agency",
+   "page_start": 54,
+   "page_end": 54,
+   "n_tokens": 95,
+   "has_overlap": false,
+   "text_sha256": "ff4a517a3afb29559f4a7f0b08571787e8c2d418276234cf0b8021de8e7b937e"
+  },
+  {
+   "chunk_id": "nt-200",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Fault Tree Analysis",
+   "entry": "Fault Tree Analysis",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 91,
+   "has_overlap": false,
+   "text_sha256": "2aab2cb33a1509587e4c951fe5d0e0c1bcf891caff033eda268ef801922f67f1"
+  },
+  {
+   "chunk_id": "nt-201",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Federal Agency",
+   "entry": "Federal Agency",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 8,
+   "has_overlap": false,
+   "text_sha256": "78a6d814239d5b1cac29054fa9b063f1c83db989cdfdf7411abdfca3ed3dd670"
+  },
+  {
+   "chunk_id": "nt-202",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Federal Information System",
+   "entry": "Federal Information System",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 49,
+   "has_overlap": false,
+   "text_sha256": "1d2ae92c0aabd071286b343c471ef95df9f6b342ea9d4be122623e6553874621"
+  },
+  {
+   "chunk_id": "nt-203",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Hybrid Security Control",
+   "entry": "Hybrid Security Control",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 49,
+   "has_overlap": false,
+   "text_sha256": "50e1e69d235157846bc99c31a908ad63752e44b30755281590ec2c28662d84e7"
+  },
+  {
+   "chunk_id": "nt-204",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Impact Level",
+   "entry": "Impact Level",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 50,
+   "has_overlap": false,
+   "text_sha256": "80638ac4b24393d45a927e4e1362d597e815cef0cf484d7a977edc8aa6e2e6e8"
+  },
+  {
+   "chunk_id": "nt-205",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Impact Value",
+   "entry": "Impact Value",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 46,
+   "has_overlap": false,
+   "text_sha256": "c98d53e2b99ee63a175251964331c0f7c326a6cf4e92a2a923aacc3d2c92ae34"
+  },
+  {
+   "chunk_id": "nt-206",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Industrial Control System",
+   "entry": "Industrial Control System",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 70,
+   "has_overlap": false,
+   "text_sha256": "74a99aecc94c6a46b5498b0f5b414b197ebab62a8e9bd828547cf8b2259c3ef3"
+  },
+  {
+   "chunk_id": "nt-207",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information",
+   "entry": "Information",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 60,
+   "has_overlap": false,
+   "text_sha256": "c4da3125d51096b47897b3942db11d5633e48533c6c4eddbd2e9f72f979b1b55"
+  },
+  {
+   "chunk_id": "nt-208",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Owner",
+   "entry": "Information Owner",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 46,
+   "has_overlap": false,
+   "text_sha256": "bcf619d25313ab0071f2c6266feda1fe0487054fbe087df7c08348ed70fdaf2a"
+  },
+  {
+   "chunk_id": "nt-209",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Resources",
+   "entry": "Information Resources",
+   "page_start": 55,
+   "page_end": 55,
+   "n_tokens": 35,
+   "has_overlap": false,
+   "text_sha256": "a9635c7625ae9dbf403d7b72f99f48178d89b1d42eafe87f260566f8c02c4238"
+  },
+  {
+   "chunk_id": "nt-210",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Security",
+   "entry": "Information Security",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 51,
+   "has_overlap": false,
+   "text_sha256": "a6999fa5407e4ff0aada78986a4309295bf9b1fd4ec4115ffa603a61419bac47"
+  },
+  {
+   "chunk_id": "nt-211",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Security Architecture",
+   "entry": "Information Security Architecture",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 52,
+   "has_overlap": false,
+   "text_sha256": "199c5e1261ae071a36b40da994f7713c1a58a61562035691a5711db2b4c3c19b"
+  },
+  {
+   "chunk_id": "nt-212",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Security Program Plan",
+   "entry": "Information Security Program Plan",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 50,
+   "has_overlap": false,
+   "text_sha256": "055737f5ad6fe89cf10398ff0bc413af52720c7adc1e5921199e94644e3920bf"
+  },
+  {
+   "chunk_id": "nt-213",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Security Risk",
+   "entry": "Information Security Risk",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 61,
+   "has_overlap": false,
+   "text_sha256": "33bc2a13d29549a5bb8858f9fac3d223fd75aaba2c33f33ce47b87558b47c682"
+  },
+  {
+   "chunk_id": "nt-214",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Steward",
+   "entry": "Information Steward",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 42,
+   "has_overlap": false,
+   "text_sha256": "186c6b2e7b58ae3f356e06a2e730f3a832d5b36df7b9b2c5480acc475c7d8610"
+  },
+  {
+   "chunk_id": "nt-215",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information System",
+   "entry": "Information System",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 44,
+   "has_overlap": false,
+   "text_sha256": "c3cf6d6e999044b094b220713dc4f6159267661ea5af6efaa1ff5c8a07574205"
+  },
+  {
+   "chunk_id": "nt-216",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information System Boundary",
+   "entry": "Information System Boundary",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 9,
+   "has_overlap": false,
+   "text_sha256": "0d858e11538ad1bc089368264ac77790a33214dfe78252c0ee09014dbdb00d09"
+  },
+  {
+   "chunk_id": "nt-217",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information System Owner (or Program Manager)",
+   "entry": "Information System Owner (or Program Manager)",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 32,
+   "has_overlap": false,
+   "text_sha256": "b1b70181788eb1c94d1fa98d33052f2d57096d85bebaf406689552308478864f"
+  },
+  {
+   "chunk_id": "nt-218",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information System Resilience",
+   "entry": "Information System Resilience",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 46,
+   "has_overlap": false,
+   "text_sha256": "9ac7fe034839cb3d4736f365533e7dbeffb51a988056daa1b152da21e5f989cf"
+  },
+  {
+   "chunk_id": "nt-219",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information System Security Officer",
+   "entry": "Information System Security Officer",
+   "page_start": 56,
+   "page_end": 56,
+   "n_tokens": 42,
+   "has_overlap": false,
+   "text_sha256": "9609d216d4a417e691627208249440209a9980e71dfddcb01935c4187e90c67b"
+  },
+  {
+   "chunk_id": "nt-220",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information System-Related Security Risk",
+   "entry": "Information System-Related Security Risk",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 54,
+   "has_overlap": false,
+   "text_sha256": "3006adef340d98398f27fb55dded6833d84f1d9bc8d5d75de99b8c182b2022f3"
+  },
+  {
+   "chunk_id": "nt-221",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Technology",
+   "entry": "Information Technology",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 180,
+   "has_overlap": false,
+   "text_sha256": "e3b795b32f29980016533b3ab4dbe000aab006f4900571b3d19b4574a4841cc7"
+  },
+  {
+   "chunk_id": "nt-222",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Information Type",
+   "entry": "Information Type",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 60,
+   "has_overlap": false,
+   "text_sha256": "332c75199cb43a3d4916d2c97e6b00fd46a47d68c108941fd5d4e61b76d0d16b"
+  },
+  {
+   "chunk_id": "nt-223",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Integrity",
+   "entry": "Integrity",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 37,
+   "has_overlap": false,
+   "text_sha256": "0781d7db81a8bdd7fed22bded60b55f856085efbe1d1506330b8e470274a2b53"
+  },
+  {
+   "chunk_id": "nt-224",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Likelihood of Occurrence",
+   "entry": "Likelihood of Occurrence",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 47,
+   "has_overlap": false,
+   "text_sha256": "7753ddcad8d2d0f37772d3c9a16fa93ca8778b99ad8a669cc51e176a6a76798c"
+  },
+  {
+   "chunk_id": "nt-225",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Management Controls",
+   "entry": "Management Controls",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 45,
+   "has_overlap": false,
+   "text_sha256": "cf698db9da70e695dccc006f6273195400e80f76d950a0dba751a722239ae061"
+  },
+  {
+   "chunk_id": "nt-226",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Mission/Business Segment",
+   "entry": "Mission/Business Segment",
+   "page_start": 57,
+   "page_end": 57,
+   "n_tokens": 47,
+   "has_overlap": false,
+   "text_sha256": "f5ec3d5421597b2c41065512a73b6e4156e0636af5c21376f457426299521b40"
+  },
+  {
+   "chunk_id": "nt-227",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > National Security System",
+   "entry": "National Security System",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "90ee573786caced2412ac0f890867a761424c4add0b795bfbbccd25d7b226187"
+  },
+  {
+   "chunk_id": "nt-228",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Operational Controls",
+   "entry": "Operational Controls",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 45,
+   "has_overlap": false,
+   "text_sha256": "3497f61894fd955e7cd02d3bd732cb131cf17ce2c5a432bfb7c221fd7979ac95"
+  },
+  {
+   "chunk_id": "nt-229",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Organization",
+   "entry": "Organization",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 48,
+   "has_overlap": false,
+   "text_sha256": "132882cb1faf6e1c98d3022c0b29ea0db75f4d1fa90b93c201d237e24902aafb"
+  },
+  {
+   "chunk_id": "nt-230",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Plan of Action and Milestones",
+   "entry": "Plan of Action and Milestones",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 55,
+   "has_overlap": false,
+   "text_sha256": "ce9b88d75741f681fcab80ef849fcd1af496ccea56ef6b52f6647c1c030e35f2"
+  },
+  {
+   "chunk_id": "nt-231",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Predisposing Condition",
+   "entry": "Predisposing Condition",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 84,
+   "has_overlap": false,
+   "text_sha256": "ed4de2d697a4d84937439fb53f80210640f026a72ae3d0746e8fce34666414d3"
+  },
+  {
+   "chunk_id": "nt-232",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Qualitative Assessment",
+   "entry": "Qualitative Assessment",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 37,
+   "has_overlap": false,
+   "text_sha256": "5e821189c07242524a5f558b287eb2c194419b9aa60e71d416ed23c7231a1484"
+  },
+  {
+   "chunk_id": "nt-233",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Quantitative Assessment",
+   "entry": "Quantitative Assessment",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 50,
+   "has_overlap": false,
+   "text_sha256": "c3bc6b4fefe5abbe7bd893775a7c6256b88d2f8fa3bef951224ac7a22e6e0529"
+  },
+  {
+   "chunk_id": "nt-234",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Repeatability",
+   "entry": "Repeatability",
+   "page_start": 58,
+   "page_end": 58,
+   "n_tokens": 30,
+   "has_overlap": false,
+   "text_sha256": "9c9a81e3482452232f04a64becec6620e5be645c25ace2bebea3b53df165df57"
+  },
+  {
+   "chunk_id": "nt-235",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Reproducibility",
+   "entry": "Reproducibility",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 21,
+   "has_overlap": false,
+   "text_sha256": "bd4d92f3dc41640cc174969c052f085bf5aa1aeeed08f3a9c47259097688b922"
+  },
+  {
+   "chunk_id": "nt-236",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Residual Risk",
+   "entry": "Residual Risk",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 23,
+   "has_overlap": false,
+   "text_sha256": "a62a3986fef066cd73277fef18f34782d3cb7d86ff79e8722cafc90aa15dfa7e"
+  },
+  {
+   "chunk_id": "nt-237",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk",
+   "entry": "Risk",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 68,
+   "has_overlap": false,
+   "text_sha256": "26f90c647ee6c6c73ffdc4db334edbc08291400860328e58d10f14492cd666db"
+  },
+  {
+   "chunk_id": "nt-238",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Assessment",
+   "entry": "Risk Assessment",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 90,
+   "has_overlap": false,
+   "text_sha256": "2f34b776f31815ec4af523606b35a4a468018c44834b60ccd06cd8b4aa50e653"
+  },
+  {
+   "chunk_id": "nt-239",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Assessment Methodology",
+   "entry": "Risk Assessment Methodology",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 23,
+   "has_overlap": false,
+   "text_sha256": "b871509fb6220003a6d1185777cf0db5d4d8b7c36a8e55e920f0e060d2a6ca0f"
+  },
+  {
+   "chunk_id": "nt-240",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Assessment Report",
+   "entry": "Risk Assessment Report",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 27,
+   "has_overlap": false,
+   "text_sha256": "6fa7a646d79b4bf5b974d9c1ca65da925fa358998dffb69e636d0dd3f46d1644"
+  },
+  {
+   "chunk_id": "nt-241",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Assessor",
+   "entry": "Risk Assessor",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 19,
+   "has_overlap": false,
+   "text_sha256": "0972eadd8687f514a61ab176b26cfbfdbb685224beeb10fcf93f239b6a99e5f9"
+  },
+  {
+   "chunk_id": "nt-242",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Executive (Function)",
+   "entry": "Risk Executive (Function)",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 114,
+   "has_overlap": false,
+   "text_sha256": "6213f17d9e79a6761a452a3ec71197372706b7932150333477388b6f06fab812"
+  },
+  {
+   "chunk_id": "nt-243",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Factor",
+   "entry": "Risk Factor",
+   "page_start": 59,
+   "page_end": 59,
+   "n_tokens": 25,
+   "has_overlap": false,
+   "text_sha256": "7a2c4d8ff3a7c6d88c3998b467a61464bf76161f6d714d16fcec6e92d53c7a5e"
+  },
+  {
+   "chunk_id": "nt-244",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Management",
+   "entry": "Risk Management",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 97,
+   "has_overlap": false,
+   "text_sha256": "fb3dbe6411486e241b4b239fcc6ae61658c995fb7d38d34a406ca317b0bafe66"
+  },
+  {
+   "chunk_id": "nt-245",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Mitigation",
+   "entry": "Risk Mitigation",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 46,
+   "has_overlap": false,
+   "text_sha256": "aa84677dffd1df03fbe02521b8eff837d25e994935c1f03deacad36231a5c653"
+  },
+  {
+   "chunk_id": "nt-246",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Model",
+   "entry": "Risk Model",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 32,
+   "has_overlap": false,
+   "text_sha256": "48c1e3a89f5f0a23a7c38a5510ca090ce0fd11c69d30e6ac18cefee5963be3bf"
+  },
+  {
+   "chunk_id": "nt-247",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Monitoring",
+   "entry": "Risk Monitoring",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 35,
+   "has_overlap": false,
+   "text_sha256": "8be08a6cbe3950dc132181f6bccf7fb4caef2823e95d928c3f8bc15252afbd18"
+  },
+  {
+   "chunk_id": "nt-248",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Response",
+   "entry": "Risk Response",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 61,
+   "has_overlap": false,
+   "text_sha256": "dbf62035ce7fb3bbbd77ec56f6e39f49faf5542af71daaeb6153beaef0241701"
+  },
+  {
+   "chunk_id": "nt-249",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Risk Response Measure",
+   "entry": "Risk Response Measure",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 24,
+   "has_overlap": false,
+   "text_sha256": "500743265c3e54d5fe0d3a732c25c8167d2890b747b4581fd71b0a476b7f639a"
+  },
+  {
+   "chunk_id": "nt-250",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Root Cause Analysis",
+   "entry": "Root Cause Analysis",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 26,
+   "has_overlap": false,
+   "text_sha256": "ac3526ee4b1677407c3ddad8a24deeab51de1530b45fb03c6f70746397a795a8"
+  },
+  {
+   "chunk_id": "nt-251",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Authorization (to Operate)",
+   "entry": "Security Authorization (to Operate)",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 15,
+   "has_overlap": false,
+   "text_sha256": "6fa12ba9aed6e24b8d9844c9de947bc4ff96ba29328b6e26f9e2e9ee459610af"
+  },
+  {
+   "chunk_id": "nt-252",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Categorization",
+   "entry": "Security Categorization",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 51,
+   "has_overlap": false,
+   "text_sha256": "97ca1980abf0a1a924ecb0cfec9697fe42ee6c64efaf21f6f701fc265be5fc12"
+  },
+  {
+   "chunk_id": "nt-253",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Control Assessment",
+   "entry": "Security Control Assessment",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 74,
+   "has_overlap": false,
+   "text_sha256": "1ac6a245c8a5188efcfb0cab3662ef60a28b959e3570a5743ad659c900b74ede"
+  },
+  {
+   "chunk_id": "nt-254",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Control Assessor",
+   "entry": "Security Control Assessor",
+   "page_start": 60,
+   "page_end": 60,
+   "n_tokens": 21,
+   "has_overlap": false,
+   "text_sha256": "9dfb55c827edbca247067638fbaea2b6ed38adaba1c56cef4b869d4a135eb133"
+  },
+  {
+   "chunk_id": "nt-255",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Control Baseline",
+   "entry": "Security Control Baseline",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 104,
+   "has_overlap": false,
+   "text_sha256": "bc8a8defe0b569109686fc8e709116a989f93ae28312989deff5e0ab60b6c98f"
+  },
+  {
+   "chunk_id": "nt-256",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Control Enhancement",
+   "entry": "Security Control Enhancement",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 52,
+   "has_overlap": false,
+   "text_sha256": "7bc073690b62e74efb26eca3b99caea2db3ce901f95e7a09fd85d09dfbc4f7f9"
+  },
+  {
+   "chunk_id": "nt-257",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Control Inheritance",
+   "entry": "Security Control Inheritance",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 77,
+   "has_overlap": false,
+   "text_sha256": "12a2680c5c0f64aead6c3d49cf12f0842e5bfa0aed8e4faff7b0218b8f0a236e"
+  },
+  {
+   "chunk_id": "nt-258",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Controls",
+   "entry": "Security Controls",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 60,
+   "has_overlap": false,
+   "text_sha256": "4c956bd6cc1efe19a152d8d74f2d3d4f97336a8f47e1c1e990a8ad172a7cfebb"
+  },
+  {
+   "chunk_id": "nt-259",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Impact Analysis",
+   "entry": "Security Impact Analysis",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 40,
+   "has_overlap": false,
+   "text_sha256": "b5f824c4a160cab86a8351fc41f867488514385a194410192961d8f8a432a9ba"
+  },
+  {
+   "chunk_id": "nt-260",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Objective",
+   "entry": "Security Objective",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 17,
+   "has_overlap": false,
+   "text_sha256": "94567601540993186012dc3e469ed35a0c220dd1727d61611d4a81cd7afc4283"
+  },
+  {
+   "chunk_id": "nt-261",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Plan",
+   "entry": "Security Plan",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 55,
+   "has_overlap": false,
+   "text_sha256": "4d671e446b3363fa0daf485451a2bedaf91b64289678413797c6d8a6dde4c3c3"
+  },
+  {
+   "chunk_id": "nt-262",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Policy",
+   "entry": "Security Policy",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 23,
+   "has_overlap": false,
+   "text_sha256": "90cfd9939dd420a67def8ffcdf3bd98e5e83b98e93179b6a5c6628c1da92e181"
+  },
+  {
+   "chunk_id": "nt-263",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Posture",
+   "entry": "Security Posture",
+   "page_start": 61,
+   "page_end": 61,
+   "n_tokens": 64,
+   "has_overlap": false,
+   "text_sha256": "74a8d52ade65155b514b079ed7f5eb863e18dbb9f5acb0534dfd08bd2ec15b14"
+  },
+  {
+   "chunk_id": "nt-264",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Security Requirements",
+   "entry": "Security Requirements",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 67,
+   "has_overlap": false,
+   "text_sha256": "7ed6a8bbe67cbcc6eaa7a06cb02aa25aa3725183504e60fca0906e6e9ef95161"
+  },
+  {
+   "chunk_id": "nt-265",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Semi-Quantitative Assessment",
+   "entry": "Semi-Quantitative Assessment",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 54,
+   "has_overlap": false,
+   "text_sha256": "0c96656c12d5f597b175b03ebc9a922a274a2ee7deaa9c6a47eb2ca4b6d404a4"
+  },
+  {
+   "chunk_id": "nt-266",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Senior Agency Information Security Officer",
+   "entry": "Senior Agency Information Security Officer",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 101,
+   "has_overlap": false,
+   "text_sha256": "ac2cf94a7aa1491491e680feaf5eb1b958e40854ef00937419d38d2fe62d59ed"
+  },
+  {
+   "chunk_id": "nt-267",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Senior Information Security Officer",
+   "entry": "Senior Information Security Officer",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 13,
+   "has_overlap": false,
+   "text_sha256": "e778c921f74934283adc6a73b0fad4fa02350a1297798f7476bb0035f580c0c1"
+  },
+  {
+   "chunk_id": "nt-268",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Sensitivity",
+   "entry": "Sensitivity",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 34,
+   "has_overlap": false,
+   "text_sha256": "0fa0e305b9d5c9bb5810cb4b4eb870c1357344078ca4619bdbdc41ffea5be854"
+  },
+  {
+   "chunk_id": "nt-269",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Subsystem",
+   "entry": "Subsystem",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 40,
+   "has_overlap": false,
+   "text_sha256": "575acb2c1c0ab009b46b1c49588dbcd853acca9e4b1dc4ea6d34b6039116f6cd"
+  },
+  {
+   "chunk_id": "nt-270",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Supplementation (Security Controls)",
+   "entry": "Supplementation (Security Controls)",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 59,
+   "has_overlap": false,
+   "text_sha256": "7a75f330109ad82c312909bedd9133cd097e5e628a0ffc781fa44845c63301c6"
+  },
+  {
+   "chunk_id": "nt-271",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > System",
+   "entry": "System",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 7,
+   "has_overlap": false,
+   "text_sha256": "bb3cff46d947442f67badf27af060daa6efb0ae0ae547f4d65544aa2e93ffbbe"
+  },
+  {
+   "chunk_id": "nt-272",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > System Security Plan",
+   "entry": "System Security Plan",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 41,
+   "has_overlap": false,
+   "text_sha256": "213da0a13c68c702604ba23b180585eaf5da88db037ba8f68fef683554c1b985"
+  },
+  {
+   "chunk_id": "nt-273",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > System-Specific Security Control",
+   "entry": "System-Specific Security Control",
+   "page_start": 62,
+   "page_end": 62,
+   "n_tokens": 48,
+   "has_overlap": false,
+   "text_sha256": "07e9928b190cb68ba58970d5232cb6619c37e62f6221e07f2d2b28e132d781fd"
+  },
+  {
+   "chunk_id": "nt-274",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Tailoring",
+   "entry": "Tailoring",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 80,
+   "has_overlap": false,
+   "text_sha256": "04e6bde00d60032e5c5ac7a195018a600891ca4be98e6c75d8350845a96d9114"
+  },
+  {
+   "chunk_id": "nt-275",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Tailored Security Control Baseline",
+   "entry": "Tailored Security Control Baseline",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 37,
+   "has_overlap": false,
+   "text_sha256": "34fa8ffb581f798c1d617f7cfef6fb4383e9aa713064e2a09fc7b42b3085a69e"
+  },
+  {
+   "chunk_id": "nt-276",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Technical Controls",
+   "entry": "Technical Controls",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 56,
+   "has_overlap": false,
+   "text_sha256": "69a75f36221200de240eeaaed6a186e7e2c5e27480f5f84a703e1d5c6bc6d5f3"
+  },
+  {
+   "chunk_id": "nt-277",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Threat",
+   "entry": "Threat",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 71,
+   "has_overlap": false,
+   "text_sha256": "e00ef992e57d7a0dafddb4c326c5343dd4410854d804184ccea4e215fd7191c9"
+  },
+  {
+   "chunk_id": "nt-278",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Threat Assessment",
+   "entry": "Threat Assessment",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 34,
+   "has_overlap": false,
+   "text_sha256": "71e07ccc7111deef0840fcc2955d6c070d1836581e588995b769c6ef207bfbaf"
+  },
+  {
+   "chunk_id": "nt-279",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Threat Event",
+   "entry": "Threat Event",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 22,
+   "has_overlap": false,
+   "text_sha256": "0dd7fc05d433f7492cfacb22ac1cc8e70f04feddfc2087c7dcd56e1a2e908d30"
+  },
+  {
+   "chunk_id": "nt-280",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Threat Scenario",
+   "entry": "Threat Scenario",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 32,
+   "has_overlap": false,
+   "text_sha256": "71367dcaafa1896c4c3173a9540fb708bbdee0f97236ae206f758996a0601695"
+  },
+  {
+   "chunk_id": "nt-281",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Threat Shifting",
+   "entry": "Threat Shifting",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 62,
+   "has_overlap": false,
+   "text_sha256": "c3947317de1d4adca0f96ac5edc2ed5894eae14807e3ec21a7a1b3bf0b33f20b"
+  },
+  {
+   "chunk_id": "nt-282",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Threat Source",
+   "entry": "Threat Source",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 36,
+   "has_overlap": false,
+   "text_sha256": "4890274928536648d462d083505ad08b1c488097b9ad1bba9d98ad3ccdfeaf15"
+  },
+  {
+   "chunk_id": "nt-283",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Vulnerability",
+   "entry": "Vulnerability",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 35,
+   "has_overlap": false,
+   "text_sha256": "eb9d0e1ba727bde16ab759f88e92ee90ebf4ad6372872211012578ab41647312"
+  },
+  {
+   "chunk_id": "nt-284",
+   "section": "APPENDIX B — GLOSSARY — COMMON TERMS AND DEFINITIONS > Vulnerability Assessment",
+   "entry": "Vulnerability Assessment",
+   "page_start": 63,
+   "page_end": 63,
+   "n_tokens": 62,
+   "has_overlap": false,
+   "text_sha256": "5ef5c837d2392b7a18f72f73384267d461a4cbeac53d4f97ad5bfda444907e12"
+  },
+  {
+   "chunk_id": "nt-285",
+   "section": "APPENDIX D — THREAT SOURCES — TAXONOMY OF THREATS SOURCES CAPABLE OF INITIATING THREAT EVENTS",
+   "entry": null,
+   "page_start": 65,
+   "page_end": 65,
+   "n_tokens": 175,
+   "has_overlap": false,
+   "text_sha256": "b1694165b9a73e1540f2a9c9edb8ddd96fd6ada476c3075401e09a297b5a09ad"
+  },
+  {
+   "chunk_id": "nt-286",
+   "section": "APPENDIX E — THREAT EVENTS — REPRESENTATIVE THREAT EVENTS INITIATED BY THREAT SOURCES",
+   "entry": null,
+   "page_start": 69,
+   "page_end": 69,
+   "n_tokens": 208,
+   "has_overlap": false,
+   "text_sha256": "6c112a6419592d812a131f2a4cd2d111bf45d3c09b0ad19832f169f2bee7e489"
+  },
+  {
+   "chunk_id": "nt-287",
+   "section": "APPENDIX F — VULNERABILITIES AND PREDISPOSING CONDITIONS — RISK FACTORS AFFECTING THE LIKELIHOOD OF SUCCESSFUL THREAT EXPLOITATION",
+   "entry": null,
+   "page_start": 77,
+   "page_end": 77,
+   "n_tokens": 176,
+   "has_overlap": false,
+   "text_sha256": "62f079666c0249cc800f02a651edb7b26ed0c14bbac5d9c2188447cf3ecad2dd"
+  },
+  {
+   "chunk_id": "nt-288",
+   "section": "APPENDIX G — LIKELIHOOD OF OCCURRENCE — DETERMINING THE LIKELIHOOD OF THREAT EVENTS CAUSING ADVERSE IMPACTS",
+   "entry": null,
+   "page_start": 81,
+   "page_end": 81,
+   "n_tokens": 151,
+   "has_overlap": false,
+   "text_sha256": "093d9e9e941d925cd5f444937ba27b2d6498122e7f4706ba65402ff53e45f0da"
+  },
+  {
+   "chunk_id": "nt-289",
+   "section": "APPENDIX H — IMPACT — EFFECTS OF THREAT EVENTS ON ORGANIZATIONS, INDIVIDUALS, AND THE NATION",
+   "entry": null,
+   "page_start": 83,
+   "page_end": 83,
+   "n_tokens": 154,
+   "has_overlap": false,
+   "text_sha256": "114094e8f2789d2d9b1ad9f5ae1c4193db4515ebb533692c92810b7e0c36df6f"
+  },
+  {
+   "chunk_id": "nt-290",
+   "section": "APPENDIX I — RISK DETERMINATION — ASSESSING RISK TO ORGANIZATIONS, INDIVIDUALS, AND THE NATION",
+   "entry": null,
+   "page_start": 86,
+   "page_end": 86,
+   "n_tokens": 170,
+   "has_overlap": false,
+   "text_sha256": "ac1ed2480ea0d5a7ebccb4d3917828b0364cb8c9a62815e93a2a0ff18c3f9450"
+  },
+  {
+   "chunk_id": "nt-291",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS",
+   "entry": null,
+   "page_start": 90,
+   "page_end": 90,
+   "n_tokens": 174,
+   "has_overlap": false,
+   "text_sha256": "9412ba5014f57d106662bc9249847ed27be04d1bbeb6aa6d9d36203a7dcdccd2"
+  },
+  {
+   "chunk_id": "nt-292",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS",
+   "entry": null,
+   "page_start": 90,
+   "page_end": 90,
+   "n_tokens": 64,
+   "has_overlap": false,
+   "text_sha256": "dbf8ca089e2c216e161de33dbb62bb8b6b6e918f57a143b2e65033232d826171"
+  },
+  {
+   "chunk_id": "nt-293",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS > Time Frame",
+   "entry": null,
+   "page_start": 90,
+   "page_end": 90,
+   "n_tokens": 82,
+   "has_overlap": false,
+   "text_sha256": "c2301d408cb6c380dce0d9dea0e6238c7c9da5328b2477fcfa859afa3ca07494"
+  },
+  {
+   "chunk_id": "nt-294",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS > Time Frame",
+   "entry": null,
+   "page_start": 90,
+   "page_end": 90,
+   "n_tokens": 172,
+   "has_overlap": true,
+   "text_sha256": "505ac044ef2b854fa4bbd8c9cb702edf1e96e21fc0016cfb3900abfda355bee1"
+  },
+  {
+   "chunk_id": "nt-295",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS > Total Cumulative Impact",
+   "entry": null,
+   "page_start": 90,
+   "page_end": 90,
+   "n_tokens": 79,
+   "has_overlap": false,
+   "text_sha256": "9016edb429cfa378971370d12d5310922c677c413ce85060bd7d0e6b670d2713"
+  },
+  {
+   "chunk_id": "nt-296",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS > Synergies Among Risks",
+   "entry": null,
+   "page_start": 91,
+   "page_end": 91,
+   "n_tokens": 140,
+   "has_overlap": false,
+   "text_sha256": "80160bcf12d7696d0bfc4638623a0a043ff98fc7457f18d9f9dccb31bfff5ff0"
+  },
+  {
+   "chunk_id": "nt-297",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS > Synergies Among Risks",
+   "entry": null,
+   "page_start": 91,
+   "page_end": 91,
+   "n_tokens": 98,
+   "has_overlap": true,
+   "text_sha256": "12bff99e4b1f393d315253aad415a0aba1f35b83ee43ab74c03e89be9968291c"
+  },
+  {
+   "chunk_id": "nt-298",
+   "section": "APPENDIX J — INFORMING RISK RESPONSE — APPROACHES TO REFINING RISK ASSESSMENT RESULTS > Synergies Among Risks",
+   "entry": null,
+   "page_start": 91,
+   "page_end": 91,
+   "n_tokens": 180,
+   "has_overlap": true,
+   "text_sha256": "6d817d092429ec542705b4495b94ca009311e33eaa3e47270d8fbafa8f213704"
+  },
+  {
+   "chunk_id": "nt-299",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION",
+   "entry": null,
+   "page_start": 92,
+   "page_end": 92,
+   "n_tokens": 145,
+   "has_overlap": false,
+   "text_sha256": "4411aa543a75de5a96ed1ca21387e8d4466c76dc6ab2d76e8734f94de23126ef"
+  },
+  {
+   "chunk_id": "nt-300",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Executive Summary",
+   "entry": null,
+   "page_start": 92,
+   "page_end": 92,
+   "n_tokens": 177,
+   "has_overlap": false,
+   "text_sha256": "9e6cbba95aecb061074dcb49ca1e60e446191fa59892374ed71630d933343e74"
+  },
+  {
+   "chunk_id": "nt-301",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Executive Summary",
+   "entry": null,
+   "page_start": 92,
+   "page_end": 92,
+   "n_tokens": 85,
+   "has_overlap": true,
+   "text_sha256": "251c2b8a519b9e53faf56383179c0db529fc7f59cd924079b2625eb1b25e0128"
+  },
+  {
+   "chunk_id": "nt-302",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Body of the Report",
+   "entry": null,
+   "page_start": 92,
+   "page_end": 93,
+   "n_tokens": 184,
+   "has_overlap": false,
+   "text_sha256": "c81835fd21456d460c6c7ff7f798d773ee0c771b4359620805865d5a2d05ef4d"
+  },
+  {
+   "chunk_id": "nt-303",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Body of the Report",
+   "entry": null,
+   "page_start": 93,
+   "page_end": 93,
+   "n_tokens": 155,
+   "has_overlap": true,
+   "text_sha256": "eee62aad4ee19652d3b1b9f8ddf9fd455f15ec095c529eb142c6423e887b70f4"
+  },
+  {
+   "chunk_id": "nt-304",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Body of the Report",
+   "entry": null,
+   "page_start": 93,
+   "page_end": 93,
+   "n_tokens": 186,
+   "has_overlap": false,
+   "text_sha256": "799e4caff9764451c2cfa105c5cb998e60692e7e4e73f97129cf96412dd43c74"
+  },
+  {
+   "chunk_id": "nt-305",
+   "section": "APPENDIX K — RISK ASSESSMENT REPORTS — ESSENTIAL ELEMENTS OF INFORMATION > Appendices",
+   "entry": null,
+   "page_start": 93,
+   "page_end": 93,
+   "n_tokens": 108,
+   "has_overlap": false,
+   "text_sha256": "2318330c260a9ae907e9d77f48af7742df17f4fd2fc19ffca769787fceecc7e2"
+  }
+ ]
+}

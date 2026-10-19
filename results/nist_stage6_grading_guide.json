@@ -1,0 +1,919 @@
+{
+ "guide_version": "1.0",
+ "status": "DRAFT expected-answer key for human grading; review it before you start and do not change it after you have seen an answer",
+ "authoring": {
+  "author": "the AI assistant (the same author as the questions, the gold labels and overlay v1.1): the key is therefore NOT an independent validation",
+  "written_after": "the 48 answers existed (2026-10-18)",
+  "derived_only_from": [
+   "frozen chunks (results/nist_chunks.jsonl, corpus sha256 795fb2a6...)",
+   "preregistration (question, evidence phrases, gold ids; sha256 cb7a05a1...)",
+   "scoring overlay v1.1 (sha256 180c80de...)",
+   "the pre-retrieval audit results/nist_prereg_review_sheet.md ('Expected answer (from the source only)' lines, written before any retrieval)"
+  ],
+  "answer_text_seen_before_writing": "The assistant had seen the text of the answers for E1, O1, A4, E3, N5 and O6 (displayed in earlier reports) before writing this key. No answer text was used to define any expected answer, required point or unsupported-claim example; those six entries were written from the passages and the audit lines in the same way as the other eighteen.",
+  "verification": "every quoted supporting passage is asserted to be an exact substring of its frozen chunk (here and in tests/check_frozen_artifacts.py)"
+ },
+ "definitions": {
+  "correctness": {
+   "values": [
+    "correct",
+    "partially correct",
+    "incorrect"
+   ],
+   "reference": "the expected answer in this key (derived from the frozen source), independent of which passages the model was shown",
+   "correct": "all required points are present, the required polarity and any required qualification/exception/negation are conveyed, nothing contradicts the source",
+   "partially_correct": "the main direction is right but a required qualification/exception/component is missing, or an included detail is wrong or unsupported",
+   "incorrect": "the answer contradicts the source, answers a different question, or gives no answer (including the refusal sentence when the expected answer exists in the corpus)"
+  },
+  "evidence_support": {
+   "values": [
+    "fully supported",
+    "partially supported",
+    "unsupported"
+   ],
+   "reference": "the passages shown to THAT answer (listed in the sheet), not the whole NIST publication",
+   "fully_supported": "every substantive claim is stated in, or directly entailed by, the shown passages",
+   "partially_supported": "some substantive claim is not in the shown passages",
+   "unsupported": "the main claim is not in the shown passages (a claim can be true in the full PDF and still be unsupported by the shown passages)"
+  },
+  "completeness": {
+   "values": [
+    "complete",
+    "incomplete"
+   ],
+   "reference": "the required points of this key; complete = every point marked required (and the qualification where qualification_affects is 'completeness') is present"
+  },
+  "unsupported_claims": {
+   "values": [
+    "none",
+    "present"
+   ],
+   "rule": "'present' = at least one substantive claim that is neither stated in nor directly entailed by the shown passages (see unsupported_claim_examples per query); describe it in the notes field. A citation to the wrong passage does not by itself make a claim unsupported: judge the claim against the shown passages."
+  },
+  "overall_judgment": {
+   "values": [
+    "acceptable",
+    "borderline",
+    "unacceptable"
+   ],
+   "suggestion": "acceptable = correct, fully supported, no unsupported claims; unacceptable = incorrect or unsupported; borderline = everything else. Add a one-sentence justification."
+  },
+  "paired_judgment": {
+   "field": "better",
+   "values": [
+    "A1 better",
+    "A2 better",
+    "neither clearly better"
+   ],
+   "rule": "judged on the combination of correctness, evidence support and completeness, not on length or style; objective citation checks must not decide it"
+  }
+ },
+ "conventions": [
+  "Refusal convention: the exact refusal sentence makes no factual claim, so unsupported_claims = none and evidence_support = fully supported; correctness = incorrect (the expected answer is missing) and completeness = incomplete. Apply the same convention to every refusal.",
+  "Grade against this key, not against the other answer. Do not use the objective citation checks (cites a gold chunk, only supplied passages, refusal sentence, sentence count) as evidence of correctness.",
+  "Retrieval success (lenient/strict outcome, ranks), the objective format checks and your human grades are three separate metrics; never merge them.",
+  "If you disagree with an item of this key, do not edit it while grading: record the disagreement in reviewer_notes and decide afterwards whether to issue a dated key v1.1.",
+  "The one-line 'Your grading (blank)' prompt under each query is the ORIGINAL free-text prompt and is kept unchanged. In the CSV use the vocabulary of this legend (for `better`: 'A1 better' / 'A2 better' / 'neither clearly better').",
+  "O2 and O3 carry scope decisions from overlay v1.1 (see their grader_notes)."
+ ],
+ "queries": [
+  {
+   "id": "A1",
+   "answer_type": "term",
+   "expected_polarity": "n/a (names an approach)",
+   "expected_answer": "The asset/impact-oriented approach (it starts from the impacts or consequences of concern and the critical assets).",
+   "required_points": [
+    "Names the asset/impact-oriented approach."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "'impact-oriented', 'asset-oriented' or 'asset/impact-oriented'; a description of starting from consequences/critical assets without the name also counts.",
+   "unsupported_claim_examples": [
+    "Naming the threat-oriented or the vulnerability-oriented approach as the answer.",
+    "Saying it starts from threat sources, adversary intent or weaknesses."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-063",
+     "quote": "An asset/impact-oriented approach starts with the identification of impacts or consequences of concern and critical assets"
+    }
+   ],
+   "grader_notes": "The source lists three approaches (threat-, asset/impact-, vulnerability-oriented); the question excludes the first and last.",
+   "question": "Which risk assessment orientation begins with the consequences we care about and our most critical assets, rather than with attackers or weaknesses?",
+   "category": "keyword trap",
+   "preregistered_gold_chunk_ids": [
+    "nt-063"
+   ]
+  },
+  {
+   "id": "A2",
+   "answer_type": "term",
+   "expected_polarity": "n/a (names a term)",
+   "expected_answer": "Reproducibility.",
+   "required_points": [
+    "Names 'reproducibility'."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "Only the term 'reproducibility'.",
+   "unsupported_claim_examples": [
+    "Naming 'repeatability' (the glossary entry 'Repeatability' means the ability to repeat an assessment in the future: a different term).",
+    "Naming any other term (e.g. 'validity', 'consistency') as the NIST term."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-235",
+     "quote": "The ability of different experts to produce the same results from the same data."
+    }
+   ],
+   "grader_notes": "True competitor: the glossary entry 'Repeatability' (nt-234).",
+   "question": "Which term describes different experts arriving at the same results from the same data?",
+   "category": "keyword trap",
+   "preregistered_gold_chunk_ids": [
+    "nt-235"
+   ]
+  },
+  {
+   "id": "A3",
+   "answer_type": "term",
+   "expected_polarity": "n/a (names a term)",
+   "expected_answer": "A compensating security control.",
+   "required_points": [
+    "Names a 'compensating security control' (compensating control)."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "'compensating control' / 'compensating security control'.",
+   "unsupported_claim_examples": [
+    "Naming a different kind of control (e.g. 'supplemental', 'tailored', 'common' or 'inherited' control).",
+    "Adding requirements not in the passage (e.g. that an auditor must approve it)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-185",
+     "quote": "employed by an organization in lieu of a recommended security control in the low, moderate, or high baselines that provides equivalent or comparable protection for an information system"
+    }
+   ],
+   "grader_notes": "",
+   "question": "What do you call a safeguard used in place of a recommended baseline control that still gives comparable protection?",
+   "category": "keyword trap",
+   "preregistered_gold_chunk_ids": [
+    "nt-185"
+   ]
+  },
+  {
+   "id": "A4",
+   "answer_type": "yes/no",
+   "expected_polarity": "Yes",
+   "expected_answer": "Yes: a predisposing condition such as a stand-alone information system with no external network connectivity decreases the likelihood of exposure to a network-based cyber attack.",
+   "required_points": [
+    "Answers yes.",
+    "Identifies the isolated / no-external-network system as a predisposing condition (or equivalent environmental condition) that lowers the likelihood of attack exposure."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "The effect is a DECREASE in likelihood of exposure to a NETWORK-BASED attack, not elimination of attack risk.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'less likely', 'decreases the likelihood', 'reduces exposure'.",
+   "unsupported_claim_examples": [
+    "Claiming the isolated system is immune to attack or that attacks become impossible.",
+    "Claiming it lowers the likelihood of every kind of attack (the source says network-based).",
+    "Presenting it as a security control rather than a predisposing condition, with details not in the passage."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-040",
+     "quote": "a stand-alone information system with no external network connectivity (decreasing the likelihood of exposure to a network-based cyber attack)"
+    }
+   ],
+   "grader_notes": "The question says 'a successful attack less likely', slightly broader than the source's 'exposure to a network-based cyber attack'; an answer that says 'yes, network-based attacks' is fully correct.",
+   "question": "Can something about an organization's environment, such as a system with no outside network connection, make a successful attack less likely?",
+   "category": "keyword trap",
+   "preregistered_gold_chunk_ids": [
+    "nt-040"
+   ]
+  },
+  {
+   "id": "A5",
+   "answer_type": "contrast",
+   "expected_polarity": "n/a (explains a difference)",
+   "expected_answer": "Likelihood of initiation/occurrence = the chance a threat event is started (adversarial) or occurs (non-adversarial). Likelihood of impact = the chance that, once initiated or occurring, it results in adverse impact, regardless of the magnitude of harm. The overall likelihood combines the two.",
+   "required_points": [
+    "States that one likelihood is that the event is initiated/occurs.",
+    "States that the other is that, once initiated, it results in adverse impact (not the size of the harm).",
+    "(Completeness) mentions that the overall likelihood combines the two."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "The likelihood of impact is about whether harm results, 'regardless of the magnitude of harm' (it is not the severity).",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "Any faithful paraphrase; 'probability' and 'chance' are interchangeable.",
+   "unsupported_claim_examples": [
+    "Describing the likelihood of impact as the severity or size of the harm.",
+    "Swapping the two definitions.",
+    "Stating that the two are multiplied or combined by a specific formula (the guide specifies no algorithm; see also N1)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-044",
+     "quote": "The likelihood of impact addresses the probability (or possibility) that the threat event will result in an adverse impact, regardless of the magnitude of harm that can be expected."
+    },
+    {
+     "chunk": "nt-042",
+     "quote": "The likelihood risk factor combines an estimate of the likelihood that the threat event will be initiated with an estimate of the likelihood of impact"
+    },
+    {
+     "chunk": "nt-144",
+     "quote": "Second, organizations assess the likelihood that threat events once initiated or occurring, will result in adverse impacts to organizational operations and assets"
+    }
+   ],
+   "grader_notes": "Preregistered gold nt-043 + nt-044; overlay v1.1 also accepts nt-042 and nt-144 as independently sufficient and treats nt-043 as a partial fragment.",
+   "question": "How is the chance that an event actually causes harm different from the chance that someone starts it?",
+   "category": "keyword trap",
+   "preregistered_gold_chunk_ids": [
+    "nt-043",
+    "nt-044"
+   ]
+  },
+  {
+   "id": "A6",
+   "answer_type": "term",
+   "expected_polarity": "n/a (names a term)",
+   "expected_answer": "Threat shifting.",
+   "required_points": [
+    "Names 'threat shifting'."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "Only the term 'threat shifting'.",
+   "unsupported_claim_examples": [
+    "Naming 'advanced persistent threat', 'deterrence' or 'adversary adaptation' as the NIST term.",
+    "Describing a different phenomenon (e.g. adversaries abandoning an attack permanently)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-035",
+     "quote": "Threat shifting is the response of adversaries to perceived safeguards and/or countermeasures (i.e., security controls)"
+    },
+    {
+     "chunk": "nt-281",
+     "quote": "Response from adversaries to perceived safeguards and/or countermeasures (i.e., security controls)"
+    }
+   ],
+   "grader_notes": "",
+   "question": "What is it called when adversaries change their behaviour after noticing our safeguards?",
+   "category": "keyword trap",
+   "preregistered_gold_chunk_ids": [
+    "nt-035",
+    "nt-281"
+   ]
+  },
+  {
+   "id": "E1",
+   "answer_type": "yes/no with exception",
+   "expected_polarity": "No",
+   "expected_answer": "No. The risk level is typically not higher than the impact level (impact is an upper bound), but this upper bound may fail to apply, e.g. when multiple risks materialize concurrently or the same risk repeatedly, so aggregated risk can exceed the originally assessed impact.",
+   "required_points": [
+    "Answers no (risk is not ALWAYS capped by impact).",
+    "Gives the exception: the upper bound may fail when risks aggregate / multiple risks materialize (organization-wide view)."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "exception",
+   "qualification": "The general rule (risk is typically not higher than impact; likelihood can reduce risk below impact) AND its exception (aggregation of multiple/repeated risks).",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'does not always hold', 'may fail to apply'.",
+   "unsupported_claim_examples": [
+    "Answering yes / 'always capped'.",
+    "Claiming likelihood can push risk ABOVE the impact level (the source says likelihood can reduce risk below impact).",
+    "Giving specific numeric thresholds or levels not in the passages."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-153",
+     "quote": "In general, the risk level is typically not higher than the impact level, and likelihood can serve to reduce risk below that impact level."
+    },
+    {
+     "chunk": "nt-153",
+     "quote": "impact as an upper bound on risk may not hold"
+    },
+    {
+     "chunk": "nt-053",
+     "quote": "this upper bound for risk may fail to apply"
+    },
+    {
+     "chunk": "nt-054",
+     "quote": "when multiple risks materialize concurrently or when the same risk materializes repeatedly over a period of time"
+    }
+   ],
+   "grader_notes": "A bare 'No' without the exception is at most partially correct and incomplete. Overlay v1.1: nt-053 and nt-153 are independently sufficient; nt-054 only explains why.",
+   "question": "Is the level of risk always capped by the level of impact?",
+   "category": "exception",
+   "preregistered_gold_chunk_ids": [
+    "nt-053",
+    "nt-054",
+    "nt-153"
+   ]
+  },
+  {
+   "id": "E2",
+   "answer_type": "yes/no with exception",
+   "expected_polarity": "No",
+   "expected_answer": "No. Threat events with no identified vulnerabilities or predisposing conditions have a very low likelihood of resulting in adverse impacts; they can be tracked for follow-on assessments, but no further consideration during the current assessment is warranted.",
+   "required_points": [
+    "Answers no (stop analysing it in the current assessment).",
+    "(Completeness) mentions that it can be tracked / moved to the end or a separate table for follow-on assessments."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "'Very low likelihood' (not zero) and the follow-on-tracking allowance.",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "'no further consideration is warranted in the current assessment'.",
+   "unsupported_claim_examples": [
+    "Saying the event must be deleted or ignored permanently (the source says it is tracked for follow-on assessments).",
+    "Claiming zero likelihood (the source says 'very low').",
+    "Justifying it with the different rule for events 'deemed irrelevant' (nt-136/nt-137) instead of 'no vulnerabilities or predisposing conditions identified'."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-146",
+     "quote": "Threat events for which no vulnerabilities or predisposing conditions are identified, have a very low likelihood of resulting in adverse impacts."
+    },
+    {
+     "chunk": "nt-146",
+     "quote": "so that they can be tracked for consideration in follow-on risk assessments"
+    },
+    {
+     "chunk": "nt-146",
+     "quote": "However, no further consideration during the current assessment is warranted."
+    }
+   ],
+   "grader_notes": "The question says 'weaknesses'; the source says 'vulnerabilities or predisposing conditions' (noted in the overlay). nt-147 only repeats the last sentence.",
+   "question": "If a threat event has no identified weaknesses that could be exploited, do we keep analysing it in the current assessment?",
+   "category": "exception",
+   "preregistered_gold_chunk_ids": [
+    "nt-146",
+    "nt-147"
+   ]
+  },
+  {
+   "id": "E3",
+   "answer_type": "yes/no with condition",
+   "expected_polarity": "Yes (permitted)",
+   "expected_answer": "Yes: organizations can eliminate certain threat events from further consideration if no adversary with the necessary capability has been identified.",
+   "required_points": [
+    "Answers yes (it is permitted).",
+    "States the condition: no adversary with the necessary capability has been identified."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "It is a permission ('can'), conditional on no adversary with the necessary capability having been identified.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'can be eliminated', 'may be dropped from further consideration'.",
+   "unsupported_claim_examples": [
+    "Presenting elimination as mandatory.",
+    "Allowing elimination when adversary capability is merely unknown or unassessed (the source: 'no adversary ... has been identified').",
+    "Citing the rules about 'irrelevant' events or adversary intent instead (different rules)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-286",
+     "quote": "Organizations can eliminate certain threat events from further consideration if no adversary with the necessary capability has been identified."
+    }
+   ],
+   "grader_notes": "",
+   "question": "Can a threat event be dropped from the analysis when no adversary is known to have the ability to carry it out?",
+   "category": "exception",
+   "preregistered_gold_chunk_ids": [
+    "nt-286"
+   ]
+  },
+  {
+   "id": "E4",
+   "answer_type": "yes/no with exception",
+   "expected_polarity": "Not necessarily",
+   "expected_answer": "Not necessarily. If significant changes (as defined by organizational policies) have occurred, organizations revisit the purpose, scope, assumptions and constraints to determine whether all tasks need to be repeated; otherwise the update covers only how selected risk factors have changed (a subsequent risk assessment).",
+   "required_points": [
+    "Answers 'not necessarily / no, not every task must always be redone'.",
+    "States that significant changes trigger a review of purpose/scope/assumptions/constraints to decide whether all tasks are repeated.",
+    "States that otherwise only the changed risk factors are identified and assessed."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "exception",
+   "qualification": "The decision depends on whether the changes are SIGNIFICANT (per organizational policy); the update may be limited to changed risk factors.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'subsequent risk assessment', 'only the factors that changed'.",
+   "unsupported_claim_examples": [
+    "Answering that every task must always be redone (or that nothing ever needs redoing).",
+    "Claiming a specific threshold or schedule for 'significant' (the source defers to organizational policy).",
+    "Saying all tasks are automatically repeated whenever any condition changes."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-163",
+     "quote": "If significant changes (as defined by organizational policies, direction, or guidance) have occurred since the risk assessment was conducted, organizations can revisit the purpose, scope, assumptions, and constraints of the assessment to determine whether all tasks in the risk assessment process need to be repeated."
+    },
+    {
+     "chunk": "nt-164",
+     "quote": "Otherwise, the updates constitute subsequent risk assessments, identifying and assessing only how selected risk factors have changed"
+    }
+   ],
+   "grader_notes": "Joint evidence (nt-163 + nt-164) under overlay v1.1. The question says 'conditions have changed'; the source says 'significant changes'.",
+   "question": "When conditions have changed since the last assessment, must every task be redone?",
+   "category": "exception",
+   "preregistered_gold_chunk_ids": [
+    "nt-163",
+    "nt-164"
+   ]
+  },
+  {
+   "id": "E5",
+   "answer_type": "yes/no with option",
+   "expected_polarity": "Yes (permitted option)",
+   "expected_answer": "Yes: the scope of a system-level assessment can be limited solely to the information system, without consideration of inherited vulnerabilities (the alternative is to place the system in its architectural context so that vulnerabilities in inherited controls are considered).",
+   "required_points": [
+    "Answers yes (it is a permitted scoping choice).",
+    "(Completeness) mentions the alternative scope that does consider inherited vulnerabilities."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "It is one of two permitted options, not a requirement.",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "'can be limited solely to the system', 'without consideration of inherited vulnerabilities'.",
+   "unsupported_claim_examples": [
+    "Saying inherited vulnerabilities must never be considered, or must always be considered.",
+    "Attributing the option to a different tier or technique not in the passage."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-105",
+     "quote": "Alternately, the scope of the assessment can be limited solely to the information system, without consideration of inherited vulnerabilities."
+    },
+    {
+     "chunk": "nt-105",
+     "quote": "so that vulnerabilities in inherited controls can be taken into consideration"
+    }
+   ],
+   "grader_notes": "",
+   "question": "Can the scope of a system-level assessment ignore weaknesses that come from controls the system inherits?",
+   "category": "exception",
+   "preregistered_gold_chunk_ids": [
+    "nt-105"
+   ]
+  },
+  {
+   "id": "E6",
+   "answer_type": "short fact",
+   "expected_polarity": "n/a",
+   "expected_answer": "Expert analysis may be needed to normalize the results from Tier 2 risk assessments (in decentralized organizations or organizations with varied missions/business functions).",
+   "required_points": [
+    "States that expert analysis may be needed to normalize the (Tier 2) results."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "It is conditional ('may be needed') and applies to decentralized organizations / varied missions or environments.",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "'normalize the results', 'expert analysis'.",
+   "unsupported_claim_examples": [
+    "Describing a specific normalization method or tool (none is given).",
+    "Stating it is always required for every organization."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-076",
+     "quote": "In decentralized organizations or organizations with varied missions/business functions and/or environments of operation, expert analysis may be needed to normalize the results from Tier 2 risk assessments."
+    }
+   ],
+   "grader_notes": "'Mission-level results' = Tier 2 risk assessments used as inputs to Tier 1.",
+   "question": "What extra step may be needed when rolling up mission-level results in an organization whose missions differ a lot?",
+   "category": "exception",
+   "preregistered_gold_chunk_ids": [
+    "nt-076",
+    "nt-077"
+   ]
+  },
+  {
+   "id": "N1",
+   "answer_type": "yes/no with negation",
+   "expected_polarity": "No",
+   "expected_answer": "No. The guide does not specify algorithms for combining semi-quantitative values; organization-specific risk models supply the algorithms (or the organization specifies them as part of the task).",
+   "required_points": [
+    "Answers no (no prescribed formula).",
+    "(Completeness) says the algorithms come from organization-specific risk models / are specified by the organization."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "negation",
+   "qualification": "The guide explicitly does NOT specify algorithms.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'does not specify algorithms', 'no prescribed formula'.",
+   "unsupported_claim_examples": [
+    "Presenting a specific formula (e.g. multiply likelihood by impact) as the guide's prescription.",
+    "Saying the guide mandates a particular combination rule (it only gives example rules as options in other places)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-126",
+     "quote": "this guideline does not specify algorithms for combining semi-quantitative values"
+    },
+    {
+     "chunk": "nt-126",
+     "quote": "Organization-specific risk models include algorithms (e.g., formulas, tables, rules) for combining risk factors."
+    }
+   ],
+   "grader_notes": "",
+   "question": "Does the guide prescribe a formula for combining semi-quantitative factor values?",
+   "category": "negation/constraint",
+   "preregistered_gold_chunk_ids": [
+    "nt-126"
+   ]
+  },
+  {
+   "id": "N2",
+   "answer_type": "yes/no with negation",
+   "expected_polarity": "No",
+   "expected_answer": "No. The guide states there are no specific requirements regarding the formality, rigor or level of detail of a risk assessment (nor the methodologies/tools or the format of results); organizations have maximum flexibility.",
+   "required_points": [
+    "Answers no (there are no fixed requirements).",
+    "(Completeness) names formality/rigor/level of detail."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "negation",
+   "qualification": "The source is a statement of absence of requirements; organizations have flexibility.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'no specific requirements', 'maximum flexibility'.",
+   "unsupported_claim_examples": [
+    "Stating that a particular level of rigor, a methodology or a report format is mandatory.",
+    "Inventing minimum documentation requirements."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-002",
+     "quote": "There are no specific requirements with regard to: (i) the formality, rigor, or level of detail that characterizes any particular risk assessment"
+    }
+   ],
+   "grader_notes": "",
+   "question": "Are there fixed requirements for how formal or detailed a risk assessment has to be?",
+   "category": "negation/constraint",
+   "preregistered_gold_chunk_ids": [
+    "nt-002"
+   ]
+  },
+  {
+   "id": "N3",
+   "answer_type": "yes/no with negation",
+   "expected_polarity": "No",
+   "expected_answer": "No. The templates in Appendices D through I are exemplary and can be tailored; the use of the templates is not required in order to conduct risk assessments.",
+   "required_points": [
+    "Answers no (not mandatory).",
+    "(Completeness) says they are exemplary / can be tailored."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "negation",
+   "qualification": "Use of the templates is explicitly NOT required.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'templates' = the question's 'sample tables'.",
+   "unsupported_claim_examples": [
+    "Claiming the appendix tables must be used for compliance.",
+    "Claiming a specific subset is mandatory."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-131",
+     "quote": "The use of the templates is not required in order to conduct risk assessments."
+    },
+    {
+     "chunk": "nt-131",
+     "quote": "The templates are exemplary and can be tailored by organizations"
+    }
+   ],
+   "grader_notes": "The question says 'sample tables'; the source says 'templates' (Appendices D-I).",
+   "question": "Is it mandatory to use the sample tables in the appendices when carrying out an assessment?",
+   "category": "negation/constraint",
+   "preregistered_gold_chunk_ids": [
+    "nt-131"
+   ]
+  },
+  {
+   "id": "N4",
+   "answer_type": "yes/no with negation",
+   "expected_polarity": "No (hedged)",
+   "expected_answer": "No. Where organization- or process-level actions form a significant part of the risk response, monitoring only the security posture of information systems would likely not provide sufficient information to determine the organization's overall risk.",
+   "required_points": [
+    "Answers no (not enough by itself).",
+    "(Completeness) gives the reason: response actions at the organization or mission/business-process level are a significant part of the risk response."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "The source is hedged: 'would likely not provide sufficient information', 'in such situations'.",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "'would likely not be sufficient', 'not enough on its own'.",
+   "unsupported_claim_examples": [
+    "Answering yes (sufficient).",
+    "Stating absolute certainty ('never sufficient') where the source says 'would likely not'."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-161",
+     "quote": "monitoring only the security posture of information systems would likely not provide sufficient information to determine the overall risk being incurred by organizations"
+    },
+    {
+     "chunk": "nt-161",
+     "quote": "it is expected to be quite common for the security posture of information systems (that is, the risk factors measured within those systems) to reflect only a part of the organizational risk response"
+    }
+   ],
+   "grader_notes": "nt-162 repeats the last sentence of nt-161 (overlap).",
+   "question": "Is watching only the security posture of the information systems enough to know the organization's overall risk?",
+   "category": "negation/constraint",
+   "preregistered_gold_chunk_ids": [
+    "nt-161",
+    "nt-162"
+   ]
+  },
+  {
+   "id": "N5",
+   "answer_type": "yes/no with exception",
+   "expected_polarity": "No, unless approved",
+   "expected_answer": "Not by default. The guidelines apply to federal information systems other than those designated as national security systems, but they may be used for such systems with the approval of the appropriate federal officials exercising policy authority over them.",
+   "required_points": [
+    "Answers 'no / not by default' (national security systems are excluded).",
+    "States the exception: may be used for them with the approval of appropriate federal officials."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "exception",
+   "qualification": "Excluded by default, but may be used with approval of the appropriate federal officials with policy authority.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'applicable to all federal information systems other than ... national security systems'.",
+   "unsupported_claim_examples": [
+    "Answering that national security systems are covered by default.",
+    "Answering a flat no that omits the approval exception (partial).",
+    "Claiming the guidance is mandatory for national security systems, or naming specific approving officials not in the passage."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-010",
+     "quote": "The guidelines in this publication are applicable to all federal information systems other than those systems designated as national security systems as defined in 44 U.S.C., Section 3542."
+    },
+    {
+     "chunk": "nt-010",
+     "quote": "may be used for such systems with the approval of appropriate federal officials exercising policy authority over such systems"
+    }
+   ],
+   "grader_notes": "A bare 'No' without the approval exception should be at most 'partially correct'.",
+   "question": "Does this guidance cover systems that are designated as national security systems?",
+   "category": "negation/constraint",
+   "preregistered_gold_chunk_ids": [
+    "nt-010"
+   ]
+  },
+  {
+   "id": "N6",
+   "answer_type": "yes/no with negation",
+   "expected_polarity": "No",
+   "expected_answer": "No. If adversaries are not actively targeting specific organizations or their missions/business functions, adversaries are not expected to initiate threat events (against them).",
+   "required_points": [
+    "Answers no (not expected).",
+    "States the condition: adversaries are not actively targeting the organization or its missions/business functions."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "negation",
+   "qualification": "'Not expected' is a likelihood assessment for adversarial events, not a guarantee; non-adversarial events are separate.",
+   "qualification_affects": "correctness",
+   "acceptable_wording": "'are not expected to initiate threat events'.",
+   "unsupported_claim_examples": [
+    "Claiming such an organization has no risk or can never be harmed.",
+    "Applying the statement to non-adversarial threat events (natural disasters, errors)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-145",
+     "quote": "if adversaries are not actively targeting specific organizations or their missions/business functions, adversaries are not expected to initiate threat events"
+    }
+   ],
+   "grader_notes": "",
+   "question": "Should we expect an adversary to attack an organization it is not actively targeting?",
+   "category": "negation/constraint",
+   "preregistered_gold_chunk_ids": [
+    "nt-145"
+   ]
+  },
+  {
+   "id": "O1",
+   "answer_type": "list",
+   "expected_polarity": "n/a (list of four)",
+   "expected_answer": "Framing risk, assessing risk, responding to risk, and monitoring risk.",
+   "required_points": [
+    "Names all four components: framing (or establishing the context for) risk, assessing risk, responding to risk, monitoring risk."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "'Establishing the context for risk-related activities' is the glossary wording for 'framing risk' (nt-244) and is accepted.",
+   "unsupported_claim_examples": [
+    "Listing a different set (e.g. identify/protect/detect/respond/recover).",
+    "Adding a fifth component.",
+    "Replacing 'monitoring' with 'reporting' or 'authorizing'."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-018",
+     "quote": "Risk management processes include: (i) framing risk; (ii) assessing risk; (iii) responding to risk; and (iv) monitoring risk."
+    },
+    {
+     "chunk": "nt-244",
+     "quote": "(i) establishing the context for risk-related activities; (ii) assessing risk; (iii) responding to risk once determined; and (iv) monitoring risk over time"
+    }
+   ],
+   "grader_notes": "Missing one or more of the four = partially correct and incomplete.",
+   "question": "What are the four components of the risk management process?",
+   "category": "other (buried detail)",
+   "preregistered_gold_chunk_ids": [
+    "nt-018",
+    "nt-244"
+   ]
+  },
+  {
+   "id": "O2",
+   "answer_type": "list of ranges",
+   "expected_polarity": "n/a (example ranges)",
+   "expected_answer": "The example bins 0-15, 16-35, 36-70, 71-85 and 86-100 (and the example scale 1-10), from Section 2.3 on semi-quantitative assessments.",
+   "required_points": [
+    "Gives the bins 0-15, 16-35, 36-70, 71-85, 86-100 (the scale 1-10 may also be mentioned)."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "The five bins in any format.",
+   "unsupported_claim_examples": [
+    "Giving the appendix bins (e.g. Very High 96-100, High 80-95, Moderate 21-79 ...): these are NOT in the frozen corpus (appendix tables are out of scope).",
+    "Inventing other ranges."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-061",
+     "quote": "The bins (e.g., 0-15, 16-35, 36-70, 71-85, 86-100) or scales (e.g., 1-10) translate easily into qualitative terms"
+    }
+   ],
+   "grader_notes": "Overlay v1.1 answer-level rule: an answer is correct in scope only if it gives the Section 2.3 bins. An answer that gives the appendix bins should be tagged in reviewer_notes as 'accurate for the full PDF but not supported by the frozen corpus' and is not correct in scope.",
+   "question": "What example score ranges does the guide give for binning semi-quantitative values?",
+   "category": "other (buried detail)",
+   "preregistered_gold_chunk_ids": [
+    "nt-061"
+   ]
+  },
+  {
+   "id": "O3",
+   "answer_type": "list of organizations",
+   "expected_polarity": "n/a (list)",
+   "expected_answer": "US-CERT (cross-community); sector partners such as the DoD Defense Industrial Base Collaborative Information Sharing Environment (DCISE) and the Information Sharing and Analysis Centers (ISACs) for critical infrastructure sectors; research and nongovernmental organizations such as Carnegie Mellon University's Software Engineering Institute-CERT; and security service providers.",
+   "required_points": [
+    "Names US-CERT.",
+    "Names the sector partners (DCISE for the Defense Industrial Base; ISACs).",
+    "Names research / nongovernmental organizations (e.g. Carnegie Mellon University SEI-CERT).",
+    "Names security service providers."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "The source lists examples ('can include'); the list spans two chunks because of a page-break extraction defect.",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "Category names or the specific examples.",
+   "unsupported_claim_examples": [
+    "Naming organizations that are not in the passages (e.g. CISA, FBI, MITRE, NSA) as the guide's sources.",
+    "Presenting internal sources (risk assessment reports, incident reports, logs) as external."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-121",
+     "quote": "External sources of threat information can include cross-community organizations (e.g., US Computer Emergency Readiness Team [US-CERT]"
+    },
+    {
+     "chunk": "nt-121",
+     "quote": "using the DoD-Defense Industrial Base Collaborative Information"
+    },
+    {
+     "chunk": "nt-122",
+     "quote": "Sharing Environment [DCISE], Information Sharing and Analysis Centers [ISACs] for critical infrastructure sectors)"
+    },
+    {
+     "chunk": "nt-122",
+     "quote": "research and nongovernmental organizations (e.g. Carnegie Mellon University, Software Engineering Institute-CERT), and security service providers"
+    }
+   ],
+   "grader_notes": "Joint evidence under overlay v1.1: the sentence is split across nt-121 and nt-122 by a PDF page-break defect, so an answer built from only one chunk is expected to be incomplete (nt-121 alone lacks the ISACs/research/service providers; nt-122 alone lacks US-CERT).",
+   "question": "Which external organizations does the guide name as sources of threat information?",
+   "category": "other (buried detail)",
+   "preregistered_gold_chunk_ids": [
+    "nt-121",
+    "nt-122"
+   ]
+  },
+  {
+   "id": "O4",
+   "answer_type": "short fact",
+   "expected_polarity": "n/a",
+   "expected_answer": "Ideally in the Initiation phase of the system development life cycle (initial risk assessments can be performed at any phase).",
+   "required_points": [
+    "States the Initiation phase."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "'Ideally' in the Initiation phase; initial assessments can be performed at any phase.",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "'Initiation phase'.",
+   "unsupported_claim_examples": [
+    "Naming a different phase (e.g. development/acquisition, operations/maintenance, disposal) as the ideal point.",
+    "Saying it must be done only in the Initiation phase."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-080",
+     "quote": "ideally these assessments should be performed in the Initiation phase"
+    },
+    {
+     "chunk": "nt-080",
+     "quote": "initial risk assessments (i.e., risk assessments performed for the first time, rather than updating prior risk assessments) can be performed at any phase in the system development life cycle"
+    }
+   ],
+   "grader_notes": "A bare 'Initiation phase' is correct but not complete without the 'ideally / any phase' qualification.",
+   "question": "At what point in the system development life cycle should an initial risk assessment ideally be performed?",
+   "category": "other (buried detail)",
+   "preregistered_gold_chunk_ids": [
+    "nt-080"
+   ]
+  },
+  {
+   "id": "O5",
+   "answer_type": "short fact",
+   "expected_polarity": "n/a",
+   "expected_answer": "It should describe the overall level of risk (e.g., Very Low, Low, Moderate, High or Very High) and list the number of risks identified for each level of risk.",
+   "required_points": [
+    "Says the executive summary describes the overall level of risk (with the example levels).",
+    "(Completeness) also lists the number of risks identified for each level."
+   ],
+   "must_mention_qualification": true,
+   "qualification_kind": "qualification",
+   "qualification": "The levels are examples ('e.g.').",
+   "qualification_affects": "completeness",
+   "acceptable_wording": "'overall level of risk'.",
+   "unsupported_claim_examples": [
+    "Stating a specific risk level as the required content.",
+    "Inventing further required elements not in the passages (the date, purpose and scope bullets in nt-300 are supported but are not what the question asks)."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-301",
+     "quote": "Describe the overall level of risk (e.g., Very Low, Low, Moderate, High, or Very High)."
+    },
+    {
+     "chunk": "nt-301",
+     "quote": "List the number of risks identified for each level of risk"
+    }
+   ],
+   "grader_notes": "Overlay v1.1: strict credit needs nt-300 (the 'Executive Summary' scope) and nt-301 (the fact). An answer drawn from nt-301 alone states the fact without the scope.",
+   "question": "What should the executive summary of a risk assessment report say about the overall level of risk?",
+   "category": "other (buried detail)",
+   "preregistered_gold_chunk_ids": [
+    "nt-301"
+   ]
+  },
+  {
+   "id": "O6",
+   "answer_type": "number and kinds",
+   "expected_polarity": "n/a",
+   "expected_answer": "Three assessment scales for each assessable risk factor: one qualitative and two semi-quantitative.",
+   "required_points": [
+    "States three scales.",
+    "States one qualitative and two semi-quantitative."
+   ],
+   "must_mention_qualification": false,
+   "qualification_kind": "none",
+   "qualification": "",
+   "qualification_affects": "",
+   "acceptable_wording": "'three scales: one qualitative, two semi-quantitative'.",
+   "unsupported_claim_examples": [
+    "Giving a different number of scales.",
+    "Naming specific tables or scale values as the three kinds."
+   ],
+   "supporting_passages": [
+    {
+     "chunk": "nt-125",
+     "quote": "the appendices include three assessment scales (one qualitative and two semi-quantitative scales)"
+    }
+   ],
+   "grader_notes": "",
+   "question": "How many assessment scales does the guide provide for each risk factor, and of what kinds?",
+   "category": "other (buried detail)",
+   "preregistered_gold_chunk_ids": [
+    "nt-125"
+   ]
+  }
+ ]
+}

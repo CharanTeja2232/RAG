@@ -1,0 +1,175 @@
+{
+ "similarity_threshold": 0.85,
+ "overlap_neighbours": [
+  {
+   "prev": "ck-001",
+   "chunk": "ck-002",
+   "cosine": 0.4201
+  },
+  {
+   "prev": "ck-003",
+   "chunk": "ck-004",
+   "cosine": 0.5305
+  },
+  {
+   "prev": "ck-018",
+   "chunk": "ck-019",
+   "cosine": 0.3657
+  },
+  {
+   "prev": "ck-019",
+   "chunk": "ck-020",
+   "cosine": 0.6808
+  },
+  {
+   "prev": "ck-025",
+   "chunk": "ck-026",
+   "cosine": 0.7479
+  },
+  {
+   "prev": "ck-030",
+   "chunk": "ck-031",
+   "cosine": 0.7562
+  },
+  {
+   "prev": "ck-032",
+   "chunk": "ck-033",
+   "cosine": 0.5556
+  },
+  {
+   "prev": "ck-033",
+   "chunk": "ck-034",
+   "cosine": 0.5529
+  },
+  {
+   "prev": "ck-034",
+   "chunk": "ck-035",
+   "cosine": 0.7192
+  },
+  {
+   "prev": "ck-035",
+   "chunk": "ck-036",
+   "cosine": 0.5865
+  },
+  {
+   "prev": "ck-037",
+   "chunk": "ck-038",
+   "cosine": 0.7439
+  },
+  {
+   "prev": "ck-038",
+   "chunk": "ck-039",
+   "cosine": 0.8474
+  },
+  {
+   "prev": "ck-041",
+   "chunk": "ck-042",
+   "cosine": 0.7082
+  },
+  {
+   "prev": "ck-043",
+   "chunk": "ck-044",
+   "cosine": 0.7386
+  },
+  {
+   "prev": "ck-045",
+   "chunk": "ck-046",
+   "cosine": 0.6855
+  },
+  {
+   "prev": "ck-046",
+   "chunk": "ck-047",
+   "cosine": 0.5906
+  },
+  {
+   "prev": "ck-048",
+   "chunk": "ck-049",
+   "cosine": 0.8973
+  },
+  {
+   "prev": "ck-050",
+   "chunk": "ck-051",
+   "cosine": 0.8971
+  },
+  {
+   "prev": "ck-052",
+   "chunk": "ck-053",
+   "cosine": 0.8514
+  },
+  {
+   "prev": "ck-057",
+   "chunk": "ck-058",
+   "cosine": 0.8834
+  },
+  {
+   "prev": "ck-065",
+   "chunk": "ck-066",
+   "cosine": 0.6884
+  },
+  {
+   "prev": "ck-069",
+   "chunk": "ck-070",
+   "cosine": 0.8024
+  },
+  {
+   "prev": "ck-097",
+   "chunk": "ck-098",
+   "cosine": 0.5989
+  }
+ ],
+ "similar_pairs": [
+  {
+   "a": "ck-010",
+   "b": "ck-023",
+   "cosine": 0.9251,
+   "pages": "p3 / p6",
+   "kind": "different sections"
+  },
+  {
+   "a": "ck-013",
+   "b": "ck-097",
+   "cosine": 0.8925,
+   "pages": "p4 / p20",
+   "kind": "same section name on another page"
+  },
+  {
+   "a": "ck-062",
+   "b": "ck-093",
+   "cosine": 0.8863,
+   "pages": "p12 / p17",
+   "kind": "different sections"
+  }
+ ],
+ "setup_repeat_pairs": [
+  {
+   "a": "ck-013",
+   "b": "ck-097",
+   "cosine": 0.8925
+  },
+  {
+   "a": "ck-013",
+   "b": "ck-098",
+   "cosine": 0.5433
+  },
+  {
+   "a": "ck-014",
+   "b": "ck-097",
+   "cosine": 0.4927
+  },
+  {
+   "a": "ck-014",
+   "b": "ck-098",
+   "cosine": 0.5989
+  },
+  {
+   "a": "ck-015",
+   "b": "ck-097",
+   "cosine": 0.5846
+  },
+  {
+   "a": "ck-015",
+   "b": "ck-098",
+   "cosine": 0.8161
+  }
+ ]
+}

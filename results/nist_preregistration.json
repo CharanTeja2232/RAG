@@ -1,0 +1,462 @@
+{
+ "prereg_sha256": "cb7a05a13b16fd0aacbe310e7903df4f5ee34137d3cac3ebf85714ec197ace33",
+ "corpus_sha256": "795fb2a6e043a28dc39d01e2db30d4b05d74ca1535df4ca7519d386b15f0fc92",
+ "note": "authored after the corpus was frozen and before any question was embedded or run against any index",
+ "queries": [
+  {
+   "id": "A1",
+   "category": "keyword trap",
+   "question": "Which risk assessment orientation begins with the consequences we care about and our most critical assets, rather than with attackers or weaknesses?",
+   "evidence": [
+    [
+     "an asset/impact-oriented approach starts with the identification of impacts or consequences of concern and critical assets"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-063"
+   ],
+   "likely_distractors": [
+    "nt-064",
+    "nt-117",
+    "nt-124"
+   ]
+  },
+  {
+   "id": "A2",
+   "category": "keyword trap",
+   "question": "Which term describes different experts arriving at the same results from the same data?",
+   "evidence": [
+    [
+     "the ability of different experts to produce the same results from the same data"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-235"
+   ],
+   "likely_distractors": [
+    "nt-234",
+    "nt-030",
+    "nt-060"
+   ]
+  },
+  {
+   "id": "A3",
+   "category": "keyword trap",
+   "question": "What do you call a safeguard used in place of a recommended baseline control that still gives comparable protection?",
+   "evidence": [
+    [
+     "employed by an organization in lieu of a recommended security control"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-185"
+   ],
+   "likely_distractors": [
+    "nt-183",
+    "nt-274"
+   ]
+  },
+  {
+   "id": "A4",
+   "category": "keyword trap",
+   "question": "Can something about an organization's environment, such as a system with no outside network connection, make a successful attack less likely?",
+   "evidence": [
+    [
+     "stand-alone information system with no external network connectivity"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-040"
+   ],
+   "likely_distractors": [
+    "nt-041",
+    "nt-038",
+    "nt-037"
+   ]
+  },
+  {
+   "id": "A5",
+   "category": "keyword trap",
+   "question": "How is the chance that an event actually causes harm different from the chance that someone starts it?",
+   "evidence": [
+    [
+     "regardless of the magnitude of harm that can be expected"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-043",
+    "nt-044"
+   ],
+   "likely_distractors": [
+    "nt-042",
+    "nt-224",
+    "nt-145"
+   ]
+  },
+  {
+   "id": "A6",
+   "category": "keyword trap",
+   "question": "What is it called when adversaries change their behaviour after noticing our safeguards?",
+   "evidence": [
+    [
+     "threat shifting is the response of adversaries to perceived safeguards"
+    ],
+    [
+     "response from adversaries to perceived safeguards"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-035",
+    "nt-281"
+   ],
+   "likely_distractors": [
+    "nt-167",
+    "nt-036"
+   ]
+  },
+  {
+   "id": "E1",
+   "category": "exception",
+   "question": "Is the level of risk always capped by the level of impact?",
+   "evidence": [
+    [
+     "upper bound for risk may fail to apply"
+    ],
+    [
+     "impact as an upper bound on risk may not hold"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-053",
+    "nt-054",
+    "nt-153"
+   ],
+   "likely_distractors": [
+    "nt-051",
+    "nt-152",
+    "nt-237"
+   ]
+  },
+  {
+   "id": "E2",
+   "category": "exception",
+   "question": "If a threat event has no identified weaknesses that could be exploited, do we keep analysing it in the current assessment?",
+   "evidence": [
+    [
+     "no further consideration during the current assessment is warranted"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-146",
+    "nt-147"
+   ],
+   "likely_distractors": [
+    "nt-145",
+    "nt-136",
+    "nt-137"
+   ]
+  },
+  {
+   "id": "E3",
+   "category": "exception",
+   "question": "Can a threat event be dropped from the analysis when no adversary is known to have the ability to carry it out?",
+   "evidence": [
+    [
+     "eliminate certain threat events from further consideration if no adversary with the necessary capability has been identified"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-286"
+   ],
+   "likely_distractors": [
+    "nt-145",
+    "nt-136",
+    "nt-135"
+   ]
+  },
+  {
+   "id": "E4",
+   "category": "exception",
+   "question": "When conditions have changed since the last assessment, must every task be redone?",
+   "evidence": [
+    [
+     "determine whether all tasks in the risk assessment process need to be repeated"
+    ],
+    [
+     "identifying and assessing only how selected risk factors have changed"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-163",
+    "nt-164"
+   ],
+   "likely_distractors": [
+    "nt-159",
+    "nt-160",
+    "nt-023"
+   ]
+  },
+  {
+   "id": "E5",
+   "category": "exception",
+   "question": "Can the scope of a system-level assessment ignore weaknesses that come from controls the system inherits?",
+   "evidence": [
+    [
+     "without consideration of inherited vulnerabilities"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-105"
+   ],
+   "likely_distractors": [
+    "nt-101",
+    "nt-102",
+    "nt-139"
+   ]
+  },
+  {
+   "id": "E6",
+   "category": "exception",
+   "question": "What extra step may be needed when rolling up mission-level results in an organization whose missions differ a lot?",
+   "evidence": [
+    [
+     "expert analysis may be needed to normalize the results from tier 2 risk assessments"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-076",
+    "nt-077"
+   ],
+   "likely_distractors": [
+    "nt-075",
+    "nt-078",
+    "nt-079"
+   ]
+  },
+  {
+   "id": "N1",
+   "category": "negation/constraint",
+   "question": "Does the guide prescribe a formula for combining semi-quantitative factor values?",
+   "evidence": [
+    [
+     "does not specify algorithms for combining semi-quantitative values"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-126"
+   ],
+   "likely_distractors": [
+    "nt-147",
+    "nt-148",
+    "nt-125"
+   ]
+  },
+  {
+   "id": "N2",
+   "category": "negation/constraint",
+   "question": "Are there fixed requirements for how formal or detailed a risk assessment has to be?",
+   "evidence": [
+    [
+     "there are no specific requirements with regard to"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-002"
+   ],
+   "likely_distractors": [
+    "nt-118",
+    "nt-131",
+    "nt-003"
+   ]
+  },
+  {
+   "id": "N3",
+   "category": "negation/constraint",
+   "question": "Is it mandatory to use the sample tables in the appendices when carrying out an assessment?",
+   "evidence": [
+    [
+     "the use of the templates is not required in order to conduct risk assessments"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-131"
+   ],
+   "likely_distractors": [
+    "nt-133",
+    "nt-137",
+    "nt-092"
+   ]
+  },
+  {
+   "id": "N4",
+   "category": "negation/constraint",
+   "question": "Is watching only the security posture of the information systems enough to know the organization's overall risk?",
+   "evidence": [
+    [
+     "monitoring only the security posture of information systems would likely not provide sufficient information"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-161",
+    "nt-162"
+   ],
+   "likely_distractors": [
+    "nt-160",
+    "nt-159",
+    "nt-091"
+   ]
+  },
+  {
+   "id": "N5",
+   "category": "negation/constraint",
+   "question": "Does this guidance cover systems that are designated as national security systems?",
+   "evidence": [
+    [
+     "other than those systems designated as national security systems"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-010"
+   ],
+   "likely_distractors": [
+    "nt-227",
+    "nt-008",
+    "nt-014"
+   ]
+  },
+  {
+   "id": "N6",
+   "category": "negation/constraint",
+   "question": "Should we expect an adversary to attack an organization it is not actively targeting?",
+   "evidence": [
+    [
+     "if adversaries are not actively targeting specific organizations or their missions/business functions, adversaries are not expected to initiate threat events"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-145"
+   ],
+   "likely_distractors": [
+    "nt-144",
+    "nt-146",
+    "nt-042"
+   ]
+  },
+  {
+   "id": "O1",
+   "category": "other (buried detail)",
+   "question": "What are the four components of the risk management process?",
+   "evidence": [
+    [
+     "(i) framing risk; (ii) assessing risk; (iii) responding to risk; and (iv) monitoring risk"
+    ],
+    [
+     "(i) establishing the context for risk-related activities; (ii) assessing risk; (iii) responding to risk once determined; and (iv) monitoring risk over time"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-018",
+    "nt-244"
+   ],
+   "likely_distractors": [
+    "nt-019",
+    "nt-020",
+    "nt-021"
+   ]
+  },
+  {
+   "id": "O2",
+   "category": "other (buried detail)",
+   "question": "What example score ranges does the guide give for binning semi-quantitative values?",
+   "evidence": [
+    [
+     "0-15, 16-35, 36-70, 71-85, 86-100"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-061"
+   ],
+   "likely_distractors": [
+    "nt-060",
+    "nt-058",
+    "nt-062"
+   ]
+  },
+  {
+   "id": "O3",
+   "category": "other (buried detail)",
+   "question": "Which external organizations does the guide name as sources of threat information?",
+   "evidence": [
+    [
+     "us computer emergency readiness team"
+    ],
+    [
+     "information sharing and analysis centers"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-121",
+    "nt-122"
+   ],
+   "likely_distractors": [
+    "nt-123",
+    "nt-120",
+    "nt-119"
+   ]
+  },
+  {
+   "id": "O4",
+   "category": "other (buried detail)",
+   "question": "At what point in the system development life cycle should an initial risk assessment ideally be performed?",
+   "evidence": [
+    [
+     "ideally these assessments should be performed in the initiation phase"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-080"
+   ],
+   "likely_distractors": [
+    "nt-023",
+    "nt-081",
+    "nt-082"
+   ]
+  },
+  {
+   "id": "O5",
+   "category": "other (buried detail)",
+   "question": "What should the executive summary of a risk assessment report say about the overall level of risk?",
+   "evidence": [
+    [
+     "describe the overall level of risk"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-301"
+   ],
+   "likely_distractors": [
+    "nt-299",
+    "nt-302",
+    "nt-304"
+   ]
+  },
+  {
+   "id": "O6",
+   "category": "other (buried detail)",
+   "question": "How many assessment scales does the guide provide for each risk factor, and of what kinds?",
+   "evidence": [
+    [
+     "three assessment scales (one qualitative and two semi-quantitative scales)"
+    ]
+   ],
+   "gold_chunk_ids": [
+    "nt-125"
+   ],
+   "likely_distractors": [
+    "nt-124",
+    "nt-126",
+    "nt-127"
+   ]
+  }
+ ]
+}

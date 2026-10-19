@@ -1,0 +1,400 @@
+{
+ "stage": 4,
+ "pipeline": "baseline (Bi-Encoder only)",
+ "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "k_init": 10,
+ "k_final": 3,
+ "corpus_sha256": "a3a1772d90e3a71bcacf6f1b5a70e01dc7237f4e5def64b7381eeb1877c61950",
+ "index_file_sha256": "2afbdb3d589671e561511d25ccf2d15d46ed827fc77b904d924e1ab8168ff733",
+ "outcome_rules": {
+  "success": "a gold chunk is in the Top 3",
+  "retrieval stumble": "best gold chunk at rank 4-10",
+  "candidate-pool miss": "no gold chunk in the Top 10"
+ },
+ "queries": {
+  "Q1 robber before the first barbarian attack": {
+   "question": "If I roll a 7 before the barbarians have attacked for the first time, can I move the robber?",
+   "gold_chunk_ids": [
+    "ck-021"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 20,
+     "chunk_id": "ck-021",
+     "score": 0.6287030577659607,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 180
+    },
+    {
+     "rank": 2,
+     "faiss_id": 68,
+     "chunk_id": "ck-069",
+     "score": 0.5674188137054443,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 117
+    },
+    {
+     "rank": 3,
+     "faiss_id": 69,
+     "chunk_id": "ck-070",
+     "score": 0.5274418592453003,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 118
+    },
+    {
+     "rank": 4,
+     "faiss_id": 81,
+     "chunk_id": "ck-082",
+     "score": 0.5024610757827759,
+     "page": 16,
+     "section": "The Almanac > Bishop (2)",
+     "n_tokens": 107
+    },
+    {
+     "rank": 5,
+     "faiss_id": 60,
+     "chunk_id": "ck-061",
+     "score": 0.4482346177101135,
+     "page": 12,
+     "section": "Attack of the Barbarians! > Losing Your Last City",
+     "n_tokens": 97
+    },
+    {
+     "rank": 6,
+     "faiss_id": 23,
+     "chunk_id": "ck-024",
+     "score": 0.4401932954788208,
+     "page": 6,
+     "section": "Specific Actions > City Walls",
+     "n_tokens": 39
+    },
+    {
+     "rank": 7,
+     "faiss_id": 65,
+     "chunk_id": "ck-066",
+     "score": 0.43173205852508545,
+     "page": 13,
+     "section": "Seafarers of Catan Variant",
+     "n_tokens": 180
+    },
+    {
+     "rank": 8,
+     "faiss_id": 17,
+     "chunk_id": "ck-018",
+     "score": 0.4174252152442932,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 154
+    },
+    {
+     "rank": 9,
+     "faiss_id": 51,
+     "chunk_id": "ck-052",
+     "score": 0.40870025753974915,
+     "page": 10,
+     "section": "Knights > Chasing Away the Robber",
+     "n_tokens": 123
+    },
+    {
+     "rank": 10,
+     "faiss_id": 67,
+     "chunk_id": "ck-068",
+     "score": 0.39434272050857544,
+     "page": 13,
+     "section": "Knight-Errant Variant",
+     "n_tokens": 63
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-021",
+    "ck-069",
+    "ck-070"
+   ],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-069",
+     "ck-070",
+     0.8024
+    ]
+   ],
+   "duplicate_notes_top3": [
+    [
+     "overlap",
+     "ck-069",
+     "ck-070",
+     0.8024
+    ]
+   ],
+   "gold_full_ranking": {
+    "ck-021": [
+     1,
+     0.6287030577659607
+    ]
+   }
+  },
+  "Q2 Smith card and mighty knights": {
+   "question": "Can the Smith progress card be used to promote a mighty knight?",
+   "gold_chunk_ids": [
+    "ck-081"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 80,
+     "chunk_id": "ck-081",
+     "score": 0.6484655141830444,
+     "page": 15,
+     "section": "The Almanac > Smith (2)",
+     "n_tokens": 96
+    },
+    {
+     "rank": 2,
+     "faiss_id": 27,
+     "chunk_id": "ck-028",
+     "score": 0.5899357795715332,
+     "page": 6,
+     "section": "Specific Actions > Promoting a Knight",
+     "n_tokens": 182
+    },
+    {
+     "rank": 3,
+     "faiss_id": 88,
+     "chunk_id": "ck-089",
+     "score": 0.5282936096191406,
+     "page": 17,
+     "section": "The Almanac > Warlord (2)",
+     "n_tokens": 63
+    },
+    {
+     "rank": 4,
+     "faiss_id": 46,
+     "chunk_id": "ck-047",
+     "score": 0.4854840040206909,
+     "page": 9,
+     "section": "Knights",
+     "n_tokens": 179
+    },
+    {
+     "rank": 5,
+     "faiss_id": 25,
+     "chunk_id": "ck-026",
+     "score": 0.48290708661079407,
+     "page": 6,
+     "section": "Specific Actions > Knights",
+     "n_tokens": 109
+    },
+    {
+     "rank": 6,
+     "faiss_id": 39,
+     "chunk_id": "ck-040",
+     "score": 0.47768449783325195,
+     "page": 9,
+     "section": "Progress Cards",
+     "n_tokens": 48
+    },
+    {
+     "rank": 7,
+     "faiss_id": 43,
+     "chunk_id": "ck-044",
+     "score": 0.46191149950027466,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 52
+    },
+    {
+     "rank": 8,
+     "faiss_id": 58,
+     "chunk_id": "ck-059",
+     "score": 0.46074584126472473,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 184
+    },
+    {
+     "rank": 9,
+     "faiss_id": 26,
+     "chunk_id": "ck-027",
+     "score": 0.4383726119995117,
+     "page": 6,
+     "section": "Specific Actions > Activating a Knight",
+     "n_tokens": 117
+    },
+    {
+     "rank": 10,
+     "faiss_id": 42,
+     "chunk_id": "ck-043",
+     "score": 0.41979357600212097,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 196
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-081",
+    "ck-028",
+    "ck-089"
+   ],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-043",
+     "ck-044",
+     0.7386
+    ]
+   ],
+   "duplicate_notes_top3": [],
+   "gold_full_ranking": {
+    "ck-081": [
+     1,
+     0.6484655141830444
+    ]
+   }
+  },
+  "Q3 (control) VP cards and the hand limit": {
+   "question": "Do Victory Point progress cards count toward the 4-card progress-card hand limit?",
+   "gold_chunk_ids": [
+    "ck-043",
+    "ck-079",
+    "ck-083"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 2,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 43,
+     "chunk_id": "ck-044",
+     "score": 0.6306376457214355,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 52
+    },
+    {
+     "rank": 2,
+     "faiss_id": 42,
+     "chunk_id": "ck-043",
+     "score": 0.6301602125167847,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 196
+    },
+    {
+     "rank": 3,
+     "faiss_id": 82,
+     "chunk_id": "ck-083",
+     "score": 0.6021040081977844,
+     "page": 16,
+     "section": "The Almanac > Constitution (1)",
+     "n_tokens": 72
+    },
+    {
+     "rank": 4,
+     "faiss_id": 78,
+     "chunk_id": "ck-079",
+     "score": 0.5719345211982727,
+     "page": 15,
+     "section": "The Almanac > Printer (1)",
+     "n_tokens": 72
+    },
+    {
+     "rank": 5,
+     "faiss_id": 28,
+     "chunk_id": "ck-029",
+     "score": 0.46197593212127686,
+     "page": 6,
+     "section": "Specific Actions > Playing Progress Cards",
+     "n_tokens": 94
+    },
+    {
+     "rank": 6,
+     "faiss_id": 87,
+     "chunk_id": "ck-088",
+     "score": 0.4596443474292755,
+     "page": 17,
+     "section": "The Almanac > Spy (3)",
+     "n_tokens": 53
+    },
+    {
+     "rank": 7,
+     "faiss_id": 39,
+     "chunk_id": "ck-040",
+     "score": 0.44569140672683716,
+     "page": 9,
+     "section": "Progress Cards",
+     "n_tokens": 48
+    },
+    {
+     "rank": 8,
+     "faiss_id": 89,
+     "chunk_id": "ck-090",
+     "score": 0.42699509859085083,
+     "page": 17,
+     "section": "The Almanac > Wedding (2)",
+     "n_tokens": 84
+    },
+    {
+     "rank": 9,
+     "faiss_id": 18,
+     "chunk_id": "ck-019",
+     "score": 0.41140738129615784,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 151
+    },
+    {
+     "rank": 10,
+     "faiss_id": 70,
+     "chunk_id": "ck-071",
+     "score": 0.4027867615222931,
+     "page": 13,
+     "section": "The Almanac",
+     "n_tokens": 84
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-044",
+    "ck-043",
+    "ck-083"
+   ],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-043",
+     "ck-044",
+     0.7386
+    ]
+   ],
+   "duplicate_notes_top3": [
+    [
+     "overlap",
+     "ck-043",
+     "ck-044",
+     0.7386
+    ]
+   ],
+   "gold_full_ranking": {
+    "ck-043": [
+     2,
+     0.6301602125167847
+    ],
+    "ck-079": [
+     4,
+     0.5719345211982727
+    ],
+    "ck-083": [
+     3,
+     0.6021040081977844
+    ]
+   }
+  }
+ }
+}

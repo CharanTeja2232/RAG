@@ -1,0 +1,25 @@
+query_id,category,lenient_baseline,lenient_baseline_best_gold_rank,lenient_reranked,lenient_reranked_best_gold_rank,lenient_movement,strict_baseline,strict_baseline_top3_evidence,strict_baseline_best_sufficient_rank,strict_reranked,strict_reranked_top3_evidence,strict_reranked_best_sufficient_rank,strict_movement
+A1,keyword trap,success,3,success,2,kept in Top 3,success,sufficient,3,success,sufficient,2,kept in Top 3
+A2,keyword trap,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+A3,keyword trap,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+A4,keyword trap,stumble,6,success,1,RESTORED into Top 3,stumble,none,6,success,sufficient,1,RESTORED into Top 3
+A5,keyword trap,success,2,success,1,kept in Top 3,success,sufficient,3,success,sufficient,1,kept in Top 3
+A6,keyword trap,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+E1,exception,success,1,success,1,kept in Top 3,success,sufficient,3,success,sufficient,1,kept in Top 3
+E2,exception,success,2,success,2,kept in Top 3,success,sufficient,2,success,sufficient,2,kept in Top 3
+E3,exception,stumble,7,success,2,RESTORED into Top 3,stumble,none,7,success,sufficient,2,RESTORED into Top 3
+E4,exception,success,1,success,1,kept in Top 3,stumble,partial,8,success,sufficient,2,RESTORED into Top 3
+E5,exception,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+E6,exception,success,2,success,1,kept in Top 3,success,sufficient,2,success,sufficient,1,kept in Top 3
+N1,negation/constraint,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+N2,negation/constraint,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+N3,negation/constraint,success,3,success,2,kept in Top 3,success,sufficient,3,success,sufficient,2,kept in Top 3
+N4,negation/constraint,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,2,kept in Top 3
+N5,negation/constraint,stumble,4,success,1,RESTORED into Top 3,stumble,none,4,success,sufficient,1,RESTORED into Top 3
+N6,negation/constraint,success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+O1,other (buried detail),success,3,success,2,kept in Top 3,success,sufficient,3,success,sufficient,2,kept in Top 3
+O2,other (buried detail),success,1,success,1,kept in Top 3,success,sufficient,1,success,sufficient,1,kept in Top 3
+O3,other (buried detail),success,1,success,1,kept in Top 3,success,sufficient,2,success,sufficient,2,kept in Top 3
+O4,other (buried detail),success,3,success,1,kept in Top 3,success,sufficient,3,success,sufficient,1,kept in Top 3
+O5,other (buried detail),success,1,success,1,kept in Top 3,success,sufficient,3,success,sufficient,2,kept in Top 3
+O6,other (buried detail),success,2,success,1,kept in Top 3,success,sufficient,2,success,sufficient,1,kept in Top 3

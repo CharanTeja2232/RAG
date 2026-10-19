@@ -1,0 +1,23 @@
+{
+ "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+ "device": "cpu",
+ "dim": 384,
+ "max_seq_length": 256,
+ "normalised": true,
+ "index_class": "faiss.IndexFlatIP",
+ "n_vectors": 98,
+ "corpus_sha256": "a3a1772d90e3a71bcacf6f1b5a70e01dc7237f4e5def64b7381eeb1877c61950",
+ "embeddings_sha256": "2aaba0f3451ce25a3aa134d8bdcc67cce38314674e3ac3c59c447c3d3c96febe",
+ "note": "embeddings_sha256 can differ across CPUs/BLAS builds in the last bits; corpus_sha256 is the binding reference.",
+ "versions": {
+  "python": "3.14.7",
+  "machine": "arm64",
+  "torch": "2.14.1",
+  "sentence-transformers": "6.1.0",
+  "transformers": "5.20.1",
+  "faiss-cpu": "1.15.1",
+  "numpy": "2.5.4",
+  "pymupdf": "1.28.2",
+  "tokenizers": "0.23.3"
+ }
+}

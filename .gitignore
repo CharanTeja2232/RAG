@@ -1,0 +1,15 @@
+# Python / environment
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Credentials: every .env variant is ignored; only the placeholder template may be committed
+.env
+.env.*
+!.env.example
+
+# Rulebook PDF and derived text are copyright Catan GmbH: never commit them (see README / corpus_manifest.json)
+data/
+
+# Local copy of the fallback corpus (public domain, but not part of the active pipeline)
+nistspecialpublication800-30r1.pdf

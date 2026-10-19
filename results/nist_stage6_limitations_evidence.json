@@ -1,0 +1,417 @@
+{
+ "O2_bins": {
+  "answers_lexical_flags": {
+   "answer_1": {
+    "mentions_an_appendix_bin_marker": false,
+    "mentions_each_in_scope_bin": {
+     "0-15": true,
+     "16-35": true,
+     "36-70": true,
+     "71-85": true,
+     "86-100": true
+    }
+   },
+   "answer_2": {
+    "mentions_an_appendix_bin_marker": false,
+    "mentions_each_in_scope_bin": {
+     "0-15": true,
+     "16-35": true,
+     "36-70": true,
+     "71-85": true,
+     "86-100": true
+    }
+   }
+  },
+  "chunks_containing_each_appendix_bin_marker": {
+   "21-79": [],
+   "5-20": [],
+   "80-95": [],
+   "96-100": []
+  },
+  "chunks_containing_the_in_scope_bin_list": [
+   "nt-061"
+  ],
+  "gold_chunk": "nt-061",
+  "in_scope_bins": "0-15, 16-35, 36-70, 71-85, 86-100",
+  "overlay_rule": "When generated answers are judged later: an answer is correct in scope only if it gives the Section 2.3 bins. An answer that gives the appendix bins is recorded separately as 'accurate for the full PDF but not supported by the frozen corpus'.",
+  "pdf_check": {
+   "checked": true,
+   "excluded_from_corpus": "tables are outside the corpus scope (README)",
+   "page_67_contains_appendix_bin_markers": {
+    "21-79": true,
+    "5-20": true,
+    "80-95": true,
+    "96-100": true
+   }
+  },
+  "retrieval": {
+   "baseline_gold_rank": 1,
+   "both_contexts_contain_nt_061": true,
+   "reranked_gold_rank": 1
+  }
+ },
+ "O3_page_break_defect": {
+  "answers_lexical_flags": {
+   "answer_1": {
+    "Carnegie Mellon / SEI-CERT": true,
+    "DCISE": true,
+    "ISACs": true,
+    "US-CERT": true,
+    "security service providers": true
+   },
+   "answer_2": {
+    "Carnegie Mellon / SEI-CERT": true,
+    "DCISE": false,
+    "ISACs": true,
+    "US-CERT": true,
+    "security service providers": true
+   }
+  },
+  "contexts_given_to_the_llm": {
+   "answer_1": {
+    "has_nt_121": true,
+    "has_nt_122": true,
+    "order": [
+     "nt-121",
+     "nt-122",
+     "nt-285"
+    ]
+   },
+   "answer_2": {
+    "has_nt_121": true,
+    "has_nt_122": true,
+    "order": [
+     "nt-121",
+     "nt-122",
+     "nt-109"
+    ]
+   }
+  },
+  "defect": "one sentence crosses the PDF page break between pages 36 and 37 and was left in two chunks (nt-121 / nt-122)",
+  "nt_121": {
+   "ends_with": "(e.g., Defense Industrial Base [DIB] using the DoD-Defense Industrial Base Collaborative Information",
+   "ends_without_terminal_punctuation": true,
+   "page": 36,
+   "section": "CHAPTER THREE — THE PROCESS — CONDUCTING RISK ASSESSMENTS WITHIN ORGANIZATIONS > STEP 1: PREPARE FOR THE ASSESSMENT > TASK 1-4"
+  },
+  "nt_122": {
+   "page": 37,
+   "same_section_as_nt_121": true,
+   "starts_with": "Sharing Environment [DCISE], Information Sharing and Analysis Centers "
+  },
+  "overlay_statement_of_scan_result": "exactly two pairs: nt-121/nt-122 (this defect) and nt-154/nt-155 (a list item continuing in the next bullet; not a gold passage)",
+  "pdf_check": {
+   "checked": true,
+   "page_36_contains": true,
+   "page_37_contains": true
+  },
+  "recomputed_corpus_scan_same_section_pairs_whose_first_chunk_lacks_terminal_punctuation": [
+   [
+    "nt-121",
+    "nt-122"
+   ],
+   [
+    "nt-154",
+    "nt-155"
+   ]
+  ],
+  "retrieval": {
+   "baseline_ranks": {
+    "nt-121": 1,
+    "nt-122": 2
+   },
+   "reranked_ranks": {
+    "nt-121": 1,
+    "nt-122": 2
+   },
+   "strict_outcome": {
+    "baseline": "success",
+    "reranked": "success"
+   },
+   "strict_top3_evidence": {
+    "baseline": "sufficient",
+    "reranked": "sufficient"
+   }
+  },
+  "treatment": "corpus preserved (frozen hash); strict rule requires BOTH chunks (overlay v1.1); lenient (primary) rule counts either chunk"
+ },
+ "backend_fingerprints": {
+  "calls_per_fingerprint": {
+   "fp_21e59ac2de": 21,
+   "fp_424cb89518": 15,
+   "fp_4560dae850": 2,
+   "fp_a1293f40b5": 10
+  },
+  "distinct": 4,
+  "fingerprint_by_pipeline": {
+   "baseline": {
+    "fp_21e59ac2de": 13,
+    "fp_424cb89518": 6,
+    "fp_4560dae850": 1,
+    "fp_a1293f40b5": 4
+   },
+   "reranked": {
+    "fp_21e59ac2de": 8,
+    "fp_424cb89518": 9,
+    "fp_4560dae850": 1,
+    "fp_a1293f40b5": 6
+   }
+  },
+  "groq_determinism": "documented as best effort only",
+  "identical_answer_text": {
+   "among_different_fingerprint_pairs": 5,
+   "among_same_fingerprint_pairs": 3,
+   "total": 8
+  },
+  "identical_context_set_different_order": [
+   {
+    "a1_order": [
+     "nt-054",
+     "nt-052",
+     "nt-153"
+    ],
+    "a2_order": [
+     "nt-153",
+     "nt-054",
+     "nt-052"
+    ],
+    "identical_answer": false,
+    "query": "E1",
+    "same_fingerprint": false
+   },
+   {
+    "a1_order": [
+     "nt-022",
+     "nt-019",
+     "nt-018"
+    ],
+    "a2_order": [
+     "nt-019",
+     "nt-018",
+     "nt-022"
+    ],
+    "identical_answer": true,
+    "query": "O1",
+    "same_fingerprint": false
+   }
+  ],
+  "pairs_with_different_fingerprints": 16,
+  "pairs_with_the_same_fingerprint": 8,
+  "request_settings_identical_for_all": true,
+  "retrieval_failure_queries": [
+   {
+    "query": "A4",
+    "same_fingerprint": false
+   },
+   {
+    "query": "E3",
+    "same_fingerprint": true
+   },
+   {
+    "query": "N5",
+    "same_fingerprint": false
+   }
+  ],
+  "seed_sent": 1234,
+  "temperature_sent": 0.0
+ },
+ "evaluation_size_and_design": {
+  "authors": {
+   "blinding": "none: the Answer 1 / Answer 2 labels and the rank tables reveal which pipeline produced each answer",
+   "graders": "one (the user)",
+   "independent_validation": "none",
+   "questions_gold_overlay_and_grading_key": "the same AI assistant"
+  },
+  "expected_polarity_counts": {
+   "no, or not by default / not necessarily": 9,
+   "yes": 3
+  },
+  "generations_per_query_and_pipeline": {
+   "1": 48
+  },
+  "n_queries": 24,
+  "per_category": {
+   "exception": 6,
+   "keyword trap": 6,
+   "negation/constraint": 6,
+   "other (buried detail)": 6
+  },
+  "questions_with_expected_yes_no_style_answer": 12,
+  "retrieval_failures": {
+   "lenient_baseline_stumbles": [
+    "A4",
+    "E3",
+    "N5"
+   ],
+   "strict_baseline_stumbles": [
+    "A4",
+    "E3",
+    "E4",
+    "N5"
+   ]
+  },
+  "statistical_testing": "none performed",
+  "strict_joint_evidence_questions": [
+   "E4",
+   "O3",
+   "O5"
+  ],
+  "total_answers": 48,
+  "yes_no_style_question_ids": {
+   "no": [
+    "E1",
+    "E2",
+    "E4",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6"
+   ],
+   "yes": [
+    "A4",
+    "E3",
+    "E5"
+   ]
+  }
+ },
+ "input_tokens": {
+  "api_completion_tokens_total": {
+   "answer_1": 977,
+   "answer_2": 1106
+  },
+  "api_prompt_tokens_total": {
+   "answer_1": 12784,
+   "answer_2": 14454
+  },
+  "context_chunk_tokens_embedding_tokenizer_total": {
+   "answer_1": 8981,
+   "answer_2": 10713
+  },
+  "difference": 1670,
+  "difference_percent_of_answer_1": 13.1,
+  "per_query_difference_answer2_minus_answer1": {
+   "max": 178,
+   "median": 86.0,
+   "min": -63,
+   "queries_equal": 2,
+   "queries_where_answer_2_prompt_is_longer": 18,
+   "queries_where_shorter": 4
+  },
+  "reading": "the re-ranked Top 3 contains longer passages on average (short glossary entries are displaced); the LLM therefore saw more text for Answer 2 than for Answer 1",
+  "retrieval_failure_queries": {
+   "A4": {
+    "context_chunk_tokens": [
+     279,
+     457
+    ],
+    "prompt_tokens": [
+     437,
+     602
+    ]
+   },
+   "E3": {
+    "context_chunk_tokens": [
+     323,
+     498
+    ],
+    "prompt_tokens": [
+     483,
+     661
+    ]
+   },
+   "N5": {
+    "context_chunk_tokens": [
+     289,
+     385
+    ],
+    "prompt_tokens": [
+     462,
+     555
+    ]
+   }
+  }
+ },
+ "latency_two_kinds": {
+  "llm_generation": {
+   "answer_1_baseline_context": {
+    "max_ms": 1354.7,
+    "mean_ms": 422.6,
+    "median_ms": 325.9,
+    "min_ms": 221.1,
+    "n": 24,
+    "stdev_ms": 297.0
+   },
+   "answer_2_reranked_context": {
+    "max_ms": 1689.8,
+    "mean_ms": 397.4,
+    "median_ms": 316.2,
+    "min_ms": 237.9,
+    "n": 24,
+    "stdev_ms": 292.1
+   },
+   "first_vs_second_call_in_pair_median_ms": {
+    "1": 346.0,
+    "2": 311.5
+   },
+   "server_reported_total_time_ms": {
+    "answer_1": {
+     "max_ms": 265.6,
+     "mean_ms": 119.9,
+     "median_ms": 104.1,
+     "min_ms": 50.0,
+     "n": 24,
+     "stdev_ms": 51.2
+    },
+    "answer_2": {
+     "max_ms": 198.5,
+     "mean_ms": 132.3,
+     "median_ms": 131.8,
+     "min_ms": 63.3,
+     "n": 24,
+     "stdev_ms": 37.1
+    }
+   },
+   "what": "wall clock of each successful HTTPS call to a remote service from this machine (network, queueing and a new TLS connection per call included; pacing sleeps and retries excluded); one call per query and pipeline"
+  },
+  "no_latency_claim": "no difference between the pipelines is claimed for LLM latency (dominated by a few slow calls; one sample per query and pipeline)",
+  "not_comparable_because": "different hardware, network vs none, warmed local models vs a shared remote service, n = 480 vs n = 24, and different tokens processed; the two are never added or ranked against each other",
+  "retrieval_and_reranking": {
+   "machine": {
+    "cpu": "Apple M5",
+    "memory_gb": 16.0,
+    "other_processes_running": true
+   },
+   "n": 480,
+   "pipeline_1_ms": {
+    "max_ms": 7.87,
+    "mean_ms": 2.89,
+    "median_ms": 2.85,
+    "min_ms": 2.6,
+    "n": 480,
+    "p95_ms": 3.13,
+    "stdev_ms": 0.28
+   },
+   "pipeline_2_ms": {
+    "max_ms": 144.52,
+    "mean_ms": 95.51,
+    "median_ms": 95.95,
+    "min_ms": 50.89,
+    "n": 480,
+    "p95_ms": 111.1,
+    "stdev_ms": 12.4
+   },
+   "reranking_overhead_ms": {
+    "max_ms": 141.7,
+    "mean_ms": 92.62,
+    "median_ms": 93.04,
+    "min_ms": 47.98,
+    "n": 480,
+    "p95_ms": 108.21,
+    "stdev_ms": 12.34
+   },
+   "what": "local CPU, single-threaded (OMP_NUM_THREADS=1), models already loaded and warmed up, 3 discarded warm-up passes, 20 timed passes x 24 queries"
+  }
+ }
+}

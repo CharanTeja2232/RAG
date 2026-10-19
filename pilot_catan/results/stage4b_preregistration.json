@@ -1,0 +1,295 @@
+{
+ "prereg_sha256": "312f1b2ddaff694c4ed8600fb1c77b9ac000b791860c3d6ef38202bc6c095476",
+ "note": "authored after reading the frozen corpus and before any of these questions was run through the index",
+ "corpus_sha256": "a3a1772d90e3a71bcacf6f1b5a70e01dc7237f4e5def64b7381eeb1877c61950",
+ "queries": [
+  {
+   "id": "A1",
+   "category": "keyword trap",
+   "question": "How many points is a city worth if one of the yellow gates is sitting on it?",
+   "evidence": [
+    [
+     "worth a total of 4 victory points"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-019",
+    "ck-020",
+    "ck-037"
+   ],
+   "gold_chunk_ids": [
+    "ck-038"
+   ]
+  },
+  {
+   "id": "A2",
+   "category": "keyword trap",
+   "question": "None of my hexes paid out on my roll. Is there anything that still lets me take something?",
+   "evidence": [
+    [
+     "do not receive any resources or commodities"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-018",
+    "ck-020",
+    "ck-021"
+   ],
+   "gold_chunk_ids": [
+    "ck-036"
+   ]
+  },
+  {
+   "id": "A3",
+   "category": "keyword trap",
+   "question": "Do I get anything extra while I'm holding the little wooden cone?",
+   "evidence": [
+    [
+     "you receive 1 victory point"
+    ],
+    [
+     "receive 1 victory point for as long as you control the merchant"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-013",
+    "ck-097",
+    "ck-004"
+   ],
+   "gold_chunk_ids": [
+    "ck-062",
+    "ck-093"
+   ]
+  },
+  {
+   "id": "A4",
+   "category": "keyword trap",
+   "question": "Do stronger soldiers need more grain to get ready for action?",
+   "evidence": [
+    [
+     "does not affect the cost to activate it"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-028",
+    "ck-056",
+    "ck-047"
+   ],
+   "gold_chunk_ids": [
+    "ck-027"
+   ]
+  },
+  {
+   "id": "E1",
+   "category": "exception",
+   "question": "Can I ever get a mighty knight onto the board without having built the Fortress?",
+   "evidence": [
+    [
+     "mighty",
+     "even if you have not yet built"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-028",
+    "ck-036",
+    "ck-081"
+   ],
+   "gold_chunk_ids": [
+    "ck-084"
+   ]
+  },
+  {
+   "id": "E2",
+   "category": "exception",
+   "question": "Do I need a knight of my own to displace an opponent's knight?",
+   "evidence": [
+    [
+     "without using a knight of your own"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-050",
+    "ck-051"
+   ],
+   "gold_chunk_ids": [
+    "ck-086"
+   ]
+  },
+  {
+   "id": "E3",
+   "category": "exception",
+   "question": "What if several players tie for the biggest knight army after we beat the barbarians?",
+   "evidence": [
+    [
+     "no player is declared defender of catan"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-057",
+    "ck-058"
+   ],
+   "gold_chunk_ids": [
+    "ck-059"
+   ]
+  },
+  {
+   "id": "E4",
+   "category": "exception",
+   "question": "Which production numbers am I not allowed to swap when I move number tokens around?",
+   "evidence": [
+    [
+     "but not 2, 12, 6, or 8"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-097",
+    "ck-013"
+   ],
+   "gold_chunk_ids": [
+    "ck-075"
+   ]
+  },
+  {
+   "id": "N1",
+   "category": "negation/constraint",
+   "question": "Can I use two cards that cut the price of one city improvement on the same upgrade?",
+   "evidence": [
+    [
+     "not combine 2 crane cards"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-077",
+    "ck-080"
+   ],
+   "gold_chunk_ids": [
+    "ck-073"
+   ]
+  },
+  {
+   "id": "N2",
+   "category": "negation/constraint",
+   "question": "Can I raid the hand of a player who is behind me on points?",
+   "evidence": [
+    [
+     "only play this card on an opponent who has more victory points than you"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-090",
+    "ck-088",
+    "ck-087"
+   ],
+   "gold_chunk_ids": [
+    "ck-092"
+   ]
+  },
+  {
+   "id": "N3",
+   "category": "negation/constraint",
+   "question": "Do all of the players have to agree before one of the optional rules is used?",
+   "evidence": [
+    [
+     "strictly optional and should only be used if agreed on by all players"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-065",
+    "ck-066",
+    "ck-069"
+   ],
+   "gold_chunk_ids": [
+    "ck-064"
+   ]
+  },
+  {
+   "id": "N4",
+   "category": "negation/constraint",
+   "question": "Can the robber stop me from using the merchant's cheaper trades?",
+   "evidence": [
+    [
+     "the robber does not affect the merchant"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-062",
+    "ck-091"
+   ],
+   "gold_chunk_ids": [
+    "ck-093"
+   ]
+  },
+  {
+   "id": "O1",
+   "category": "other (buried detail)",
+   "question": "With two cities that each have a wall, how many cards can I keep when a seven comes up?",
+   "evidence": [
+    [
+     "safely hold up to 11 cards"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-010",
+    "ck-074",
+    "ck-021"
+   ],
+   "gold_chunk_ids": [
+    "ck-023"
+   ]
+  },
+  {
+   "id": "O2",
+   "category": "other (buried detail)",
+   "question": "How many ship faces are on the event die?",
+   "evidence": [
+    [
+     "1 event die (with 3 ships and 3 city gate symbols)"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-018",
+    "ck-019",
+    "ck-054"
+   ],
+   "gold_chunk_ids": [
+    "ck-004"
+   ]
+  },
+  {
+   "id": "O3",
+   "category": "other (buried detail)",
+   "question": "How strong are the barbarians when they land?",
+   "evidence": [
+    [
+     "strength of the barbarians is equal to the number of cities"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-056",
+    "ck-054",
+    "ck-058"
+   ],
+   "gold_chunk_ids": [
+    "ck-055"
+   ]
+  },
+  {
+   "id": "O4",
+   "category": "other (buried detail)",
+   "question": "Can a settlement next to a pasture hex give me cloth?",
+   "evidence": [
+    [
+     "commodities are produced only by cities"
+    ]
+   ],
+   "likely_distractors": [
+    "ck-003",
+    "ck-020",
+    "ck-031"
+   ],
+   "gold_chunk_ids": [
+    "ck-030"
+   ]
+  }
+ ]
+}

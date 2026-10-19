@@ -1,0 +1,644 @@
+{
+ "purpose": "Everything that defines the 48 evaluation prompts, so they can be rebuilt and audited without running anything",
+ "system_instruction": "You answer questions about NIST Special Publication 800-30 Revision 1 using ONLY the context passages provided. If the context does not contain the answer, reply exactly: The provided context does not contain the answer. Do not use outside knowledge. Answer in at most three sentences and cite the passage ids you used in square brackets, for example [nt-012].",
+ "context_header": "Context passages (in the order retrieved):",
+ "prompt_template": "{system}\n\n{header}\n{context}\n\nQuestion: {question}\nAnswer:",
+ "generation_config": {
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_output_tokens": 300,
+  "n": 1
+ },
+ "prompt_and_generation_config_sha256": "013f4a4cbaf737a3b498ebfd23d06c1293d55c37024c9baab09e82da9a37300c",
+ "message_layout": "messages = [system: SYSTEM_INSTRUCTION, user: CONTEXT_HEADER + passages + question]; format_context as in the notebook",
+ "baseline_file_sha256": "c697c05d64304be40714750070aaba022f0540da347530d44f78d1a46f7c137d",
+ "rerank_file_sha256": "1282c5190017579a26925ce6ad706c486b969eee997c590caeb786749c800838",
+ "corpus_sha256": "795fb2a6e043a28dc39d01e2db30d4b05d74ca1535df4ca7519d386b15f0fc92",
+ "eval_prompts_sha256": "5a639b1442ea00229e3b9071b9ebd6f57b7bb1a3f6b20bc1304a8248d4dac430",
+ "tasks": [
+  {
+   "key": "A1|baseline",
+   "query_id": "A1",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-064",
+    "nt-020",
+    "nt-063"
+   ],
+   "prompt_sha256": "a5d2a84632b9189b53f8bf6d8f146c40ef49157e760079f1fca0608f8fce1c95",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "A1|reranked",
+   "query_id": "A1",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-064",
+    "nt-063",
+    "nt-238"
+   ],
+   "prompt_sha256": "7352f5c2d5a9ca21f9bdfa0642934c63760bd972764cd206ea3df3df9e99924b",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "A2|reranked",
+   "query_id": "A2",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-235",
+    "nt-060",
+    "nt-059"
+   ],
+   "prompt_sha256": "1bd81fa251160106279c6235e6e20b8992c7c4e76d7e375870ef72f765583ec7",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "A2|baseline",
+   "query_id": "A2",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-235",
+    "nt-059",
+    "nt-062"
+   ],
+   "prompt_sha256": "b59d5458d7845971cc185ed293d84422094cc8050f08596ee96533dad4c1f9dd",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "A3|baseline",
+   "query_id": "A3",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-185",
+    "nt-275",
+    "nt-270"
+   ],
+   "prompt_sha256": "2b027a9d9fc66023c75274cffe5e1594076d267c2497adeeff720a5cff4264e5",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "A3|reranked",
+   "query_id": "A3",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-185",
+    "nt-258",
+    "nt-255"
+   ],
+   "prompt_sha256": "b91f8bf3adf241ec889339db39219fb2fcf7dbce029ee966fb9f0ca369c96da1",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "A4|reranked",
+   "query_id": "A4",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-040",
+    "nt-041",
+    "nt-043"
+   ],
+   "prompt_sha256": "eab2097f792db69c8550fa3a606d3330ace4abd5360a7f265f2576a4f22251ab",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "A4|baseline",
+   "query_id": "A4",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-277",
+    "nt-038",
+    "nt-283"
+   ],
+   "prompt_sha256": "bcc9ce9bfa416fff0d89a1d1322235e8715eff3cd0866dc0421f1c32be34dd29",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "A5|baseline",
+   "query_id": "A5",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-279",
+    "nt-043",
+    "nt-044"
+   ],
+   "prompt_sha256": "e87426ac7b84a702b867daed290dbf5ec82b732f5b6c1bb5bad8d02e8685f84c",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "A5|reranked",
+   "query_id": "A5",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-044",
+    "nt-043",
+    "nt-147"
+   ],
+   "prompt_sha256": "5830f372ef577cfaa1730dcbe327c9bc57590a7a59013276f14c8b26f27709b6",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "A6|reranked",
+   "query_id": "A6",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-281",
+    "nt-035",
+    "nt-036"
+   ],
+   "prompt_sha256": "888858734dada8dc3cc81e74c56d0c5eb72f83e647ce4c091e54dfca4bbc27b1",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "A6|baseline",
+   "query_id": "A6",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-281",
+    "nt-168",
+    "nt-035"
+   ],
+   "prompt_sha256": "d99ef35ff9bed641cf82005846501de06224da33825627fe2470beeb8b55e027",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "E1|baseline",
+   "query_id": "E1",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-054",
+    "nt-052",
+    "nt-153"
+   ],
+   "prompt_sha256": "01c051d2aa18ce02760fccb9dc35cfc9cd354613befe113612d4b49284c4b3df",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "E1|reranked",
+   "query_id": "E1",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-153",
+    "nt-054",
+    "nt-052"
+   ],
+   "prompt_sha256": "62b07adf0532be840b28f397969a99564d8f45796951fd31968a9b0434611997",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "E2|reranked",
+   "query_id": "E2",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-045",
+    "nt-146",
+    "nt-039"
+   ],
+   "prompt_sha256": "b1d096c316db7dc3acef88f8ddda99a0ba17bdf13cf30e6dc931543f7ff27ab0",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "E2|baseline",
+   "query_id": "E2",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-045",
+    "nt-146",
+    "nt-117"
+   ],
+   "prompt_sha256": "9e8a555fe07a2146fedd44e47e1432f1a2b0bda6fdec7383320f28ff90d273a8",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "E3|baseline",
+   "query_id": "E3",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-279",
+    "nt-034",
+    "nt-043"
+   ],
+   "prompt_sha256": "be4b6bd29d3bcf29da2d4ea437e9c189c2911aa2aff76da9cfa525811b6913c1",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "E3|reranked",
+   "query_id": "E3",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-034",
+    "nt-286",
+    "nt-039"
+   ],
+   "prompt_sha256": "044e9d1447430649d30b883511966749d03fcf76b89c29625dc4435852bcaf39",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "E4|reranked",
+   "query_id": "E4",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-163",
+    "nt-164",
+    "nt-160"
+   ],
+   "prompt_sha256": "28ff15ffa4e312aca588af8bffbac58fea66094928fe3002c0c7720f1e582ab6",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "E4|baseline",
+   "query_id": "E4",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-163",
+    "nt-160",
+    "nt-234"
+   ],
+   "prompt_sha256": "c3b87db808897f5ef183444b605ea291f197b0c7c47a8fdcad4e55fd32d40e39",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "E5|baseline",
+   "query_id": "E5",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-105",
+    "nt-253",
+    "nt-257"
+   ],
+   "prompt_sha256": "20228599c13dadc6f8e5b1f6752658f9dc88f8ff8685d45300b33095f91ead41",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "E5|reranked",
+   "query_id": "E5",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-105",
+    "nt-257",
+    "nt-080"
+   ],
+   "prompt_sha256": "ae070710a5906c5ddde450dcb9028dbda87afa10c5e22aba613a6be6c3749160",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "E6|reranked",
+   "query_id": "E6",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-077",
+    "nt-053",
+    "nt-076"
+   ],
+   "prompt_sha256": "5136ceecd3e17f74249106f783fc65ed9f513674d457b015a320b192a7948e90",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "E6|baseline",
+   "query_id": "E6",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-226",
+    "nt-076",
+    "nt-118"
+   ],
+   "prompt_sha256": "3344739d6685a3bd6edcf4bba17835447a8a5cb150cfaf45a429430ba292fa37",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "N1|baseline",
+   "query_id": "N1",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-126",
+    "nt-061",
+    "nt-265"
+   ],
+   "prompt_sha256": "8c69978b9aeb09c9f8ee5826502461c97e1edbfa87c328a38065db8afdb30db2",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "N1|reranked",
+   "query_id": "N1",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-126",
+    "nt-125",
+    "nt-061"
+   ],
+   "prompt_sha256": "767c71950ee7c82ff41bc31c09a02b40aabc6e6ce8dea7a192ec2d0e6ef3de28",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "N2|reranked",
+   "query_id": "N2",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-002",
+    "nt-094",
+    "nt-291"
+   ],
+   "prompt_sha256": "f4a48be3a6bde5a15a3ddcd30fba349696e8a7d42812d007b6f560799b9362d3",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "N2|baseline",
+   "query_id": "N2",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-002",
+    "nt-094",
+    "nt-003"
+   ],
+   "prompt_sha256": "75eb384af449f7656a25faa8e2a35de5629302c17be75ea1e2f5305813448870",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "N3|baseline",
+   "query_id": "N3",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-305",
+    "nt-016",
+    "nt-131"
+   ],
+   "prompt_sha256": "de37eb663b213ec88850668677a7121c742dd2b924c634f7de9865071ff57c6a",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "N3|reranked",
+   "query_id": "N3",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-305",
+    "nt-131",
+    "nt-092"
+   ],
+   "prompt_sha256": "48ddc8e432a61d7afe6e0df3c908628c7175741344b8791ca8acbedba2157d8d",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "N4|reranked",
+   "query_id": "N4",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-162",
+    "nt-161",
+    "nt-005"
+   ],
+   "prompt_sha256": "a5d6f279a088133484bc4bdcb23bd2d1f1aa2120e8bf2f619d1632e7c9708dad",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "N4|baseline",
+   "query_id": "N4",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-161",
+    "nt-005",
+    "nt-213"
+   ],
+   "prompt_sha256": "1a7e79bc8e02a67e2c6f28a3fb063b59401e416e05096c575f05dc4019cacb97",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "N5|baseline",
+   "query_id": "N5",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-227",
+    "nt-262",
+    "nt-274"
+   ],
+   "prompt_sha256": "0054c6fa85625f9f2602a74624821d04052beebb78cea9aab601068b42eaf2ac",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "N5|reranked",
+   "query_id": "N5",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-010",
+    "nt-227",
+    "nt-273"
+   ],
+   "prompt_sha256": "fb953d6a392abb4eabfb3c344c67843c71164ebbb39f90233fc88498425b9ecd",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "N6|reranked",
+   "query_id": "N6",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-145",
+    "nt-034",
+    "nt-167"
+   ],
+   "prompt_sha256": "fd4e06810ba8cbd157622179ac50bab81a0e8740960a5025f563c38ef1a2cbbc",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "N6|baseline",
+   "query_id": "N6",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-145",
+    "nt-168",
+    "nt-034"
+   ],
+   "prompt_sha256": "13430f4184913bf27e3ef0bd56694c6f612c1372294b1af2e6493dff214a10d8",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "O1|baseline",
+   "query_id": "O1",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-022",
+    "nt-019",
+    "nt-018"
+   ],
+   "prompt_sha256": "67659c06c219401a247be9fbb4e5f2a466a29b273b2879db16ad70a24f2c8def",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "O1|reranked",
+   "query_id": "O1",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-019",
+    "nt-018",
+    "nt-022"
+   ],
+   "prompt_sha256": "3d20f608806783d6b0e088d87a1bb44394a2530dfd94684ce9d2f57259724809",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "O2|reranked",
+   "query_id": "O2",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-061",
+    "nt-125",
+    "nt-126"
+   ],
+   "prompt_sha256": "f0bdf313fe4cb1c6231b9ab80fddd574aaf8669cc198060e237f2e2a79f08749",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "O2|baseline",
+   "query_id": "O2",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-061",
+    "nt-265",
+    "nt-125"
+   ],
+   "prompt_sha256": "dccaaccfad888f30fcee9cbc26f920a04e968445dd2ec1a0d2ca667bec2a83e9",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "O3|baseline",
+   "query_id": "O3",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-121",
+    "nt-122",
+    "nt-285"
+   ],
+   "prompt_sha256": "ab8bf1ff4f577954ab430aa0486dd3d19a9c06a20e82378eda27bbf45171fe5c",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "O3|reranked",
+   "query_id": "O3",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-121",
+    "nt-122",
+    "nt-109"
+   ],
+   "prompt_sha256": "29bffaca7eda8e507cee0b3a0cb327e842f2a1248a0c0db490fd05f4d161e6b3",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "O4|reranked",
+   "query_id": "O4",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-080",
+    "nt-081",
+    "nt-082"
+   ],
+   "prompt_sha256": "0e982bdd2a63ce844e06c44160b4b16ba76c1a6be4594fc10d8be4ecd7609b5f",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "O4|baseline",
+   "query_id": "O4",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-001",
+    "nt-082",
+    "nt-080"
+   ],
+   "prompt_sha256": "dbc3bcdda40a5a8412532c9e394c1ff304afe93012bbbc516cc933ebe39ab4f6",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "O5|baseline",
+   "query_id": "O5",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-301",
+    "nt-240",
+    "nt-300"
+   ],
+   "prompt_sha256": "737bfe8923eb5bb85c81ea014eacf4a7659910e81b532ed4a0d1ad85f4b82519",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "O5|reranked",
+   "query_id": "O5",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-301",
+    "nt-300",
+    "nt-299"
+   ],
+   "prompt_sha256": "13c71db72e525cd18c194f1a6693494ceb32cbfaef895b927f1eef77af998e33",
+   "call_position_in_pair": 2
+  },
+  {
+   "key": "O6|reranked",
+   "query_id": "O6",
+   "pipeline": "reranked",
+   "label": "Answer 2",
+   "context_chunk_ids": [
+    "nt-125",
+    "nt-061",
+    "nt-068"
+   ],
+   "prompt_sha256": "c0dacea765f24b8e29ccef8b96bfafaa6147f33da65920d07b5d5e9e93f2a346",
+   "call_position_in_pair": 1
+  },
+  {
+   "key": "O6|baseline",
+   "query_id": "O6",
+   "pipeline": "baseline",
+   "label": "Answer 1",
+   "context_chunk_ids": [
+    "nt-002",
+    "nt-125",
+    "nt-233"
+   ],
+   "prompt_sha256": "83dc8178e6b20f7e2ce458dcfd5472daa6cf3b1e5dd07ed528a073954ded858c",
+   "call_position_in_pair": 2
+  }
+ ]
+}

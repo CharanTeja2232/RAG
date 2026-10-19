@@ -1,0 +1,236 @@
+{
+ "n_queries": 24,
+ "retrieval_frozen": {
+  "lenient": {
+   "baseline": {
+    "success": 21,
+    "stumble": 3
+   },
+   "reranked": {
+    "success": 24
+   }
+  },
+  "strict": {
+   "baseline": {
+    "success": 20,
+    "stumble": 4
+   },
+   "reranked": {
+    "success": 24
+   }
+  }
+ },
+ "objective_format_checks": {
+  "a1": {
+   "cites_a_passage": 21,
+   "cites_only_supplied_passages": 21,
+   "cites_a_preregistered_gold_chunk": 21,
+   "is_the_refusal_sentence": 3,
+   "finish_reason_stop": 24,
+   "within_three_sentence_limit": 24
+  },
+  "a2": {
+   "cites_a_passage": 24,
+   "cites_only_supplied_passages": 24,
+   "cites_a_preregistered_gold_chunk": 24,
+   "is_the_refusal_sentence": 0,
+   "finish_reason_stop": 24,
+   "within_three_sentence_limit": 24
+  }
+ },
+ "human": {
+  "a1": {
+   "correct": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0,
+    "ungraded": 24
+   },
+   "supported_by_passages": {
+    "fully supported": 0,
+    "partially supported": 0,
+    "unsupported": 0,
+    "ungraded": 24
+   },
+   "complete": {
+    "complete": 0,
+    "incomplete": 0,
+    "ungraded": 24
+   },
+   "unsupported_claims": {
+    "none": 0,
+    "present": 0,
+    "ungraded": 24
+   },
+   "overall_judgment": {
+    "acceptable": 0,
+    "borderline": 0,
+    "unacceptable": 0,
+    "ungraded": 24
+   }
+  },
+  "a2": {
+   "correct": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0,
+    "ungraded": 24
+   },
+   "supported_by_passages": {
+    "fully supported": 0,
+    "partially supported": 0,
+    "unsupported": 0,
+    "ungraded": 24
+   },
+   "complete": {
+    "complete": 0,
+    "incomplete": 0,
+    "ungraded": 24
+   },
+   "unsupported_claims": {
+    "none": 0,
+    "present": 0,
+    "ungraded": 24
+   },
+   "overall_judgment": {
+    "acceptable": 0,
+    "borderline": 0,
+    "unacceptable": 0,
+    "ungraded": 24
+   }
+  },
+  "better": {
+   "a1 better": 0,
+   "a2 better": 0,
+   "neither clearly better": 0,
+   "ungraded": 24
+  }
+ },
+ "paired": {
+  "n_pairs_with_both_correctness_graded": 0,
+  "n_pairs_ungraded_or_incomplete": 24,
+  "crosstab_a1_rows_by_a2_columns": {
+   "correct": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0
+   },
+   "partially correct": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0
+   },
+   "incorrect": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0
+   }
+  },
+  "categories": {
+   "both correct": {
+    "n": 0,
+    "query_ids": []
+   },
+   "only Answer 1 correct": {
+    "n": 0,
+    "query_ids": []
+   },
+   "only Answer 2 correct": {
+    "n": 0,
+    "query_ids": []
+   },
+   "both incorrect": {
+    "n": 0,
+    "query_ids": []
+   },
+   "other (no 'correct'; at least one 'partially correct')": {
+    "n": 0,
+    "query_ids": []
+   }
+  },
+  "discordant_raw_counts": {
+   "only_answer_1_correct": 0,
+   "only_answer_2_correct": 0,
+   "note": "raw counts only: no test statistic, p-value or confidence interval is computed"
+  },
+  "better_by_query": {
+   "a1 better": [],
+   "a2 better": [],
+   "neither clearly better": []
+  }
+ },
+ "failure_cases_individually": [
+  {
+   "query_id": "A4",
+   "category": "keyword trap",
+   "lenient": "stumble -> success",
+   "strict": "stumble -> success",
+   "a1_correct": "ungraded",
+   "a2_correct": "ungraded",
+   "better": "ungraded"
+  },
+  {
+   "query_id": "E3",
+   "category": "exception",
+   "lenient": "stumble -> success",
+   "strict": "stumble -> success",
+   "a1_correct": "ungraded",
+   "a2_correct": "ungraded",
+   "better": "ungraded"
+  },
+  {
+   "query_id": "E4",
+   "category": "exception",
+   "lenient": "success -> success",
+   "strict": "stumble -> success",
+   "a1_correct": "ungraded",
+   "a2_correct": "ungraded",
+   "better": "ungraded"
+  },
+  {
+   "query_id": "N5",
+   "category": "negation/constraint",
+   "lenient": "stumble -> success",
+   "strict": "stumble -> success",
+   "a1_correct": "ungraded",
+   "a2_correct": "ungraded",
+   "better": "ungraded"
+  }
+ ],
+ "correctness_by_baseline_lenient_retrieval_outcome_descriptive": {
+  "baseline retrieval success": {
+   "a1": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0,
+    "ungraded": 21
+   },
+   "a2": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0,
+    "ungraded": 21
+   }
+  },
+  "baseline retrieval stumble or miss": {
+   "a1": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0,
+    "ungraded": 3
+   },
+   "a2": {
+    "correct": 0,
+    "partially correct": 0,
+    "incorrect": 0,
+    "ungraded": 3
+   }
+  }
+ },
+ "warnings": [],
+ "n_rows_fully_graded": 0,
+ "input": {
+  "csv": "/Users/charan/Documents/LanguageModels&Agents/RAGAssignment/results/nist_stage6_human_grades.csv",
+  "sha256": "b8ea5658def98e161f04a004937ff440e9e03cead34adc91418b4ddeaa1b67e3"
+ }
+}

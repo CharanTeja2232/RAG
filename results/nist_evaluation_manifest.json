@@ -1,0 +1,191 @@
+{
+ "purpose": "NIST SP 800-30r1 baseline vs re-ranking evaluation: provenance, frozen rules and methodology",
+ "primary_metric": "preregistered LENIENT rule (any preregistered gold chunk in the Top 3)",
+ "secondary_analysis": "STRICT rule of overlay v1.1 (independently sufficient evidence or complete joint sets); partial evidence is never strict success",
+ "hashes": {
+  "source_pdf_sha256": "f214087f0bdb35932a28c16eb93932a33c67a6edfb5e6f1638866bd201c98e04",
+  "corpus_sha256": "795fb2a6e043a28dc39d01e2db30d4b05d74ca1535df4ca7519d386b15f0fc92",
+  "preregistration_sha256": "cb7a05a13b16fd0aacbe310e7903df4f5ee34137d3cac3ebf85714ec197ace33",
+  "preregistration_file_sha256": "232760869e8465afb4255202e4b5b90dd86a16e0e10fac75e17917c708278ce4",
+  "review_sheet_file_sha256": "4f4007b70f8660270c02e6db410aae91d72094a129526a53aff6d6e6fd576e52",
+  "overlay_v1_0_sha256": "c99f3cfe7cd7ec5898982fa499e9457dd2f2ed364a6a839c2424d7cd55d1a2ef",
+  "overlay_v1_1_sha256": "180c80dee8cf63207866cea103ec3c7c0e5dbeb80c9fd10d06b7e0460b8ab9ea",
+  "overlay_v1_1_file_sha256": "0a6596c89cdb483d509ae9c5baec0b8613f4c10af7370e21a8f3dff1dcdf97f6",
+  "index_file_sha256": "5ad15f18c9e17155191e814ceb8f1a3be0809fa80d2426553124c64491348021",
+  "embeddings_sha256": "9eb498f7e1576064ed02ecef4aa5398b5f15406d7aaf50a3fd026d53ab8c5652",
+  "baseline_top10_file_sha256": "c697c05d64304be40714750070aaba022f0540da347530d44f78d1a46f7c137d",
+  "rerank_top10_file_sha256": "1282c5190017579a26925ce6ad706c486b969eee997c590caeb786749c800838",
+  "per_query_results_csv_sha256": "9dba2ee01ea093a7db3a5066fcd2630d02731623b6bed4b481d88dbde02c20d8",
+  "prompt_and_generation_config_sha256": "013f4a4cbaf737a3b498ebfd23d06c1293d55c37024c9baab09e82da9a37300c",
+  "stage6_prompt_spec_file_sha256": "37d96f4734b75305fd7095608aca8d6431ef43d86fdbc2d08b5c6f46258110c6",
+  "stage6_eval_prompts_sha256": "5a639b1442ea00229e3b9071b9ebd6f57b7bb1a3f6b20bc1304a8248d4dac430",
+  "stage6_settings_sha256": "fc869685494b2d61c1bc68fc5888a7fb21ac31eaf868c41fcb6a7e60262d967c",
+  "stage6_smoke_test_file_sha256": "93886b7ccd3e69ad40b8664555e0832e585ef21b31852bb8e24aacf036a8ac07",
+  "stage6_answers_ledger_file_sha256": "138b569baed41df0ba924e06ebd966db0b9647d8f5328544c8da6d5a6b33a372",
+  "stage6_attempts_log_file_sha256": "0fa2a3b6feb61c9439eb92830984781e9205ce45a43a568faacc7dcef51d717d",
+  "stage6_answers_file_sha256": "f56da7990a0f7dc6e9cc4b2142b87be7d1c91bf7a20e37d95a53686ec5c5a7c1",
+  "stage6_comparison_csv_sha256": "dc0d7cde2d809cb1cc00ca8304663955af46586a8e07dc42b9bdd4d9552f2408",
+  "stage6_human_review_md_sha256": "f7d6900305334affaef10a8654e26c8acda57b99cd8257e914a11ccf51b5ed13",
+  "stage6_human_review_csv_sha256": "b8ea5658def98e161f04a004937ff440e9e03cead34adc91418b4ddeaa1b67e3",
+  "stage6_grading_guide_file_sha256": "156cd5480b7febad084312262505802833e8b7bb802e6cff04c8568caefccf33",
+  "stage6_human_summary_template_sha256": "68b9845c031b035171612e5b624e7c4e17c4d847ebfb64f075ccbaff8ce199b7",
+  "stage6_human_grades_file_sha256": null,
+  "stage6_human_summary_sha256": null,
+  "stage6_limitations_evidence_sha256": "4b83bc36e72e54d030b7669f27f3951b591f268fa9d229c5e315542ae3319867",
+  "stage6_limitations_notes_sha256": "48991eb7ea2a8d5741b6d1d89ec823f2a3e2d9ee48d688eefb13225692096867",
+  "latency_retrieval_file_sha256": "58f335e0f28e8df7868c9c1c336239067e26760fefc45d47dcc0e4e6de365032"
+ },
+ "statement_preregistration": "The original preregistration (24 questions, gold labels, order, wording) is unchanged; overlay v1.1 is a separate secondary scoring.",
+ "models": {
+  "bi_encoder": {
+   "name": "sentence-transformers/all-MiniLM-L6-v2",
+   "dim": 384,
+   "max_seq_length": 256,
+   "normalised": true
+  },
+  "cross_encoder": {
+   "name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+   "params_millions": 22.7,
+   "max_seq_length": 512,
+   "score": "raw logit"
+  },
+  "llm": {
+   "provider": "groq",
+   "model": "qwen/qwen3.8-27b",
+   "request_template": {
+    "model": "qwen/qwen3.8-27b",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_completion_tokens": 300,
+    "n": 1,
+    "seed": 1234,
+    "stream": false,
+    "reasoning_effort": "none"
+   },
+   "note": "used only for answer generation; identical for Answer 1 and Answer 2"
+  }
+ },
+ "parameters": {
+  "k_init": 10,
+  "k_final": 3,
+  "index": "faiss.IndexFlatIP (exact), unit-length vectors",
+  "tie_handling": "stable: equal Cross-Encoder scores keep the baseline order",
+  "chunking": {
+   "max_chunk_tokens": 200,
+   "hard_limit_tokens": 240,
+   "entry_max_tokens": 240,
+   "overlap_sentences": 1
+  }
+ },
+ "environment": {
+  "python": "3.14.7",
+  "machine": "arm64",
+  "system": "Darwin",
+  "omp_num_threads": "1",
+  "torch_threads": 1,
+  "device": "cpu",
+  "packages": {
+   "torch": "2.14.1",
+   "sentence-transformers": "6.1.0",
+   "transformers": "5.20.1",
+   "faiss-cpu": "1.15.1",
+   "numpy": "2.5.4",
+   "pymupdf": "1.28.2",
+   "tokenizers": "0.23.3",
+   "huggingface_hub": "1.33.0"
+  }
+ },
+ "commands": [
+  "python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt",
+  "open RAG_Baseline_vs_Rerank.ipynb with the .venv kernel and Run All (OMP_NUM_THREADS=1 is set in the first cell; Stage 6 mode defaults to off: no network)",
+  "RAG_STAGE6_MODE=smoke    # after putting GROQ_API_KEY in the git-ignored .env: synthetic prompts only",
+  "RAG_STAGE6_MODE=evaluate # the 48 evaluation answers; refuses to start without a passing smoke test; resumable",
+  "RAG_LATENCY_MODE=measure # retrieval/re-ranking latency (writes results/nist_latency_retrieval.json)",
+  "python tools/run_stage6_only.py   # with RAG_STAGE6_MODE=smoke|evaluate: runs ONLY the Stage 6 cells; Stages 1-5 are not re-executed (state restored from the hash-verified files)",
+  "python tests/check_frozen_artifacts.py   # verifies every pinned hash and the Stage 6 artifacts without loading a model"
+ ],
+ "latency_methodology": {
+  "status": "MEASURED: see results/nist_latency_retrieval.json (retrieval and re-ranking) and the per-call latency in results/nist_stage6_answers.json (LLM)",
+  "protocol": [
+   "time.perf_counter, wall clock, CPU, single-threaded (OMP_NUM_THREADS=1), one query at a time, models already loaded and warmed up (3 discarded warm-up passes)",
+   "baseline retrieval (pipeline 1) = query embedding + FAISS Top-10 search; re-ranking pipeline (pipeline 2) = the same two steps + Cross-Encoder scoring of the ten pairs + sort (cumulative)",
+   "each component also reported separately; 20 timed passes over the 24 questions (n = 480 per component); mean, median, standard deviation, 95th percentile, min, max; index building and model loading excluded",
+   "LLM generation time is the wall clock of each successful HTTP call (remote service, network included), recorded per call; it is never added to the local CPU timings as if the conditions were the same"
+  ]
+ },
+ "llm_status": {
+  "mode_of_last_notebook_run": "off",
+  "smoke_test_recorded": true,
+  "smoke_test_passed": true,
+  "evaluation_answers_on_disk": 48,
+  "expected_answers": 48,
+  "api_attempts_logged_for_evaluation": 48
+ },
+ "not_run": [],
+ "frozen_rules": "No change to the corpus, queries, gold labels, models or parameters is permitted after observing results; each is protected by a pinned hash.",
+ "generation": {
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "parameters": {
+   "temperature": 0.0,
+   "top_p": 1.0,
+   "max_output_tokens": 300,
+   "n": 1
+  },
+  "provider_request_template": {
+   "model": "qwen/qwen3.8-27b",
+   "temperature": 0.0,
+   "top_p": 1.0,
+   "max_completion_tokens": 300,
+   "n": 1,
+   "seed": 1234,
+   "stream": false,
+   "reasoning_effort": "none"
+  },
+  "settings_sha256": "fc869685494b2d61c1bc68fc5888a7fb21ac31eaf868c41fcb6a7e60262d967c",
+  "provider_documentation_read": {
+   "read_on": "2026-10-18",
+   "urls": [
+    "https://console.groq.com/docs/rate-limits",
+    "https://console.groq.com/docs/models",
+    "https://console.groq.com/docs/reasoning",
+    "https://console.groq.com/docs/deprecations",
+    "https://console.groq.com/docs/your-data",
+    "https://console.groq.com/docs/errors"
+   ],
+   "free_plan_limits": {
+    "openai/gpt-oss-120b": {
+     "rpm": 30,
+     "rpd": 1000,
+     "tpm": 8000,
+     "tpd": 200000
+    },
+    "openai/gpt-oss-20b": {
+     "rpm": 30,
+     "rpd": 1000,
+     "tpm": 8000,
+     "tpd": 200000
+    },
+    "qwen/qwen3.8-27b": {
+     "rpm": 30,
+     "rpd": 1000,
+     "tpm": 8000,
+     "tpd": 200000
+    }
+   },
+   "status": {
+    "openai/gpt-oss-120b": "production",
+    "openai/gpt-oss-20b": "production",
+    "qwen/qwen3.8-27b": "preview (may be discontinued at short notice)"
+   },
+   "notes": [
+    "Limits apply per organisation; whichever limit is hit first applies; the documented figures are a summary and the account's Limits page is authoritative.",
+    "Free-plan chat models listed: gpt-oss-120b, gpt-oss-20b, gpt-oss-safeguard-20b (safety classifier), qwen3.8-27b. Llama 3.x chat models are marked Enterprise / Contact Sales and were deprecated for free and developer tiers on 2026-08-16.",
+    "A temperature of 0 is converted by Groq to 1e-8; n must be 1; seed is best-effort only; reasoning tokens of the gpt-oss models are part of the completion tokens and cannot be switched off.",
+    "Inference inputs and outputs are not retained by default; they may be logged for up to 30 days for reliability or abuse investigation unless Zero Data Retention is enabled."
+   ]
+  },
+  "note": "prompt, context format and parameters fixed; identical for both pipelines; the Top-3 context is the only intended difference"
+ },
+ "self_tests_passed": 73
+}

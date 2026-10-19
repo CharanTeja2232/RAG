@@ -1,0 +1,2221 @@
+{
+ "stage": "4b",
+ "pipeline": "baseline (Bi-Encoder only)",
+ "prereg_sha256": "312f1b2ddaff694c4ed8600fb1c77b9ac000b791860c3d6ef38202bc6c095476",
+ "corpus_sha256": "a3a1772d90e3a71bcacf6f1b5a70e01dc7237f4e5def64b7381eeb1877c61950",
+ "index_file_sha256": "2afbdb3d589671e561511d25ccf2d15d46ed827fc77b904d924e1ab8168ff733",
+ "k_init": 10,
+ "k_final": 3,
+ "n_questions": 16,
+ "tally": {
+  "candidate-pool miss": 4,
+  "success": 11,
+  "retrieval stumble": 1
+ },
+ "queries": [
+  {
+   "id": "A1",
+   "category": "keyword trap",
+   "question": "How many points is a city worth if one of the yellow gates is sitting on it?",
+   "gold_chunk_ids": [
+    "ck-038"
+   ],
+   "outcome": "candidate-pool miss",
+   "best_gold_rank": null,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 18,
+     "chunk_id": "ck-019",
+     "score": 0.5174483060836792,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 151
+    },
+    {
+     "rank": 2,
+     "faiss_id": 38,
+     "chunk_id": "ck-039",
+     "score": 0.47908324003219604,
+     "page": 8,
+     "section": "The Metropolis",
+     "n_tokens": 127
+    },
+    {
+     "rank": 3,
+     "faiss_id": 36,
+     "chunk_id": "ck-037",
+     "score": 0.47699305415153503,
+     "page": 8,
+     "section": "The Metropolis",
+     "n_tokens": 174
+    },
+    {
+     "rank": 4,
+     "faiss_id": 19,
+     "chunk_id": "ck-020",
+     "score": 0.45026153326034546,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 168
+    },
+    {
+     "rank": 5,
+     "faiss_id": 22,
+     "chunk_id": "ck-023",
+     "score": 0.44590938091278076,
+     "page": 6,
+     "section": "Specific Actions > City Walls",
+     "n_tokens": 173
+    },
+    {
+     "rank": 6,
+     "faiss_id": 9,
+     "chunk_id": "ck-010",
+     "score": 0.4404197335243225,
+     "page": 3,
+     "section": "New Game Pieces > City Walls",
+     "n_tokens": 167
+    },
+    {
+     "rank": 7,
+     "faiss_id": 97,
+     "chunk_id": "ck-098",
+     "score": 0.419699490070343,
+     "page": 20,
+     "section": "Setting Up the Game",
+     "n_tokens": 141
+    },
+    {
+     "rank": 8,
+     "faiss_id": 40,
+     "chunk_id": "ck-041",
+     "score": 0.40661221742630005,
+     "page": 9,
+     "section": "Progress Cards > Acquiring Progress Cards",
+     "n_tokens": 185
+    },
+    {
+     "rank": 9,
+     "faiss_id": 15,
+     "chunk_id": "ck-016",
+     "score": 0.39563339948654175,
+     "page": 5,
+     "section": "Turn Overview",
+     "n_tokens": 183
+    },
+    {
+     "rank": 10,
+     "faiss_id": 3,
+     "chunk_id": "ck-004",
+     "score": 0.39478641748428345,
+     "page": 2,
+     "section": "Game Components",
+     "n_tokens": 116
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-019",
+    "ck-039",
+    "ck-037"
+   ],
+   "gold_full_ranking": {
+    "ck-038": {
+     "rank": 11,
+     "score": 0.3778458833694458
+    }
+   },
+   "distractors_predicted": [
+    "ck-019",
+    "ck-020",
+    "ck-037"
+   ],
+   "distractors_in_top3": [
+    "ck-019",
+    "ck-037"
+   ],
+   "distractors_in_top10": [
+    "ck-019",
+    "ck-020",
+    "ck-037"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-019",
+     "ck-020",
+     0.6808
+    ],
+    [
+     "near-duplicate",
+     "ck-010",
+     "ck-023",
+     0.9251
+    ]
+   ]
+  },
+  {
+   "id": "A2",
+   "category": "keyword trap",
+   "question": "None of my hexes paid out on my roll. Is there anything that still lets me take something?",
+   "gold_chunk_ids": [
+    "ck-036"
+   ],
+   "outcome": "candidate-pool miss",
+   "best_gold_rank": null,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 20,
+     "chunk_id": "ck-021",
+     "score": 0.42143720388412476,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 180
+    },
+    {
+     "rank": 2,
+     "faiss_id": 19,
+     "chunk_id": "ck-020",
+     "score": 0.3470892310142517,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 168
+    },
+    {
+     "rank": 3,
+     "faiss_id": 74,
+     "chunk_id": "ck-075",
+     "score": 0.29989367723464966,
+     "page": 14,
+     "section": "The Almanac > Inventor (2)",
+     "n_tokens": 157
+    },
+    {
+     "rank": 4,
+     "faiss_id": 17,
+     "chunk_id": "ck-018",
+     "score": 0.29425641894340515,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 154
+    },
+    {
+     "rank": 5,
+     "faiss_id": 61,
+     "chunk_id": "ck-062",
+     "score": 0.28315141797065735,
+     "page": 12,
+     "section": "The Merchant",
+     "n_tokens": 190
+    },
+    {
+     "rank": 6,
+     "faiss_id": 11,
+     "chunk_id": "ck-012",
+     "score": 0.26949071884155273,
+     "page": 3,
+     "section": "Setting Up the Island of Catan > Hexagon Tiles and the Barbarian Tile",
+     "n_tokens": 101
+    },
+    {
+     "rank": 7,
+     "faiss_id": 92,
+     "chunk_id": "ck-093",
+     "score": 0.2604796588420868,
+     "page": 17,
+     "section": "The Almanac > Merchant (6)",
+     "n_tokens": 211
+    },
+    {
+     "rank": 8,
+     "faiss_id": 12,
+     "chunk_id": "ck-013",
+     "score": 0.23582610487937927,
+     "page": 4,
+     "section": "Setting Up the Game",
+     "n_tokens": 187
+    },
+    {
+     "rank": 9,
+     "faiss_id": 81,
+     "chunk_id": "ck-082",
+     "score": 0.22579453885555267,
+     "page": 16,
+     "section": "The Almanac > Bishop (2)",
+     "n_tokens": 107
+    },
+    {
+     "rank": 10,
+     "faiss_id": 96,
+     "chunk_id": "ck-097",
+     "score": 0.22510671615600586,
+     "page": 20,
+     "section": "Setting Up the Game",
+     "n_tokens": 186
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-021",
+    "ck-020",
+    "ck-075"
+   ],
+   "gold_full_ranking": {
+    "ck-036": {
+     "rank": 33,
+     "score": 0.16518157720565796
+    }
+   },
+   "distractors_predicted": [
+    "ck-018",
+    "ck-020",
+    "ck-021"
+   ],
+   "distractors_in_top3": [
+    "ck-020",
+    "ck-021"
+   ],
+   "distractors_in_top10": [
+    "ck-018",
+    "ck-020",
+    "ck-021"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "near-duplicate",
+     "ck-013",
+     "ck-097",
+     0.8925
+    ],
+    [
+     "near-duplicate",
+     "ck-062",
+     "ck-093",
+     0.8863
+    ],
+    [
+     "near-duplicate",
+     "ck-013",
+     "ck-097",
+     0.8925
+    ]
+   ]
+  },
+  {
+   "id": "A3",
+   "category": "keyword trap",
+   "question": "Do I get anything extra while I'm holding the little wooden cone?",
+   "gold_chunk_ids": [
+    "ck-062",
+    "ck-093"
+   ],
+   "outcome": "candidate-pool miss",
+   "best_gold_rank": null,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 25,
+     "chunk_id": "ck-026",
+     "score": 0.18273673951625824,
+     "page": 6,
+     "section": "Specific Actions > Knights",
+     "n_tokens": 109
+    },
+    {
+     "rank": 2,
+     "faiss_id": 30,
+     "chunk_id": "ck-031",
+     "score": 0.16439767181873322,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 227
+    },
+    {
+     "rank": 3,
+     "faiss_id": 82,
+     "chunk_id": "ck-083",
+     "score": 0.15634198486804962,
+     "page": 16,
+     "section": "The Almanac > Constitution (1)",
+     "n_tokens": 72
+    },
+    {
+     "rank": 4,
+     "faiss_id": 21,
+     "chunk_id": "ck-022",
+     "score": 0.15386348962783813,
+     "page": 6,
+     "section": "Specific Actions > Trading and Building",
+     "n_tokens": 140
+    },
+    {
+     "rank": 5,
+     "faiss_id": 43,
+     "chunk_id": "ck-044",
+     "score": 0.1532006561756134,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 52
+    },
+    {
+     "rank": 6,
+     "faiss_id": 87,
+     "chunk_id": "ck-088",
+     "score": 0.15112361311912537,
+     "page": 17,
+     "section": "The Almanac > Spy (3)",
+     "n_tokens": 53
+    },
+    {
+     "rank": 7,
+     "faiss_id": 29,
+     "chunk_id": "ck-030",
+     "score": 0.1430985927581787,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 171
+    },
+    {
+     "rank": 8,
+     "faiss_id": 2,
+     "chunk_id": "ck-003",
+     "score": 0.14143267273902893,
+     "page": 2,
+     "section": "Game Components",
+     "n_tokens": 190
+    },
+    {
+     "rank": 9,
+     "faiss_id": 42,
+     "chunk_id": "ck-043",
+     "score": 0.14065147936344147,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 196
+    },
+    {
+     "rank": 10,
+     "faiss_id": 90,
+     "chunk_id": "ck-091",
+     "score": 0.13659004867076874,
+     "page": 17,
+     "section": "The Almanac > Commercial Harbor (2)",
+     "n_tokens": 129
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-026",
+    "ck-031",
+    "ck-083"
+   ],
+   "gold_full_ranking": {
+    "ck-062": {
+     "rank": 17,
+     "score": 0.12485566735267639
+    },
+    "ck-093": {
+     "rank": 48,
+     "score": 0.06533318012952805
+    }
+   },
+   "distractors_predicted": [
+    "ck-013",
+    "ck-097",
+    "ck-004"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-030",
+     "ck-031",
+     0.7562
+    ],
+    [
+     "overlap",
+     "ck-043",
+     "ck-044",
+     0.7386
+    ]
+   ]
+  },
+  {
+   "id": "A4",
+   "category": "keyword trap",
+   "question": "Do stronger soldiers need more grain to get ready for action?",
+   "gold_chunk_ids": [
+    "ck-027"
+   ],
+   "outcome": "candidate-pool miss",
+   "best_gold_rank": null,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 56,
+     "chunk_id": "ck-057",
+     "score": 0.2787246108055115,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 198
+    },
+    {
+     "rank": 2,
+     "faiss_id": 75,
+     "chunk_id": "ck-076",
+     "score": 0.2767897844314575,
+     "page": 14,
+     "section": "The Almanac > Irrigation (2)",
+     "n_tokens": 93
+    },
+    {
+     "rank": 3,
+     "faiss_id": 35,
+     "chunk_id": "ck-036",
+     "score": 0.2727096676826477,
+     "page": 7,
+     "section": "City Improvements",
+     "n_tokens": 159
+    },
+    {
+     "rank": 4,
+     "faiss_id": 46,
+     "chunk_id": "ck-047",
+     "score": 0.2560683786869049,
+     "page": 9,
+     "section": "Knights",
+     "n_tokens": 179
+    },
+    {
+     "rank": 5,
+     "faiss_id": 55,
+     "chunk_id": "ck-056",
+     "score": 0.24795910716056824,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Determine the Strength of Catan\u2019s Knights",
+     "n_tokens": 101
+    },
+    {
+     "rank": 6,
+     "faiss_id": 29,
+     "chunk_id": "ck-030",
+     "score": 0.2353018820285797,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 171
+    },
+    {
+     "rank": 7,
+     "faiss_id": 66,
+     "chunk_id": "ck-067",
+     "score": 0.23528927564620972,
+     "page": 13,
+     "section": "Nasty Variant for Experienced Players",
+     "n_tokens": 191
+    },
+    {
+     "rank": 8,
+     "faiss_id": 33,
+     "chunk_id": "ck-034",
+     "score": 0.22009189426898956,
+     "page": 7,
+     "section": "City Improvements",
+     "n_tokens": 174
+    },
+    {
+     "rank": 9,
+     "faiss_id": 53,
+     "chunk_id": "ck-054",
+     "score": 0.2165539264678955,
+     "page": 10,
+     "section": "Attack of the Barbarians!",
+     "n_tokens": 77
+    },
+    {
+     "rank": 10,
+     "faiss_id": 27,
+     "chunk_id": "ck-028",
+     "score": 0.2128608524799347,
+     "page": 6,
+     "section": "Specific Actions > Promoting a Knight",
+     "n_tokens": 182
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-057",
+    "ck-076",
+    "ck-036"
+   ],
+   "gold_full_ranking": {
+    "ck-027": {
+     "rank": 16,
+     "score": 0.19903136789798737
+    }
+   },
+   "distractors_predicted": [
+    "ck-028",
+    "ck-056",
+    "ck-047"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [
+    "ck-028",
+    "ck-056",
+    "ck-047"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": []
+  },
+  {
+   "id": "E1",
+   "category": "exception",
+   "question": "Can I ever get a mighty knight onto the board without having built the Fortress?",
+   "gold_chunk_ids": [
+    "ck-084"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 83,
+     "chunk_id": "ck-084",
+     "score": 0.5671193599700928,
+     "page": 16,
+     "section": "The Almanac > Deserter (2)",
+     "n_tokens": 207
+    },
+    {
+     "rank": 2,
+     "faiss_id": 85,
+     "chunk_id": "ck-086",
+     "score": 0.5337255001068115,
+     "page": 16,
+     "section": "The Almanac > Intrigue (2)",
+     "n_tokens": 125
+    },
+    {
+     "rank": 3,
+     "faiss_id": 48,
+     "chunk_id": "ck-049",
+     "score": 0.5163756012916565,
+     "page": 10,
+     "section": "Knights > Moving a Knight",
+     "n_tokens": 86
+    },
+    {
+     "rank": 4,
+     "faiss_id": 25,
+     "chunk_id": "ck-026",
+     "score": 0.5117896199226379,
+     "page": 6,
+     "section": "Specific Actions > Knights",
+     "n_tokens": 109
+    },
+    {
+     "rank": 5,
+     "faiss_id": 27,
+     "chunk_id": "ck-028",
+     "score": 0.5035597085952759,
+     "page": 6,
+     "section": "Specific Actions > Promoting a Knight",
+     "n_tokens": 182
+    },
+    {
+     "rank": 6,
+     "faiss_id": 26,
+     "chunk_id": "ck-027",
+     "score": 0.4734712541103363,
+     "page": 6,
+     "section": "Specific Actions > Activating a Knight",
+     "n_tokens": 117
+    },
+    {
+     "rank": 7,
+     "faiss_id": 80,
+     "chunk_id": "ck-081",
+     "score": 0.4711780250072479,
+     "page": 15,
+     "section": "The Almanac > Smith (2)",
+     "n_tokens": 96
+    },
+    {
+     "rank": 8,
+     "faiss_id": 44,
+     "chunk_id": "ck-045",
+     "score": 0.46748119592666626,
+     "page": 9,
+     "section": "Knights",
+     "n_tokens": 193
+    },
+    {
+     "rank": 9,
+     "faiss_id": 88,
+     "chunk_id": "ck-089",
+     "score": 0.46642208099365234,
+     "page": 17,
+     "section": "The Almanac > Warlord (2)",
+     "n_tokens": 63
+    },
+    {
+     "rank": 10,
+     "faiss_id": 46,
+     "chunk_id": "ck-047",
+     "score": 0.4650447368621826,
+     "page": 9,
+     "section": "Knights",
+     "n_tokens": 179
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-084",
+    "ck-086",
+    "ck-049"
+   ],
+   "gold_full_ranking": {
+    "ck-084": {
+     "rank": 1,
+     "score": 0.5671193599700928
+    }
+   },
+   "distractors_predicted": [
+    "ck-028",
+    "ck-036",
+    "ck-081"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [
+    "ck-028",
+    "ck-081"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": []
+  },
+  {
+   "id": "E2",
+   "category": "exception",
+   "question": "Do I need a knight of my own to displace an opponent's knight?",
+   "gold_chunk_ids": [
+    "ck-086"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 85,
+     "chunk_id": "ck-086",
+     "score": 0.7184240818023682,
+     "page": 16,
+     "section": "The Almanac > Intrigue (2)",
+     "n_tokens": 125
+    },
+    {
+     "rank": 2,
+     "faiss_id": 49,
+     "chunk_id": "ck-050",
+     "score": 0.7060454487800598,
+     "page": 10,
+     "section": "Knights > Displacing a Knight",
+     "n_tokens": 183
+    },
+    {
+     "rank": 3,
+     "faiss_id": 50,
+     "chunk_id": "ck-051",
+     "score": 0.7029606103897095,
+     "page": 10,
+     "section": "Knights > Displacing a Knight",
+     "n_tokens": 174
+    },
+    {
+     "rank": 4,
+     "faiss_id": 48,
+     "chunk_id": "ck-049",
+     "score": 0.606952428817749,
+     "page": 10,
+     "section": "Knights > Moving a Knight",
+     "n_tokens": 86
+    },
+    {
+     "rank": 5,
+     "faiss_id": 83,
+     "chunk_id": "ck-084",
+     "score": 0.5831514596939087,
+     "page": 16,
+     "section": "The Almanac > Deserter (2)",
+     "n_tokens": 207
+    },
+    {
+     "rank": 6,
+     "faiss_id": 26,
+     "chunk_id": "ck-027",
+     "score": 0.5554050803184509,
+     "page": 6,
+     "section": "Specific Actions > Activating a Knight",
+     "n_tokens": 117
+    },
+    {
+     "rank": 7,
+     "faiss_id": 67,
+     "chunk_id": "ck-068",
+     "score": 0.5327010750770569,
+     "page": 13,
+     "section": "Knight-Errant Variant",
+     "n_tokens": 63
+    },
+    {
+     "rank": 8,
+     "faiss_id": 25,
+     "chunk_id": "ck-026",
+     "score": 0.5224967002868652,
+     "page": 6,
+     "section": "Specific Actions > Knights",
+     "n_tokens": 109
+    },
+    {
+     "rank": 9,
+     "faiss_id": 52,
+     "chunk_id": "ck-053",
+     "score": 0.5205934047698975,
+     "page": 10,
+     "section": "Knights > Chasing Away the Robber",
+     "n_tokens": 102
+    },
+    {
+     "rank": 10,
+     "faiss_id": 27,
+     "chunk_id": "ck-028",
+     "score": 0.5195725560188293,
+     "page": 6,
+     "section": "Specific Actions > Promoting a Knight",
+     "n_tokens": 182
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-086",
+    "ck-050",
+    "ck-051"
+   ],
+   "gold_full_ranking": {
+    "ck-086": {
+     "rank": 1,
+     "score": 0.7184240818023682
+    }
+   },
+   "distractors_predicted": [
+    "ck-050",
+    "ck-051"
+   ],
+   "distractors_in_top3": [
+    "ck-050",
+    "ck-051"
+   ],
+   "distractors_in_top10": [
+    "ck-050",
+    "ck-051"
+   ],
+   "duplicate_notes_top3": [
+    [
+     "overlap",
+     "ck-050",
+     "ck-051",
+     0.8971
+    ]
+   ],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-050",
+     "ck-051",
+     0.8971
+    ]
+   ]
+  },
+  {
+   "id": "E3",
+   "category": "exception",
+   "question": "What if several players tie for the biggest knight army after we beat the barbarians?",
+   "gold_chunk_ids": [
+    "ck-059"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 58,
+     "chunk_id": "ck-059",
+     "score": 0.5690670609474182,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 184
+    },
+    {
+     "rank": 2,
+     "faiss_id": 56,
+     "chunk_id": "ck-057",
+     "score": 0.5649658441543579,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 198
+    },
+    {
+     "rank": 3,
+     "faiss_id": 66,
+     "chunk_id": "ck-067",
+     "score": 0.5614250302314758,
+     "page": 13,
+     "section": "Nasty Variant for Experienced Players",
+     "n_tokens": 191
+    },
+    {
+     "rank": 4,
+     "faiss_id": 55,
+     "chunk_id": "ck-056",
+     "score": 0.5360202193260193,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Determine the Strength of Catan\u2019s Knights",
+     "n_tokens": 101
+    },
+    {
+     "rank": 5,
+     "faiss_id": 57,
+     "chunk_id": "ck-058",
+     "score": 0.5142527222633362,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 192
+    },
+    {
+     "rank": 6,
+     "faiss_id": 44,
+     "chunk_id": "ck-045",
+     "score": 0.4717578887939453,
+     "page": 9,
+     "section": "Knights",
+     "n_tokens": 193
+    },
+    {
+     "rank": 7,
+     "faiss_id": 65,
+     "chunk_id": "ck-066",
+     "score": 0.46084851026535034,
+     "page": 13,
+     "section": "Seafarers of Catan Variant",
+     "n_tokens": 180
+    },
+    {
+     "rank": 8,
+     "faiss_id": 59,
+     "chunk_id": "ck-060",
+     "score": 0.4363803267478943,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Barbarians Return Home",
+     "n_tokens": 67
+    },
+    {
+     "rank": 9,
+     "faiss_id": 83,
+     "chunk_id": "ck-084",
+     "score": 0.4314958155155182,
+     "page": 16,
+     "section": "The Almanac > Deserter (2)",
+     "n_tokens": 207
+    },
+    {
+     "rank": 10,
+     "faiss_id": 46,
+     "chunk_id": "ck-047",
+     "score": 0.4208591878414154,
+     "page": 9,
+     "section": "Knights",
+     "n_tokens": 179
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-059",
+    "ck-057",
+    "ck-067"
+   ],
+   "gold_full_ranking": {
+    "ck-059": {
+     "rank": 1,
+     "score": 0.5690670609474182
+    }
+   },
+   "distractors_predicted": [
+    "ck-057",
+    "ck-058"
+   ],
+   "distractors_in_top3": [
+    "ck-057"
+   ],
+   "distractors_in_top10": [
+    "ck-057",
+    "ck-058"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-057",
+     "ck-058",
+     0.8834
+    ]
+   ]
+  },
+  {
+   "id": "E4",
+   "category": "exception",
+   "question": "Which production numbers am I not allowed to swap when I move number tokens around?",
+   "gold_chunk_ids": [
+    "ck-075"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 74,
+     "chunk_id": "ck-075",
+     "score": 0.5480630993843079,
+     "page": 14,
+     "section": "The Almanac > Inventor (2)",
+     "n_tokens": 157
+    },
+    {
+     "rank": 2,
+     "faiss_id": 7,
+     "chunk_id": "ck-008",
+     "score": 0.2980495095252991,
+     "page": 3,
+     "section": "New Game Pieces > Knights",
+     "n_tokens": 56
+    },
+    {
+     "rank": 3,
+     "faiss_id": 93,
+     "chunk_id": "ck-094",
+     "score": 0.2827259302139282,
+     "page": 18,
+     "section": "The Almanac > Merchant Fleet (2)",
+     "n_tokens": 86
+    },
+    {
+     "rank": 4,
+     "faiss_id": 90,
+     "chunk_id": "ck-091",
+     "score": 0.24054129421710968,
+     "page": 17,
+     "section": "The Almanac > Commercial Harbor (2)",
+     "n_tokens": 129
+    },
+    {
+     "rank": 5,
+     "faiss_id": 68,
+     "chunk_id": "ck-069",
+     "score": 0.2340010553598404,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 117
+    },
+    {
+     "rank": 6,
+     "faiss_id": 35,
+     "chunk_id": "ck-036",
+     "score": 0.2305673360824585,
+     "page": 7,
+     "section": "City Improvements",
+     "n_tokens": 159
+    },
+    {
+     "rank": 7,
+     "faiss_id": 30,
+     "chunk_id": "ck-031",
+     "score": 0.22561940550804138,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 227
+    },
+    {
+     "rank": 8,
+     "faiss_id": 92,
+     "chunk_id": "ck-093",
+     "score": 0.20855054259300232,
+     "page": 17,
+     "section": "The Almanac > Merchant (6)",
+     "n_tokens": 211
+    },
+    {
+     "rank": 9,
+     "faiss_id": 69,
+     "chunk_id": "ck-070",
+     "score": 0.20432765781879425,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 118
+    },
+    {
+     "rank": 10,
+     "faiss_id": 20,
+     "chunk_id": "ck-021",
+     "score": 0.19748453795909882,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 180
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-075",
+    "ck-008",
+    "ck-094"
+   ],
+   "gold_full_ranking": {
+    "ck-075": {
+     "rank": 1,
+     "score": 0.5480630993843079
+    }
+   },
+   "distractors_predicted": [
+    "ck-097",
+    "ck-013"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-069",
+     "ck-070",
+     0.8024
+    ]
+   ]
+  },
+  {
+   "id": "N1",
+   "category": "negation/constraint",
+   "question": "Can I use two cards that cut the price of one city improvement on the same upgrade?",
+   "gold_chunk_ids": [
+    "ck-073"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 72,
+     "chunk_id": "ck-073",
+     "score": 0.6026531457901001,
+     "page": 14,
+     "section": "The Almanac > Crane (2)",
+     "n_tokens": 101
+    },
+    {
+     "rank": 2,
+     "faiss_id": 33,
+     "chunk_id": "ck-034",
+     "score": 0.4796542823314667,
+     "page": 7,
+     "section": "City Improvements",
+     "n_tokens": 174
+    },
+    {
+     "rank": 3,
+     "faiss_id": 31,
+     "chunk_id": "ck-032",
+     "score": 0.4615795910358429,
+     "page": 7,
+     "section": "City Improvements",
+     "n_tokens": 160
+    },
+    {
+     "rank": 4,
+     "faiss_id": 60,
+     "chunk_id": "ck-061",
+     "score": 0.4596937298774719,
+     "page": 12,
+     "section": "Attack of the Barbarians! > Losing Your Last City",
+     "n_tokens": 97
+    },
+    {
+     "rank": 5,
+     "faiss_id": 79,
+     "chunk_id": "ck-080",
+     "score": 0.45703935623168945,
+     "page": 15,
+     "section": "The Almanac > Road Building (2)",
+     "n_tokens": 82
+    },
+    {
+     "rank": 6,
+     "faiss_id": 76,
+     "chunk_id": "ck-077",
+     "score": 0.45008814334869385,
+     "page": 14,
+     "section": "The Almanac > Medicine (2)",
+     "n_tokens": 48
+    },
+    {
+     "rank": 7,
+     "faiss_id": 34,
+     "chunk_id": "ck-035",
+     "score": 0.44680365920066833,
+     "page": 7,
+     "section": "City Improvements",
+     "n_tokens": 145
+    },
+    {
+     "rank": 8,
+     "faiss_id": 73,
+     "chunk_id": "ck-074",
+     "score": 0.4450496733188629,
+     "page": 14,
+     "section": "The Almanac > Engineer (1)",
+     "n_tokens": 77
+    },
+    {
+     "rank": 9,
+     "faiss_id": 9,
+     "chunk_id": "ck-010",
+     "score": 0.42660748958587646,
+     "page": 3,
+     "section": "New Game Pieces > City Walls",
+     "n_tokens": 167
+    },
+    {
+     "rank": 10,
+     "faiss_id": 22,
+     "chunk_id": "ck-023",
+     "score": 0.42311370372772217,
+     "page": 6,
+     "section": "Specific Actions > City Walls",
+     "n_tokens": 173
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-073",
+    "ck-034",
+    "ck-032"
+   ],
+   "gold_full_ranking": {
+    "ck-073": {
+     "rank": 1,
+     "score": 0.6026531457901001
+    }
+   },
+   "distractors_predicted": [
+    "ck-077",
+    "ck-080"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [
+    "ck-077",
+    "ck-080"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-034",
+     "ck-035",
+     0.7192
+    ],
+    [
+     "near-duplicate",
+     "ck-010",
+     "ck-023",
+     0.9251
+    ]
+   ]
+  },
+  {
+   "id": "N2",
+   "category": "negation/constraint",
+   "question": "Can I raid the hand of a player who is behind me on points?",
+   "gold_chunk_ids": [
+    "ck-092"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 3,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 87,
+     "chunk_id": "ck-088",
+     "score": 0.398966521024704,
+     "page": 17,
+     "section": "The Almanac > Spy (3)",
+     "n_tokens": 53
+    },
+    {
+     "rank": 2,
+     "faiss_id": 82,
+     "chunk_id": "ck-083",
+     "score": 0.35389840602874756,
+     "page": 16,
+     "section": "The Almanac > Constitution (1)",
+     "n_tokens": 72
+    },
+    {
+     "rank": 3,
+     "faiss_id": 91,
+     "chunk_id": "ck-092",
+     "score": 0.3317544162273407,
+     "page": 17,
+     "section": "The Almanac > Master Merchant (2)",
+     "n_tokens": 70
+    },
+    {
+     "rank": 4,
+     "faiss_id": 78,
+     "chunk_id": "ck-079",
+     "score": 0.30276232957839966,
+     "page": 15,
+     "section": "The Almanac > Printer (1)",
+     "n_tokens": 72
+    },
+    {
+     "rank": 5,
+     "faiss_id": 85,
+     "chunk_id": "ck-086",
+     "score": 0.29111719131469727,
+     "page": 16,
+     "section": "The Almanac > Intrigue (2)",
+     "n_tokens": 125
+    },
+    {
+     "rank": 6,
+     "faiss_id": 42,
+     "chunk_id": "ck-043",
+     "score": 0.28688493371009827,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 196
+    },
+    {
+     "rank": 7,
+     "faiss_id": 43,
+     "chunk_id": "ck-044",
+     "score": 0.2643324136734009,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 52
+    },
+    {
+     "rank": 8,
+     "faiss_id": 86,
+     "chunk_id": "ck-087",
+     "score": 0.23367942869663239,
+     "page": 17,
+     "section": "The Almanac > Saboteur (2)",
+     "n_tokens": 97
+    },
+    {
+     "rank": 9,
+     "faiss_id": 81,
+     "chunk_id": "ck-082",
+     "score": 0.22677826881408691,
+     "page": 16,
+     "section": "The Almanac > Bishop (2)",
+     "n_tokens": 107
+    },
+    {
+     "rank": 10,
+     "faiss_id": 50,
+     "chunk_id": "ck-051",
+     "score": 0.22415772080421448,
+     "page": 10,
+     "section": "Knights > Displacing a Knight",
+     "n_tokens": 174
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-088",
+    "ck-083",
+    "ck-092"
+   ],
+   "gold_full_ranking": {
+    "ck-092": {
+     "rank": 3,
+     "score": 0.3317544162273407
+    }
+   },
+   "distractors_predicted": [
+    "ck-090",
+    "ck-088",
+    "ck-087"
+   ],
+   "distractors_in_top3": [
+    "ck-088"
+   ],
+   "distractors_in_top10": [
+    "ck-088",
+    "ck-087"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-043",
+     "ck-044",
+     0.7386
+    ]
+   ]
+  },
+  {
+   "id": "N3",
+   "category": "negation/constraint",
+   "question": "Do all of the players have to agree before one of the optional rules is used?",
+   "gold_chunk_ids": [
+    "ck-064"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 63,
+     "chunk_id": "ck-064",
+     "score": 0.7921833992004395,
+     "page": 13,
+     "section": "Variants and Optional Rules",
+     "n_tokens": 27
+    },
+    {
+     "rank": 2,
+     "faiss_id": 41,
+     "chunk_id": "ck-042",
+     "score": 0.3252740204334259,
+     "page": 9,
+     "section": "Progress Cards > Acquiring Progress Cards",
+     "n_tokens": 113
+    },
+    {
+     "rank": 3,
+     "faiss_id": 68,
+     "chunk_id": "ck-069",
+     "score": 0.3171752095222473,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 117
+    },
+    {
+     "rank": 4,
+     "faiss_id": 89,
+     "chunk_id": "ck-090",
+     "score": 0.30997025966644287,
+     "page": 17,
+     "section": "The Almanac > Wedding (2)",
+     "n_tokens": 84
+    },
+    {
+     "rank": 5,
+     "faiss_id": 69,
+     "chunk_id": "ck-070",
+     "score": 0.27921801805496216,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 118
+    },
+    {
+     "rank": 6,
+     "faiss_id": 66,
+     "chunk_id": "ck-067",
+     "score": 0.25214439630508423,
+     "page": 13,
+     "section": "Nasty Variant for Experienced Players",
+     "n_tokens": 191
+    },
+    {
+     "rank": 7,
+     "faiss_id": 86,
+     "chunk_id": "ck-087",
+     "score": 0.2490549385547638,
+     "page": 17,
+     "section": "The Almanac > Saboteur (2)",
+     "n_tokens": 97
+    },
+    {
+     "rank": 8,
+     "faiss_id": 0,
+     "chunk_id": "ck-001",
+     "score": 0.23393359780311584,
+     "page": 2,
+     "section": "Introduction",
+     "n_tokens": 170
+    },
+    {
+     "rank": 9,
+     "faiss_id": 62,
+     "chunk_id": "ck-063",
+     "score": 0.224640354514122,
+     "page": 12,
+     "section": "Ending the Game",
+     "n_tokens": 49
+    },
+    {
+     "rank": 10,
+     "faiss_id": 43,
+     "chunk_id": "ck-044",
+     "score": 0.22285719215869904,
+     "page": 9,
+     "section": "Progress Cards > Playing Progress Cards",
+     "n_tokens": 52
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-064",
+    "ck-042",
+    "ck-069"
+   ],
+   "gold_full_ranking": {
+    "ck-064": {
+     "rank": 1,
+     "score": 0.7921833992004395
+    }
+   },
+   "distractors_predicted": [
+    "ck-065",
+    "ck-066",
+    "ck-069"
+   ],
+   "distractors_in_top3": [
+    "ck-069"
+   ],
+   "distractors_in_top10": [
+    "ck-069"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-069",
+     "ck-070",
+     0.8024
+    ]
+   ]
+  },
+  {
+   "id": "N4",
+   "category": "negation/constraint",
+   "question": "Can the robber stop me from using the merchant's cheaper trades?",
+   "gold_chunk_ids": [
+    "ck-093"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 92,
+     "chunk_id": "ck-093",
+     "score": 0.5265951156616211,
+     "page": 17,
+     "section": "The Almanac > Merchant (6)",
+     "n_tokens": 211
+    },
+    {
+     "rank": 2,
+     "faiss_id": 91,
+     "chunk_id": "ck-092",
+     "score": 0.4552295506000519,
+     "page": 17,
+     "section": "The Almanac > Master Merchant (2)",
+     "n_tokens": 70
+    },
+    {
+     "rank": 3,
+     "faiss_id": 81,
+     "chunk_id": "ck-082",
+     "score": 0.4493790864944458,
+     "page": 16,
+     "section": "The Almanac > Bishop (2)",
+     "n_tokens": 107
+    },
+    {
+     "rank": 4,
+     "faiss_id": 61,
+     "chunk_id": "ck-062",
+     "score": 0.4390406012535095,
+     "page": 12,
+     "section": "The Merchant",
+     "n_tokens": 190
+    },
+    {
+     "rank": 5,
+     "faiss_id": 30,
+     "chunk_id": "ck-031",
+     "score": 0.41916513442993164,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 227
+    },
+    {
+     "rank": 6,
+     "faiss_id": 93,
+     "chunk_id": "ck-094",
+     "score": 0.40833327174186707,
+     "page": 18,
+     "section": "The Almanac > Merchant Fleet (2)",
+     "n_tokens": 86
+    },
+    {
+     "rank": 7,
+     "faiss_id": 29,
+     "chunk_id": "ck-030",
+     "score": 0.394044429063797,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 171
+    },
+    {
+     "rank": 8,
+     "faiss_id": 20,
+     "chunk_id": "ck-021",
+     "score": 0.3842790126800537,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 180
+    },
+    {
+     "rank": 9,
+     "faiss_id": 51,
+     "chunk_id": "ck-052",
+     "score": 0.3724881410598755,
+     "page": 10,
+     "section": "Knights > Chasing Away the Robber",
+     "n_tokens": 123
+    },
+    {
+     "rank": 10,
+     "faiss_id": 52,
+     "chunk_id": "ck-053",
+     "score": 0.3463670611381531,
+     "page": 10,
+     "section": "Knights > Chasing Away the Robber",
+     "n_tokens": 102
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-093",
+    "ck-092",
+    "ck-082"
+   ],
+   "gold_full_ranking": {
+    "ck-093": {
+     "rank": 1,
+     "score": 0.5265951156616211
+    }
+   },
+   "distractors_predicted": [
+    "ck-062",
+    "ck-091"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [
+    "ck-062"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-030",
+     "ck-031",
+     0.7562
+    ],
+    [
+     "overlap",
+     "ck-052",
+     "ck-053",
+     0.8514
+    ],
+    [
+     "near-duplicate",
+     "ck-062",
+     "ck-093",
+     0.8863
+    ]
+   ]
+  },
+  {
+   "id": "O1",
+   "category": "other (buried detail)",
+   "question": "With two cities that each have a wall, how many cards can I keep when a seven comes up?",
+   "gold_chunk_ids": [
+    "ck-023"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 22,
+     "chunk_id": "ck-023",
+     "score": 0.7094967365264893,
+     "page": 6,
+     "section": "Specific Actions > City Walls",
+     "n_tokens": 173
+    },
+    {
+     "rank": 2,
+     "faiss_id": 73,
+     "chunk_id": "ck-074",
+     "score": 0.6328566074371338,
+     "page": 14,
+     "section": "The Almanac > Engineer (1)",
+     "n_tokens": 77
+    },
+    {
+     "rank": 3,
+     "faiss_id": 9,
+     "chunk_id": "ck-010",
+     "score": 0.6302129626274109,
+     "page": 3,
+     "section": "New Game Pieces > City Walls",
+     "n_tokens": 167
+    },
+    {
+     "rank": 4,
+     "faiss_id": 77,
+     "chunk_id": "ck-078",
+     "score": 0.431427925825119,
+     "page": 15,
+     "section": "The Almanac > Mining (2)",
+     "n_tokens": 94
+    },
+    {
+     "rank": 5,
+     "faiss_id": 20,
+     "chunk_id": "ck-021",
+     "score": 0.4142841100692749,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 180
+    },
+    {
+     "rank": 6,
+     "faiss_id": 76,
+     "chunk_id": "ck-077",
+     "score": 0.4133114516735077,
+     "page": 14,
+     "section": "The Almanac > Medicine (2)",
+     "n_tokens": 48
+    },
+    {
+     "rank": 7,
+     "faiss_id": 13,
+     "chunk_id": "ck-014",
+     "score": 0.4058131277561188,
+     "page": 4,
+     "section": "Setting Up the Game",
+     "n_tokens": 51
+    },
+    {
+     "rank": 8,
+     "faiss_id": 97,
+     "chunk_id": "ck-098",
+     "score": 0.40425312519073486,
+     "page": 20,
+     "section": "Setting Up the Game",
+     "n_tokens": 141
+    },
+    {
+     "rank": 9,
+     "faiss_id": 60,
+     "chunk_id": "ck-061",
+     "score": 0.4034702777862549,
+     "page": 12,
+     "section": "Attack of the Barbarians! > Losing Your Last City",
+     "n_tokens": 97
+    },
+    {
+     "rank": 10,
+     "faiss_id": 21,
+     "chunk_id": "ck-022",
+     "score": 0.3954479396343231,
+     "page": 6,
+     "section": "Specific Actions > Trading and Building",
+     "n_tokens": 140
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-023",
+    "ck-074",
+    "ck-010"
+   ],
+   "gold_full_ranking": {
+    "ck-023": {
+     "rank": 1,
+     "score": 0.7094967365264893
+    }
+   },
+   "distractors_predicted": [
+    "ck-010",
+    "ck-074",
+    "ck-021"
+   ],
+   "distractors_in_top3": [
+    "ck-010",
+    "ck-074"
+   ],
+   "distractors_in_top10": [
+    "ck-010",
+    "ck-074",
+    "ck-021"
+   ],
+   "duplicate_notes_top3": [
+    [
+     "near-duplicate",
+     "ck-010",
+     "ck-023",
+     0.9251
+    ]
+   ],
+   "duplicate_notes_top10": [
+    [
+     "near-duplicate",
+     "ck-010",
+     "ck-023",
+     0.9251
+    ]
+   ]
+  },
+  {
+   "id": "O2",
+   "category": "other (buried detail)",
+   "question": "How many ship faces are on the event die?",
+   "gold_chunk_ids": [
+    "ck-004"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 3,
+     "chunk_id": "ck-004",
+     "score": 0.49256858229637146,
+     "page": 2,
+     "section": "Game Components",
+     "n_tokens": 116
+    },
+    {
+     "rank": 2,
+     "faiss_id": 69,
+     "chunk_id": "ck-070",
+     "score": 0.420284241437912,
+     "page": 13,
+     "section": "Easy Start Variant",
+     "n_tokens": 118
+    },
+    {
+     "rank": 3,
+     "faiss_id": 17,
+     "chunk_id": "ck-018",
+     "score": 0.37384676933288574,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 154
+    },
+    {
+     "rank": 4,
+     "faiss_id": 40,
+     "chunk_id": "ck-041",
+     "score": 0.3635571599006653,
+     "page": 9,
+     "section": "Progress Cards > Acquiring Progress Cards",
+     "n_tokens": 185
+    },
+    {
+     "rank": 5,
+     "faiss_id": 71,
+     "chunk_id": "ck-072",
+     "score": 0.36179035902023315,
+     "page": 14,
+     "section": "The Almanac > Alchemist (2)",
+     "n_tokens": 112
+    },
+    {
+     "rank": 6,
+     "faiss_id": 96,
+     "chunk_id": "ck-097",
+     "score": 0.354097843170166,
+     "page": 20,
+     "section": "Setting Up the Game",
+     "n_tokens": 186
+    },
+    {
+     "rank": 7,
+     "faiss_id": 41,
+     "chunk_id": "ck-042",
+     "score": 0.3092277944087982,
+     "page": 9,
+     "section": "Progress Cards > Acquiring Progress Cards",
+     "n_tokens": 113
+    },
+    {
+     "rank": 8,
+     "faiss_id": 12,
+     "chunk_id": "ck-013",
+     "score": 0.30730825662612915,
+     "page": 4,
+     "section": "Setting Up the Game",
+     "n_tokens": 187
+    },
+    {
+     "rank": 9,
+     "faiss_id": 53,
+     "chunk_id": "ck-054",
+     "score": 0.2984355688095093,
+     "page": 10,
+     "section": "Attack of the Barbarians!",
+     "n_tokens": 77
+    },
+    {
+     "rank": 10,
+     "faiss_id": 2,
+     "chunk_id": "ck-003",
+     "score": 0.29694893956184387,
+     "page": 2,
+     "section": "Game Components",
+     "n_tokens": 190
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-004",
+    "ck-070",
+    "ck-018"
+   ],
+   "gold_full_ranking": {
+    "ck-004": {
+     "rank": 1,
+     "score": 0.49256858229637146
+    }
+   },
+   "distractors_predicted": [
+    "ck-018",
+    "ck-019",
+    "ck-054"
+   ],
+   "distractors_in_top3": [
+    "ck-018"
+   ],
+   "distractors_in_top10": [
+    "ck-018",
+    "ck-054"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-003",
+     "ck-004",
+     0.5305
+    ],
+    [
+     "overlap",
+     "ck-041",
+     "ck-042",
+     0.7082
+    ],
+    [
+     "near-duplicate",
+     "ck-013",
+     "ck-097",
+     0.8925
+    ],
+    [
+     "near-duplicate",
+     "ck-013",
+     "ck-097",
+     0.8925
+    ]
+   ]
+  },
+  {
+   "id": "O3",
+   "category": "other (buried detail)",
+   "question": "How strong are the barbarians when they land?",
+   "gold_chunk_ids": [
+    "ck-055"
+   ],
+   "outcome": "success",
+   "best_gold_rank": 1,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 54,
+     "chunk_id": "ck-055",
+     "score": 0.5706629753112793,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Determine the Barbarians\u2019 Strength",
+     "n_tokens": 50
+    },
+    {
+     "rank": 2,
+     "faiss_id": 56,
+     "chunk_id": "ck-057",
+     "score": 0.569865345954895,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 198
+    },
+    {
+     "rank": 3,
+     "faiss_id": 53,
+     "chunk_id": "ck-054",
+     "score": 0.5250977277755737,
+     "page": 10,
+     "section": "Attack of the Barbarians!",
+     "n_tokens": 77
+    },
+    {
+     "rank": 4,
+     "faiss_id": 59,
+     "chunk_id": "ck-060",
+     "score": 0.5210059881210327,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Barbarians Return Home",
+     "n_tokens": 67
+    },
+    {
+     "rank": 5,
+     "faiss_id": 57,
+     "chunk_id": "ck-058",
+     "score": 0.5088804960250854,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Compare Attackers\u2019 and Defenders\u2019 Strengths",
+     "n_tokens": 192
+    },
+    {
+     "rank": 6,
+     "faiss_id": 23,
+     "chunk_id": "ck-024",
+     "score": 0.4972344636917114,
+     "page": 6,
+     "section": "Specific Actions > City Walls",
+     "n_tokens": 39
+    },
+    {
+     "rank": 7,
+     "faiss_id": 55,
+     "chunk_id": "ck-056",
+     "score": 0.4702494144439697,
+     "page": 11,
+     "section": "Attack of the Barbarians! > Determine the Strength of Catan\u2019s Knights",
+     "n_tokens": 101
+    },
+    {
+     "rank": 8,
+     "faiss_id": 17,
+     "chunk_id": "ck-018",
+     "score": 0.4594932496547699,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 154
+    },
+    {
+     "rank": 9,
+     "faiss_id": 1,
+     "chunk_id": "ck-002",
+     "score": 0.4552958011627197,
+     "page": 2,
+     "section": "Introduction",
+     "n_tokens": 60
+    },
+    {
+     "rank": 10,
+     "faiss_id": 66,
+     "chunk_id": "ck-067",
+     "score": 0.41879570484161377,
+     "page": 13,
+     "section": "Nasty Variant for Experienced Players",
+     "n_tokens": 191
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-055",
+    "ck-057",
+    "ck-054"
+   ],
+   "gold_full_ranking": {
+    "ck-055": {
+     "rank": 1,
+     "score": 0.5706629753112793
+    }
+   },
+   "distractors_predicted": [
+    "ck-056",
+    "ck-054",
+    "ck-058"
+   ],
+   "distractors_in_top3": [
+    "ck-054"
+   ],
+   "distractors_in_top10": [
+    "ck-056",
+    "ck-054",
+    "ck-058"
+   ],
+   "duplicate_notes_top3": [],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-057",
+     "ck-058",
+     0.8834
+    ]
+   ]
+  },
+  {
+   "id": "O4",
+   "category": "other (buried detail)",
+   "question": "Can a settlement next to a pasture hex give me cloth?",
+   "gold_chunk_ids": [
+    "ck-030"
+   ],
+   "outcome": "retrieval stumble",
+   "best_gold_rank": 6,
+   "top10": [
+    {
+     "rank": 1,
+     "faiss_id": 92,
+     "chunk_id": "ck-093",
+     "score": 0.3979615271091461,
+     "page": 17,
+     "section": "The Almanac > Merchant (6)",
+     "n_tokens": 211
+    },
+    {
+     "rank": 2,
+     "faiss_id": 61,
+     "chunk_id": "ck-062",
+     "score": 0.3709997534751892,
+     "page": 12,
+     "section": "The Merchant",
+     "n_tokens": 190
+    },
+    {
+     "rank": 3,
+     "faiss_id": 20,
+     "chunk_id": "ck-021",
+     "score": 0.36082902550697327,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 180
+    },
+    {
+     "rank": 4,
+     "faiss_id": 75,
+     "chunk_id": "ck-076",
+     "score": 0.35356494784355164,
+     "page": 14,
+     "section": "The Almanac > Irrigation (2)",
+     "n_tokens": 93
+    },
+    {
+     "rank": 5,
+     "faiss_id": 19,
+     "chunk_id": "ck-020",
+     "score": 0.346020370721817,
+     "page": 5,
+     "section": "Specific Actions > Dice Rolls",
+     "n_tokens": 168
+    },
+    {
+     "rank": 6,
+     "faiss_id": 29,
+     "chunk_id": "ck-030",
+     "score": 0.3438296914100647,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 171
+    },
+    {
+     "rank": 7,
+     "faiss_id": 11,
+     "chunk_id": "ck-012",
+     "score": 0.32830357551574707,
+     "page": 3,
+     "section": "Setting Up the Island of Catan > Hexagon Tiles and the Barbarian Tile",
+     "n_tokens": 101
+    },
+    {
+     "rank": 8,
+     "faiss_id": 23,
+     "chunk_id": "ck-024",
+     "score": 0.3203669488430023,
+     "page": 6,
+     "section": "Specific Actions > City Walls",
+     "n_tokens": 39
+    },
+    {
+     "rank": 9,
+     "faiss_id": 65,
+     "chunk_id": "ck-066",
+     "score": 0.3133048415184021,
+     "page": 13,
+     "section": "Seafarers of Catan Variant",
+     "n_tokens": 180
+    },
+    {
+     "rank": 10,
+     "faiss_id": 30,
+     "chunk_id": "ck-031",
+     "score": 0.3122228682041168,
+     "page": 7,
+     "section": "Commodities",
+     "n_tokens": 227
+    }
+   ],
+   "top3_chunk_ids": [
+    "ck-093",
+    "ck-062",
+    "ck-021"
+   ],
+   "gold_full_ranking": {
+    "ck-030": {
+     "rank": 6,
+     "score": 0.3438296914100647
+    }
+   },
+   "distractors_predicted": [
+    "ck-003",
+    "ck-020",
+    "ck-031"
+   ],
+   "distractors_in_top3": [],
+   "distractors_in_top10": [
+    "ck-020",
+    "ck-031"
+   ],
+   "duplicate_notes_top3": [
+    [
+     "near-duplicate",
+     "ck-062",
+     "ck-093",
+     0.8863
+    ]
+   ],
+   "duplicate_notes_top10": [
+    [
+     "overlap",
+     "ck-030",
+     "ck-031",
+     0.7562
+    ],
+    [
+     "near-duplicate",
+     "ck-062",
+     "ck-093",
+     0.8863
+    ]
+   ]
+  }
+ ]
+}

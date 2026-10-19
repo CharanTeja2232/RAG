@@ -1,0 +1,3208 @@
+{
+ "stage": "N5 re-ranked (Bi-Encoder Top 10 -> Cross-Encoder -> Top 3)",
+ "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+ "ce_max_seq_length": 512,
+ "scores": "Cross-Encoder raw logits (Identity activation); NOT comparable with Bi-Encoder cosines; ties keep the baseline order",
+ "baseline_file_sha256": "c697c05d64304be40714750070aaba022f0540da347530d44f78d1a46f7c137d",
+ "corpus_sha256": "795fb2a6e043a28dc39d01e2db30d4b05d74ca1535df4ca7519d386b15f0fc92",
+ "preregistration_sha256": "cb7a05a13b16fd0aacbe310e7903df4f5ee34137d3cac3ebf85714ec197ace33",
+ "overlay_v1_1_sha256": "180c80dee8cf63207866cea103ec3c7c0e5dbeb80c9fd10d06b7e0460b8ab9ea",
+ "k_init": 10,
+ "k_final": 3,
+ "queries": [
+  {
+   "id": "A1",
+   "category": "keyword trap",
+   "question": "Which risk assessment orientation begins with the consequences we care about and our most critical assets, rather than with attackers or weaknesses?",
+   "gold_chunk_ids": [
+    "nt-063"
+   ],
+   "baseline_top10": [
+    "nt-064",
+    "nt-020",
+    "nt-063",
+    "nt-006",
+    "nt-117",
+    "nt-124",
+    "nt-238",
+    "nt-069",
+    "nt-129",
+    "nt-039"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-064",
+     "ce_logit": 2.5026779174804688,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-063",
+     "ce_logit": 2.124648332595825,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 7,
+     "rank_shift": 4,
+     "chunk_id": "nt-238",
+     "ce_logit": -3.4425384998321533,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 5,
+     "rank_shift": 1,
+     "chunk_id": "nt-117",
+     "ce_logit": -4.0154924392700195,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 4,
+     "rank_shift": -1,
+     "chunk_id": "nt-006",
+     "ce_logit": -4.2201690673828125,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 2,
+     "rank_shift": -4,
+     "chunk_id": "nt-020",
+     "ce_logit": -5.109910011291504,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 6,
+     "rank_shift": -1,
+     "chunk_id": "nt-124",
+     "ce_logit": -5.297433853149414,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 9,
+     "rank_shift": 1,
+     "chunk_id": "nt-129",
+     "ce_logit": -5.702611923217773,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-069",
+     "ce_logit": -6.748288154602051,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-039",
+     "ce_logit": -8.62349796295166,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-064",
+    "nt-063",
+    "nt-238"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 2,
+    "gold_ranks": {
+     "nt-063": 2
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "A2",
+   "category": "keyword trap",
+   "question": "Which term describes different experts arriving at the same results from the same data?",
+   "gold_chunk_ids": [
+    "nt-235"
+   ],
+   "baseline_top10": [
+    "nt-235",
+    "nt-059",
+    "nt-062",
+    "nt-234",
+    "nt-057",
+    "nt-060",
+    "nt-207",
+    "nt-158",
+    "nt-154",
+    "nt-111"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-235",
+     "ce_logit": 6.55557918548584,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 6,
+     "rank_shift": 4,
+     "chunk_id": "nt-060",
+     "ce_logit": -3.3384194374084473,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-059",
+     "ce_logit": -7.238138198852539,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 5,
+     "rank_shift": 1,
+     "chunk_id": "nt-057",
+     "ce_logit": -7.934425354003906,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 9,
+     "rank_shift": 4,
+     "chunk_id": "nt-154",
+     "ce_logit": -8.83381175994873,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 8,
+     "rank_shift": 2,
+     "chunk_id": "nt-158",
+     "ce_logit": -9.58176040649414,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 3,
+     "rank_shift": -4,
+     "chunk_id": "nt-062",
+     "ce_logit": -9.746122360229492,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 7,
+     "rank_shift": -1,
+     "chunk_id": "nt-207",
+     "ce_logit": -9.897557258605957,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 4,
+     "rank_shift": -5,
+     "chunk_id": "nt-234",
+     "ce_logit": -9.951723098754883,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-111",
+     "ce_logit": -11.10011100769043,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-235",
+    "nt-060",
+    "nt-059"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-235": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "A3",
+   "category": "keyword trap",
+   "question": "What do you call a safeguard used in place of a recommended baseline control that still gives comparable protection?",
+   "gold_chunk_ids": [
+    "nt-185"
+   ],
+   "baseline_top10": [
+    "nt-185",
+    "nt-275",
+    "nt-270",
+    "nt-274",
+    "nt-255",
+    "nt-085",
+    "nt-281",
+    "nt-257",
+    "nt-276",
+    "nt-258"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-185",
+     "ce_logit": 5.607154369354248,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 10,
+     "rank_shift": 8,
+     "chunk_id": "nt-258",
+     "ce_logit": -3.068148136138916,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 5,
+     "rank_shift": 2,
+     "chunk_id": "nt-255",
+     "ce_logit": -3.13309383392334,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 2,
+     "rank_shift": -2,
+     "chunk_id": "nt-275",
+     "ce_logit": -3.5106301307678223,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 9,
+     "rank_shift": 4,
+     "chunk_id": "nt-276",
+     "ce_logit": -4.535429000854492,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 3,
+     "rank_shift": -3,
+     "chunk_id": "nt-270",
+     "ce_logit": -4.931942462921143,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-281",
+     "ce_logit": -4.9529643058776855,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 4,
+     "rank_shift": -4,
+     "chunk_id": "nt-274",
+     "ce_logit": -5.979739665985107,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 6,
+     "rank_shift": -3,
+     "chunk_id": "nt-085",
+     "ce_logit": -7.663582801818848,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 8,
+     "rank_shift": -2,
+     "chunk_id": "nt-257",
+     "ce_logit": -7.839892864227295,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-185",
+    "nt-258",
+    "nt-255"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-185": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "A4",
+   "category": "keyword trap",
+   "question": "Can something about an organization's environment, such as a system with no outside network connection, make a successful attack less likely?",
+   "gold_chunk_ids": [
+    "nt-040"
+   ],
+   "baseline_top10": [
+    "nt-277",
+    "nt-038",
+    "nt-283",
+    "nt-033",
+    "nt-034",
+    "nt-040",
+    "nt-037",
+    "nt-041",
+    "nt-032",
+    "nt-043"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 6,
+     "rank_shift": 5,
+     "chunk_id": "nt-040",
+     "ce_logit": 0.8221866488456726,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 8,
+     "rank_shift": 6,
+     "chunk_id": "nt-041",
+     "ce_logit": -4.761089324951172,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 10,
+     "rank_shift": 7,
+     "chunk_id": "nt-043",
+     "ce_logit": -5.463927268981934,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 9,
+     "rank_shift": 5,
+     "chunk_id": "nt-032",
+     "ce_logit": -6.139006614685059,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 7,
+     "rank_shift": 2,
+     "chunk_id": "nt-037",
+     "ce_logit": -6.374588966369629,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 1,
+     "rank_shift": -5,
+     "chunk_id": "nt-277",
+     "ce_logit": -7.791145324707031,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 2,
+     "rank_shift": -5,
+     "chunk_id": "nt-038",
+     "ce_logit": -8.093877792358398,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 5,
+     "rank_shift": -3,
+     "chunk_id": "nt-034",
+     "ce_logit": -8.179425239562988,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 4,
+     "rank_shift": -5,
+     "chunk_id": "nt-033",
+     "ce_logit": -8.694854736328125,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 3,
+     "rank_shift": -7,
+     "chunk_id": "nt-283",
+     "ce_logit": -8.8577880859375,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-040",
+    "nt-041",
+    "nt-043"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-040": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "RESTORED into Top 3",
+   "strict_movement": "RESTORED into Top 3"
+  },
+  {
+   "id": "A5",
+   "category": "keyword trap",
+   "question": "How is the chance that an event actually causes harm different from the chance that someone starts it?",
+   "gold_chunk_ids": [
+    "nt-043",
+    "nt-044"
+   ],
+   "baseline_top10": [
+    "nt-279",
+    "nt-043",
+    "nt-044",
+    "nt-237",
+    "nt-147",
+    "nt-042",
+    "nt-144",
+    "nt-152",
+    "nt-250",
+    "nt-116"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 3,
+     "rank_shift": 2,
+     "chunk_id": "nt-044",
+     "ce_logit": -0.8127336502075195,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 2,
+     "rank_shift": 0,
+     "chunk_id": "nt-043",
+     "ce_logit": -2.294149398803711,
+     "prereg_gold": true,
+     "strict_role": "excluded-fragment"
+    },
+    {
+     "rank": 3,
+     "original_rank": 5,
+     "rank_shift": 2,
+     "chunk_id": "nt-147",
+     "ce_logit": -3.2026188373565674,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 6,
+     "rank_shift": 2,
+     "chunk_id": "nt-042",
+     "ce_logit": -4.592380046844482,
+     "prereg_gold": false,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 5,
+     "original_rank": 1,
+     "rank_shift": -4,
+     "chunk_id": "nt-279",
+     "ce_logit": -4.62938117980957,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 7,
+     "rank_shift": 1,
+     "chunk_id": "nt-144",
+     "ce_logit": -5.103511810302734,
+     "prereg_gold": false,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 7,
+     "original_rank": 4,
+     "rank_shift": -3,
+     "chunk_id": "nt-237",
+     "ce_logit": -5.97445011138916,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 8,
+     "rank_shift": 0,
+     "chunk_id": "nt-152",
+     "ce_logit": -6.784832000732422,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 10,
+     "rank_shift": 1,
+     "chunk_id": "nt-116",
+     "ce_logit": -8.16068172454834,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 9,
+     "rank_shift": -1,
+     "chunk_id": "nt-250",
+     "ce_logit": -9.628867149353027,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-044",
+    "nt-043",
+    "nt-147"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-043": 2,
+     "nt-044": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "A6",
+   "category": "keyword trap",
+   "question": "What is it called when adversaries change their behaviour after noticing our safeguards?",
+   "gold_chunk_ids": [
+    "nt-035",
+    "nt-281"
+   ],
+   "baseline_top10": [
+    "nt-281",
+    "nt-168",
+    "nt-035",
+    "nt-036",
+    "nt-279",
+    "nt-037",
+    "nt-185",
+    "nt-167",
+    "nt-032",
+    "nt-282"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-281",
+     "ce_logit": 5.066716194152832,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-035",
+     "ce_logit": 4.169064521789551,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 4,
+     "rank_shift": 1,
+     "chunk_id": "nt-036",
+     "ce_logit": -5.30885124206543,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 7,
+     "rank_shift": 3,
+     "chunk_id": "nt-185",
+     "ce_logit": -7.748354911804199,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 6,
+     "rank_shift": 1,
+     "chunk_id": "nt-037",
+     "ce_logit": -8.800901412963867,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 5,
+     "rank_shift": -1,
+     "chunk_id": "nt-279",
+     "ce_logit": -10.184587478637695,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 9,
+     "rank_shift": 2,
+     "chunk_id": "nt-032",
+     "ce_logit": -10.207609176635742,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 8,
+     "rank_shift": 0,
+     "chunk_id": "nt-167",
+     "ce_logit": -10.36866569519043,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 10,
+     "rank_shift": 1,
+     "chunk_id": "nt-282",
+     "ce_logit": -10.43368911743164,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 2,
+     "rank_shift": -8,
+     "chunk_id": "nt-168",
+     "ce_logit": -10.43840217590332,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-281",
+    "nt-035",
+    "nt-036"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-035": 2,
+     "nt-281": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "E1",
+   "category": "exception",
+   "question": "Is the level of risk always capped by the level of impact?",
+   "gold_chunk_ids": [
+    "nt-053",
+    "nt-054",
+    "nt-153"
+   ],
+   "baseline_top10": [
+    "nt-054",
+    "nt-052",
+    "nt-153",
+    "nt-043",
+    "nt-297",
+    "nt-147",
+    "nt-245",
+    "nt-291",
+    "nt-237",
+    "nt-236"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 3,
+     "rank_shift": 2,
+     "chunk_id": "nt-153",
+     "ce_logit": 3.3804688453674316,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 1,
+     "rank_shift": -1,
+     "chunk_id": "nt-054",
+     "ce_logit": -1.6119251251220703,
+     "prereg_gold": true,
+     "strict_role": "excluded-fragment"
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-052",
+     "ce_logit": -5.3261284828186035,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 4,
+     "rank_shift": 0,
+     "chunk_id": "nt-043",
+     "ce_logit": -6.30127477645874,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 9,
+     "rank_shift": 4,
+     "chunk_id": "nt-237",
+     "ce_logit": -6.93729829788208,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 8,
+     "rank_shift": 2,
+     "chunk_id": "nt-291",
+     "ce_logit": -7.455204486846924,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 10,
+     "rank_shift": 3,
+     "chunk_id": "nt-236",
+     "ce_logit": -7.698113918304443,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 5,
+     "rank_shift": -3,
+     "chunk_id": "nt-297",
+     "ce_logit": -8.474247932434082,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 6,
+     "rank_shift": -3,
+     "chunk_id": "nt-147",
+     "ce_logit": -8.70582103729248,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 7,
+     "rank_shift": -3,
+     "chunk_id": "nt-245",
+     "ce_logit": -10.404834747314453,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-153",
+    "nt-054",
+    "nt-052"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-053": null,
+     "nt-054": 2,
+     "nt-153": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "E2",
+   "category": "exception",
+   "question": "If a threat event has no identified weaknesses that could be exploited, do we keep analysing it in the current assessment?",
+   "gold_chunk_ids": [
+    "nt-146",
+    "nt-147"
+   ],
+   "baseline_top10": [
+    "nt-045",
+    "nt-146",
+    "nt-117",
+    "nt-043",
+    "nt-039",
+    "nt-279",
+    "nt-034",
+    "nt-129",
+    "nt-144",
+    "nt-130"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-045",
+     "ce_logit": 3.081688404083252,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 2,
+     "original_rank": 2,
+     "rank_shift": 0,
+     "chunk_id": "nt-146",
+     "ce_logit": 2.2103943824768066,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 5,
+     "rank_shift": 2,
+     "chunk_id": "nt-039",
+     "ce_logit": 1.2853412628173828,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 8,
+     "rank_shift": 4,
+     "chunk_id": "nt-129",
+     "ce_logit": 0.912073016166687,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 10,
+     "rank_shift": 5,
+     "chunk_id": "nt-130",
+     "ce_logit": 0.1253667175769806,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 4,
+     "rank_shift": -2,
+     "chunk_id": "nt-043",
+     "ce_logit": -0.6065624952316284,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-034",
+     "ce_logit": -2.0668835639953613,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 9,
+     "rank_shift": 1,
+     "chunk_id": "nt-144",
+     "ce_logit": -2.4381914138793945,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 3,
+     "rank_shift": -6,
+     "chunk_id": "nt-117",
+     "ce_logit": -3.182875871658325,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 6,
+     "rank_shift": -4,
+     "chunk_id": "nt-279",
+     "ce_logit": -3.8809189796447754,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-045",
+    "nt-146",
+    "nt-039"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 2,
+    "gold_ranks": {
+     "nt-146": 2,
+     "nt-147": null
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "E3",
+   "category": "exception",
+   "question": "Can a threat event be dropped from the analysis when no adversary is known to have the ability to carry it out?",
+   "gold_chunk_ids": [
+    "nt-286"
+   ],
+   "baseline_top10": [
+    "nt-279",
+    "nt-034",
+    "nt-043",
+    "nt-039",
+    "nt-146",
+    "nt-045",
+    "nt-286",
+    "nt-117",
+    "nt-280",
+    "nt-033"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 2,
+     "rank_shift": 1,
+     "chunk_id": "nt-034",
+     "ce_logit": 0.9298433065414429,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 2,
+     "original_rank": 7,
+     "rank_shift": 5,
+     "chunk_id": "nt-286",
+     "ce_logit": -0.6941371560096741,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 4,
+     "rank_shift": 1,
+     "chunk_id": "nt-039",
+     "ce_logit": -1.5384132862091064,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 5,
+     "rank_shift": 1,
+     "chunk_id": "nt-146",
+     "ce_logit": -2.8201615810394287,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 6,
+     "rank_shift": 1,
+     "chunk_id": "nt-045",
+     "ce_logit": -3.1473565101623535,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 3,
+     "rank_shift": -3,
+     "chunk_id": "nt-043",
+     "ce_logit": -3.2266736030578613,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 1,
+     "rank_shift": -6,
+     "chunk_id": "nt-279",
+     "ce_logit": -3.555933952331543,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 10,
+     "rank_shift": 2,
+     "chunk_id": "nt-033",
+     "ce_logit": -4.08160400390625,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-117",
+     "ce_logit": -4.780388832092285,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 9,
+     "rank_shift": -1,
+     "chunk_id": "nt-280",
+     "ce_logit": -6.214390754699707,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-034",
+    "nt-286",
+    "nt-039"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 2,
+    "gold_ranks": {
+     "nt-286": 2
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "RESTORED into Top 3",
+   "strict_movement": "RESTORED into Top 3"
+  },
+  {
+   "id": "E4",
+   "category": "exception",
+   "question": "When conditions have changed since the last assessment, must every task be redone?",
+   "gold_chunk_ids": [
+    "nt-163",
+    "nt-164"
+   ],
+   "baseline_top10": [
+    "nt-163",
+    "nt-160",
+    "nt-234",
+    "nt-099",
+    "nt-131",
+    "nt-187",
+    "nt-098",
+    "nt-164",
+    "nt-287",
+    "nt-113"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-163",
+     "ce_logit": -3.6688575744628906,
+     "prereg_gold": true,
+     "strict_role": "joint-member-1"
+    },
+    {
+     "rank": 2,
+     "original_rank": 8,
+     "rank_shift": 6,
+     "chunk_id": "nt-164",
+     "ce_logit": -5.92830753326416,
+     "prereg_gold": true,
+     "strict_role": "joint-member-1"
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-160",
+     "ce_logit": -6.2556939125061035,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 10,
+     "rank_shift": 6,
+     "chunk_id": "nt-113",
+     "ce_logit": -7.239711761474609,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 5,
+     "rank_shift": 0,
+     "chunk_id": "nt-131",
+     "ce_logit": -8.164093017578125,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 9,
+     "rank_shift": 3,
+     "chunk_id": "nt-287",
+     "ce_logit": -9.103641510009766,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 3,
+     "rank_shift": -4,
+     "chunk_id": "nt-234",
+     "ce_logit": -9.290506362915039,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 4,
+     "rank_shift": -4,
+     "chunk_id": "nt-099",
+     "ce_logit": -9.628661155700684,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 7,
+     "rank_shift": -2,
+     "chunk_id": "nt-098",
+     "ce_logit": -10.48613166809082,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 6,
+     "rank_shift": -4,
+     "chunk_id": "nt-187",
+     "ce_logit": -11.154962539672852,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-163",
+    "nt-164",
+    "nt-160"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-163": 1,
+     "nt-164": 2
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": [
+     []
+    ]
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "RESTORED into Top 3"
+  },
+  {
+   "id": "E5",
+   "category": "exception",
+   "question": "Can the scope of a system-level assessment ignore weaknesses that come from controls the system inherits?",
+   "gold_chunk_ids": [
+    "nt-105"
+   ],
+   "baseline_top10": [
+    "nt-105",
+    "nt-253",
+    "nt-257",
+    "nt-001",
+    "nt-085",
+    "nt-068",
+    "nt-101",
+    "nt-080",
+    "nt-283",
+    "nt-081"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-105",
+     "ce_logit": 2.0022964477539062,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-257",
+     "ce_logit": -2.6290574073791504,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 8,
+     "rank_shift": 5,
+     "chunk_id": "nt-080",
+     "ce_logit": -2.9964938163757324,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 5,
+     "rank_shift": 1,
+     "chunk_id": "nt-085",
+     "ce_logit": -3.2195537090301514,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 9,
+     "rank_shift": 4,
+     "chunk_id": "nt-283",
+     "ce_logit": -4.609785556793213,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 4,
+     "rank_shift": -2,
+     "chunk_id": "nt-001",
+     "ce_logit": -4.777057647705078,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-101",
+     "ce_logit": -5.002902030944824,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 2,
+     "rank_shift": -6,
+     "chunk_id": "nt-253",
+     "ce_logit": -5.486004829406738,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 6,
+     "rank_shift": -3,
+     "chunk_id": "nt-068",
+     "ce_logit": -6.47874641418457,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-081",
+     "ce_logit": -6.8280205726623535,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-105",
+    "nt-257",
+    "nt-080"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-105": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "E6",
+   "category": "exception",
+   "question": "What extra step may be needed when rolling up mission-level results in an organization whose missions differ a lot?",
+   "gold_chunk_ids": [
+    "nt-076",
+    "nt-077"
+   ],
+   "baseline_top10": [
+    "nt-226",
+    "nt-076",
+    "nt-118",
+    "nt-077",
+    "nt-294",
+    "nt-153",
+    "nt-053",
+    "nt-163",
+    "nt-293",
+    "nt-303"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 4,
+     "rank_shift": 3,
+     "chunk_id": "nt-077",
+     "ce_logit": -0.921191394329071,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 7,
+     "rank_shift": 5,
+     "chunk_id": "nt-053",
+     "ce_logit": -2.0398590564727783,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-076",
+     "ce_logit": -2.1557016372680664,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 4,
+     "original_rank": 6,
+     "rank_shift": 2,
+     "chunk_id": "nt-153",
+     "ce_logit": -2.4568092823028564,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 3,
+     "rank_shift": -2,
+     "chunk_id": "nt-118",
+     "ce_logit": -3.0647757053375244,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 5,
+     "rank_shift": -1,
+     "chunk_id": "nt-294",
+     "ce_logit": -4.754160404205322,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 1,
+     "rank_shift": -6,
+     "chunk_id": "nt-226",
+     "ce_logit": -5.351280212402344,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 8,
+     "rank_shift": 0,
+     "chunk_id": "nt-163",
+     "ce_logit": -6.751645565032959,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 9,
+     "rank_shift": 0,
+     "chunk_id": "nt-293",
+     "ce_logit": -8.04640007019043,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-303",
+     "ce_logit": -8.796573638916016,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-077",
+    "nt-053",
+    "nt-076"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-076": 3,
+     "nt-077": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "N1",
+   "category": "negation/constraint",
+   "question": "Does the guide prescribe a formula for combining semi-quantitative factor values?",
+   "gold_chunk_ids": [
+    "nt-126"
+   ],
+   "baseline_top10": [
+    "nt-126",
+    "nt-061",
+    "nt-265",
+    "nt-125",
+    "nt-172",
+    "nt-224",
+    "nt-243",
+    "nt-062",
+    "nt-059",
+    "nt-233"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-126",
+     "ce_logit": 6.561887741088867,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 4,
+     "rank_shift": 2,
+     "chunk_id": "nt-125",
+     "ce_logit": -0.7394714951515198,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-061",
+     "ce_logit": -1.8980413675308228,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 3,
+     "rank_shift": -1,
+     "chunk_id": "nt-265",
+     "ce_logit": -3.0162434577941895,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 5,
+     "rank_shift": 0,
+     "chunk_id": "nt-172",
+     "ce_logit": -5.348714828491211,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 8,
+     "rank_shift": 2,
+     "chunk_id": "nt-062",
+     "ce_logit": -7.234984397888184,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 10,
+     "rank_shift": 3,
+     "chunk_id": "nt-233",
+     "ce_logit": -9.523923873901367,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 9,
+     "rank_shift": 1,
+     "chunk_id": "nt-059",
+     "ce_logit": -10.161352157592773,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 7,
+     "rank_shift": -2,
+     "chunk_id": "nt-243",
+     "ce_logit": -10.242921829223633,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 6,
+     "rank_shift": -4,
+     "chunk_id": "nt-224",
+     "ce_logit": -10.346426010131836,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-126",
+    "nt-125",
+    "nt-061"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-126": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "N2",
+   "category": "negation/constraint",
+   "question": "Are there fixed requirements for how formal or detailed a risk assessment has to be?",
+   "gold_chunk_ids": [
+    "nt-002"
+   ],
+   "baseline_top10": [
+    "nt-002",
+    "nt-094",
+    "nt-003",
+    "nt-093",
+    "nt-023",
+    "nt-091",
+    "nt-028",
+    "nt-001",
+    "nt-128",
+    "nt-291"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-002",
+     "ce_logit": 4.051945209503174,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 2,
+     "rank_shift": 0,
+     "chunk_id": "nt-094",
+     "ce_logit": -0.1178995743393898,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 10,
+     "rank_shift": 7,
+     "chunk_id": "nt-291",
+     "ce_logit": -1.6300098896026611,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 7,
+     "rank_shift": 3,
+     "chunk_id": "nt-028",
+     "ce_logit": -2.4370882511138916,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 9,
+     "rank_shift": 4,
+     "chunk_id": "nt-128",
+     "ce_logit": -3.1053895950317383,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 6,
+     "rank_shift": 0,
+     "chunk_id": "nt-091",
+     "ce_logit": -3.1169514656066895,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 4,
+     "rank_shift": -3,
+     "chunk_id": "nt-093",
+     "ce_logit": -4.0316009521484375,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 5,
+     "rank_shift": -3,
+     "chunk_id": "nt-023",
+     "ce_logit": -4.144916534423828,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-001",
+     "ce_logit": -4.502320289611816,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 3,
+     "rank_shift": -7,
+     "chunk_id": "nt-003",
+     "ce_logit": -4.698941230773926,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-002",
+    "nt-094",
+    "nt-291"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-002": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "N3",
+   "category": "negation/constraint",
+   "question": "Is it mandatory to use the sample tables in the appendices when carrying out an assessment?",
+   "gold_chunk_ids": [
+    "nt-131"
+   ],
+   "baseline_top10": [
+    "nt-305",
+    "nt-016",
+    "nt-131",
+    "nt-299",
+    "nt-003",
+    "nt-002",
+    "nt-151",
+    "nt-095",
+    "nt-092",
+    "nt-115"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-305",
+     "ce_logit": -1.2317124605178833,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-131",
+     "ce_logit": -2.11445951461792,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 9,
+     "rank_shift": 6,
+     "chunk_id": "nt-092",
+     "ce_logit": -2.3316893577575684,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 2,
+     "rank_shift": -2,
+     "chunk_id": "nt-016",
+     "ce_logit": -4.61906623840332,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 4,
+     "rank_shift": -1,
+     "chunk_id": "nt-299",
+     "ce_logit": -5.960538864135742,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 5,
+     "rank_shift": -1,
+     "chunk_id": "nt-003",
+     "ce_logit": -8.168639183044434,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-151",
+     "ce_logit": -8.219110488891602,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 6,
+     "rank_shift": -2,
+     "chunk_id": "nt-002",
+     "ce_logit": -9.003010749816895,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-095",
+     "ce_logit": -9.13243293762207,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-115",
+     "ce_logit": -9.799257278442383,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-305",
+    "nt-131",
+    "nt-092"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 2,
+    "gold_ranks": {
+     "nt-131": 2
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "N4",
+   "category": "negation/constraint",
+   "question": "Is watching only the security posture of the information systems enough to know the organization's overall risk?",
+   "gold_chunk_ids": [
+    "nt-161",
+    "nt-162"
+   ],
+   "baseline_top10": [
+    "nt-161",
+    "nt-005",
+    "nt-213",
+    "nt-162",
+    "nt-004",
+    "nt-017",
+    "nt-022",
+    "nt-037",
+    "nt-024",
+    "nt-238"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 4,
+     "rank_shift": 3,
+     "chunk_id": "nt-162",
+     "ce_logit": 7.25383186340332,
+     "prereg_gold": true,
+     "strict_role": "excluded-fragment"
+    },
+    {
+     "rank": 2,
+     "original_rank": 1,
+     "rank_shift": -1,
+     "chunk_id": "nt-161",
+     "ce_logit": 5.87917423248291,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-005",
+     "ce_logit": 0.9888743162155151,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 3,
+     "rank_shift": -1,
+     "chunk_id": "nt-213",
+     "ce_logit": 0.7298727035522461,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 5,
+     "rank_shift": 0,
+     "chunk_id": "nt-004",
+     "ce_logit": 0.039209090173244476,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 9,
+     "rank_shift": 3,
+     "chunk_id": "nt-024",
+     "ce_logit": 0.0208812914788723,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-022",
+     "ce_logit": -0.9919010400772095,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 10,
+     "rank_shift": 2,
+     "chunk_id": "nt-238",
+     "ce_logit": -1.8737833499908447,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-037",
+     "ce_logit": -2.1589975357055664,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 6,
+     "rank_shift": -4,
+     "chunk_id": "nt-017",
+     "ce_logit": -2.2336812019348145,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-162",
+    "nt-161",
+    "nt-005"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-161": 2,
+     "nt-162": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "N5",
+   "category": "negation/constraint",
+   "question": "Does this guidance cover systems that are designated as national security systems?",
+   "gold_chunk_ids": [
+    "nt-010"
+   ],
+   "baseline_top10": [
+    "nt-227",
+    "nt-262",
+    "nt-274",
+    "nt-010",
+    "nt-275",
+    "nt-273",
+    "nt-270",
+    "nt-255",
+    "nt-087",
+    "nt-212"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 4,
+     "rank_shift": 3,
+     "chunk_id": "nt-010",
+     "ce_logit": 4.87779426574707,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 1,
+     "rank_shift": -1,
+     "chunk_id": "nt-227",
+     "ce_logit": 1.0838807821273804,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 6,
+     "rank_shift": 3,
+     "chunk_id": "nt-273",
+     "ce_logit": -6.015880584716797,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 5,
+     "rank_shift": 1,
+     "chunk_id": "nt-275",
+     "ce_logit": -8.300562858581543,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 2,
+     "rank_shift": -3,
+     "chunk_id": "nt-262",
+     "ce_logit": -8.798364639282227,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 8,
+     "rank_shift": 2,
+     "chunk_id": "nt-255",
+     "ce_logit": -9.363639831542969,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 3,
+     "rank_shift": -4,
+     "chunk_id": "nt-274",
+     "ce_logit": -9.430702209472656,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 10,
+     "rank_shift": 2,
+     "chunk_id": "nt-212",
+     "ce_logit": -10.327140808105469,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 7,
+     "rank_shift": -2,
+     "chunk_id": "nt-270",
+     "ce_logit": -10.771964073181152,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 9,
+     "rank_shift": -1,
+     "chunk_id": "nt-087",
+     "ce_logit": -10.816760063171387,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-010",
+    "nt-227",
+    "nt-273"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-010": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "RESTORED into Top 3",
+   "strict_movement": "RESTORED into Top 3"
+  },
+  {
+   "id": "N6",
+   "category": "negation/constraint",
+   "question": "Should we expect an adversary to attack an organization it is not actively targeting?",
+   "gold_chunk_ids": [
+    "nt-145"
+   ],
+   "baseline_top10": [
+    "nt-145",
+    "nt-168",
+    "nt-034",
+    "nt-036",
+    "nt-144",
+    "nt-107",
+    "nt-277",
+    "nt-049",
+    "nt-146",
+    "nt-167"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-145",
+     "ce_logit": 5.10443115234375,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-034",
+     "ce_logit": -1.0235556364059448,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 10,
+     "rank_shift": 7,
+     "chunk_id": "nt-167",
+     "ce_logit": -1.4701817035675049,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 2,
+     "rank_shift": -2,
+     "chunk_id": "nt-168",
+     "ce_logit": -1.5786250829696655,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 4,
+     "rank_shift": -1,
+     "chunk_id": "nt-036",
+     "ce_logit": -2.8655498027801514,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 9,
+     "rank_shift": 3,
+     "chunk_id": "nt-146",
+     "ce_logit": -6.105201721191406,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-277",
+     "ce_logit": -6.857609748840332,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 5,
+     "rank_shift": -3,
+     "chunk_id": "nt-144",
+     "ce_logit": -6.958105087280273,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-049",
+     "ce_logit": -8.240873336791992,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 6,
+     "rank_shift": -4,
+     "chunk_id": "nt-107",
+     "ce_logit": -8.601757049560547,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-145",
+    "nt-034",
+    "nt-167"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-145": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "O1",
+   "category": "other (buried detail)",
+   "question": "What are the four components of the risk management process?",
+   "gold_chunk_ids": [
+    "nt-018",
+    "nt-244"
+   ],
+   "baseline_top10": [
+    "nt-022",
+    "nt-019",
+    "nt-018",
+    "nt-029",
+    "nt-020",
+    "nt-001",
+    "nt-021",
+    "nt-030",
+    "nt-094",
+    "nt-159"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 2,
+     "rank_shift": 1,
+     "chunk_id": "nt-019",
+     "ce_logit": 8.976505279541016,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-018",
+     "ce_logit": 8.396376609802246,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 3,
+     "original_rank": 1,
+     "rank_shift": -2,
+     "chunk_id": "nt-022",
+     "ce_logit": 7.662538528442383,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 7,
+     "rank_shift": 3,
+     "chunk_id": "nt-021",
+     "ce_logit": 6.004010200500488,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 5,
+     "rank_shift": 0,
+     "chunk_id": "nt-020",
+     "ce_logit": 5.668628692626953,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 10,
+     "rank_shift": 4,
+     "chunk_id": "nt-159",
+     "ce_logit": 3.9728851318359375,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 4,
+     "rank_shift": -3,
+     "chunk_id": "nt-029",
+     "ce_logit": 3.9412548542022705,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 6,
+     "rank_shift": -2,
+     "chunk_id": "nt-001",
+     "ce_logit": 3.0201680660247803,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 8,
+     "rank_shift": -1,
+     "chunk_id": "nt-030",
+     "ce_logit": 2.495659351348877,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 9,
+     "rank_shift": -1,
+     "chunk_id": "nt-094",
+     "ce_logit": 1.3228905200958252,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-019",
+    "nt-018",
+    "nt-022"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 2,
+    "gold_ranks": {
+     "nt-018": 2,
+     "nt-244": null
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "O2",
+   "category": "other (buried detail)",
+   "question": "What example score ranges does the guide give for binning semi-quantitative values?",
+   "gold_chunk_ids": [
+    "nt-061"
+   ],
+   "baseline_top10": [
+    "nt-061",
+    "nt-265",
+    "nt-125",
+    "nt-062",
+    "nt-060",
+    "nt-233",
+    "nt-126",
+    "nt-059",
+    "nt-172",
+    "nt-232"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-061",
+     "ce_logit": 3.522204637527466,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-125",
+     "ce_logit": 2.478619337081909,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 7,
+     "rank_shift": 4,
+     "chunk_id": "nt-126",
+     "ce_logit": -0.08540908992290497,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 4,
+     "rank_shift": 0,
+     "chunk_id": "nt-062",
+     "ce_logit": -1.6774191856384277,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 2,
+     "rank_shift": -3,
+     "chunk_id": "nt-265",
+     "ce_logit": -2.0976338386535645,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 5,
+     "rank_shift": -1,
+     "chunk_id": "nt-060",
+     "ce_logit": -4.2164106369018555,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 8,
+     "rank_shift": 1,
+     "chunk_id": "nt-059",
+     "ce_logit": -7.7752366065979,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 9,
+     "rank_shift": 1,
+     "chunk_id": "nt-172",
+     "ce_logit": -7.7955002784729,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 6,
+     "rank_shift": -3,
+     "chunk_id": "nt-233",
+     "ce_logit": -10.039809226989746,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-232",
+     "ce_logit": -11.077016830444336,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-061",
+    "nt-125",
+    "nt-126"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-061": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "O3",
+   "category": "other (buried detail)",
+   "question": "Which external organizations does the guide name as sources of threat information?",
+   "gold_chunk_ids": [
+    "nt-121",
+    "nt-122"
+   ],
+   "baseline_top10": [
+    "nt-121",
+    "nt-122",
+    "nt-285",
+    "nt-032",
+    "nt-109",
+    "nt-133",
+    "nt-129",
+    "nt-092",
+    "nt-130",
+    "nt-132"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-121",
+     "ce_logit": 5.734583854675293,
+     "prereg_gold": true,
+     "strict_role": "joint-member-1"
+    },
+    {
+     "rank": 2,
+     "original_rank": 2,
+     "rank_shift": 0,
+     "chunk_id": "nt-122",
+     "ce_logit": 5.611461162567139,
+     "prereg_gold": true,
+     "strict_role": "joint-member-1"
+    },
+    {
+     "rank": 3,
+     "original_rank": 5,
+     "rank_shift": 2,
+     "chunk_id": "nt-109",
+     "ce_logit": 2.4708938598632812,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 6,
+     "rank_shift": 2,
+     "chunk_id": "nt-133",
+     "ce_logit": 2.3831305503845215,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 10,
+     "rank_shift": 5,
+     "chunk_id": "nt-132",
+     "ce_logit": 1.876773715019226,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 4,
+     "rank_shift": -2,
+     "chunk_id": "nt-032",
+     "ce_logit": 1.4201481342315674,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 8,
+     "rank_shift": 1,
+     "chunk_id": "nt-092",
+     "ce_logit": 0.7115954756736755,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 3,
+     "rank_shift": -5,
+     "chunk_id": "nt-285",
+     "ce_logit": -1.020956039428711,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 9,
+     "rank_shift": 0,
+     "chunk_id": "nt-130",
+     "ce_logit": -1.1114381551742554,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 7,
+     "rank_shift": -3,
+     "chunk_id": "nt-129",
+     "ce_logit": -2.800685167312622,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-121",
+    "nt-122",
+    "nt-109"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-121": 1,
+     "nt-122": 2
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": [
+     []
+    ]
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "O4",
+   "category": "other (buried detail)",
+   "question": "At what point in the system development life cycle should an initial risk assessment ideally be performed?",
+   "gold_chunk_ids": [
+    "nt-080"
+   ],
+   "baseline_top10": [
+    "nt-001",
+    "nt-082",
+    "nt-080",
+    "nt-095",
+    "nt-023",
+    "nt-056",
+    "nt-030",
+    "nt-081",
+    "nt-067",
+    "nt-094"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 3,
+     "rank_shift": 2,
+     "chunk_id": "nt-080",
+     "ce_logit": 8.435142517089844,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 8,
+     "rank_shift": 6,
+     "chunk_id": "nt-081",
+     "ce_logit": 2.7922916412353516,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 2,
+     "rank_shift": -1,
+     "chunk_id": "nt-082",
+     "ce_logit": 1.5536694526672363,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 1,
+     "rank_shift": -3,
+     "chunk_id": "nt-001",
+     "ce_logit": 0.8109854459762573,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 4,
+     "rank_shift": -1,
+     "chunk_id": "nt-095",
+     "ce_logit": 0.46803542971611023,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 6,
+     "rank_shift": 0,
+     "chunk_id": "nt-056",
+     "ce_logit": 0.4334774911403656,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 7,
+     "rank_shift": 0,
+     "chunk_id": "nt-030",
+     "ce_logit": -0.735058069229126,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 5,
+     "rank_shift": -3,
+     "chunk_id": "nt-023",
+     "ce_logit": -1.048762321472168,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 9,
+     "rank_shift": 0,
+     "chunk_id": "nt-067",
+     "ce_logit": -2.545440673828125,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-094",
+     "ce_logit": -6.010694980621338,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-080",
+    "nt-081",
+    "nt-082"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-080": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "O5",
+   "category": "other (buried detail)",
+   "question": "What should the executive summary of a risk assessment report say about the overall level of risk?",
+   "gold_chunk_ids": [
+    "nt-301"
+   ],
+   "baseline_top10": [
+    "nt-301",
+    "nt-240",
+    "nt-300",
+    "nt-093",
+    "nt-157",
+    "nt-299",
+    "nt-002",
+    "nt-128",
+    "nt-292",
+    "nt-131"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 1,
+     "rank_shift": 0,
+     "chunk_id": "nt-301",
+     "ce_logit": 4.492428779602051,
+     "prereg_gold": true,
+     "strict_role": "joint-member-1"
+    },
+    {
+     "rank": 2,
+     "original_rank": 3,
+     "rank_shift": 1,
+     "chunk_id": "nt-300",
+     "ce_logit": 4.033883571624756,
+     "prereg_gold": false,
+     "strict_role": "joint-member-1"
+    },
+    {
+     "rank": 3,
+     "original_rank": 6,
+     "rank_shift": 3,
+     "chunk_id": "nt-299",
+     "ce_logit": 1.8188471794128418,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 9,
+     "rank_shift": 5,
+     "chunk_id": "nt-292",
+     "ce_logit": 1.1358304023742676,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 2,
+     "rank_shift": -3,
+     "chunk_id": "nt-240",
+     "ce_logit": -0.023354824632406235,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 5,
+     "rank_shift": -1,
+     "chunk_id": "nt-157",
+     "ce_logit": -1.3435227870941162,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 8,
+     "rank_shift": 1,
+     "chunk_id": "nt-128",
+     "ce_logit": -1.4455780982971191,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 7,
+     "rank_shift": -1,
+     "chunk_id": "nt-002",
+     "ce_logit": -2.5390915870666504,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 4,
+     "rank_shift": -5,
+     "chunk_id": "nt-093",
+     "ce_logit": -2.846625804901123,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 10,
+     "rank_shift": 0,
+     "chunk_id": "nt-131",
+     "ce_logit": -3.0584144592285156,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-301",
+    "nt-300",
+    "nt-299"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-301": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 2,
+    "missing_joint_members": [
+     []
+    ]
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  },
+  {
+   "id": "O6",
+   "category": "other (buried detail)",
+   "question": "How many assessment scales does the guide provide for each risk factor, and of what kinds?",
+   "gold_chunk_ids": [
+    "nt-125"
+   ],
+   "baseline_top10": [
+    "nt-002",
+    "nt-125",
+    "nt-233",
+    "nt-172",
+    "nt-082",
+    "nt-008",
+    "nt-007",
+    "nt-232",
+    "nt-061",
+    "nt-068"
+   ],
+   "reranked_top10": [
+    {
+     "rank": 1,
+     "original_rank": 2,
+     "rank_shift": 1,
+     "chunk_id": "nt-125",
+     "ce_logit": 5.870335102081299,
+     "prereg_gold": true,
+     "strict_role": "strict-single"
+    },
+    {
+     "rank": 2,
+     "original_rank": 9,
+     "rank_shift": 7,
+     "chunk_id": "nt-061",
+     "ce_logit": 1.618300437927246,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 3,
+     "original_rank": 10,
+     "rank_shift": 7,
+     "chunk_id": "nt-068",
+     "ce_logit": -0.5807702541351318,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 4,
+     "original_rank": 4,
+     "rank_shift": 0,
+     "chunk_id": "nt-172",
+     "ce_logit": -1.1213040351867676,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 5,
+     "original_rank": 7,
+     "rank_shift": 2,
+     "chunk_id": "nt-007",
+     "ce_logit": -3.2298498153686523,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 6,
+     "original_rank": 6,
+     "rank_shift": 0,
+     "chunk_id": "nt-008",
+     "ce_logit": -3.5918993949890137,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 7,
+     "original_rank": 8,
+     "rank_shift": 1,
+     "chunk_id": "nt-232",
+     "ce_logit": -4.924507141113281,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 8,
+     "original_rank": 5,
+     "rank_shift": -3,
+     "chunk_id": "nt-082",
+     "ce_logit": -5.231919288635254,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 9,
+     "original_rank": 3,
+     "rank_shift": -6,
+     "chunk_id": "nt-233",
+     "ce_logit": -6.0650529861450195,
+     "prereg_gold": false,
+     "strict_role": ""
+    },
+    {
+     "rank": 10,
+     "original_rank": 1,
+     "rank_shift": -9,
+     "chunk_id": "nt-002",
+     "ce_logit": -6.253544807434082,
+     "prereg_gold": false,
+     "strict_role": ""
+    }
+   ],
+   "reranked_top3_chunk_ids": [
+    "nt-125",
+    "nt-061",
+    "nt-068"
+   ],
+   "lenient": {
+    "outcome": "success",
+    "best_gold_rank": 1,
+    "gold_ranks": {
+     "nt-125": 1
+    }
+   },
+   "strict": {
+    "outcome": "success",
+    "top3_evidence": "sufficient",
+    "best_sufficient_rank": 1,
+    "missing_joint_members": []
+   },
+   "lenient_movement": "kept in Top 3",
+   "strict_movement": "kept in Top 3"
+  }
+ ]
+}

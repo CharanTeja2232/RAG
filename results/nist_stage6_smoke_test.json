@@ -1,0 +1,143 @@
+{
+ "stage": "N6 smoke test: synthetic prompts only; no evaluation question was used",
+ "run_at_utc": "2026-10-18T11:39:47+00:00",
+ "provider": "groq",
+ "model_requested": "qwen/qwen3.8-27b",
+ "model_returned": "qwen/qwen3.8-27b",
+ "settings_sha256": "fc869685494b2d61c1bc68fc5888a7fb21ac31eaf868c41fcb6a7e60262d967c",
+ "request_template": {
+  "model": "qwen/qwen3.8-27b",
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_completion_tokens": 300,
+  "n": 1,
+  "seed": 1234,
+  "stream": false,
+  "reasoning_effort": "none"
+ },
+ "models_endpoint_lists_the_model": true,
+ "n_models_listed": 11,
+ "cases": [
+  {
+   "name": "S1 answerable",
+   "question": "When does the Orchard Committee of Varnholt meet?",
+   "answer": "The Orchard Committee of Varnholt meets on the second Tuesday of every month [syn-001].",
+   "http_status": 200,
+   "finish_reason": "stop",
+   "model_returned": "qwen/qwen3.8-27b",
+   "usage": {
+    "queue_time": 0.049067555,
+    "prompt_tokens": 162,
+    "prompt_time": 0.010906403,
+    "completion_tokens": 23,
+    "completion_time": 0.047873631,
+    "total_tokens": 185,
+    "total_time": 0.058780034
+   },
+   "reasoning_tokens": 0,
+   "latency_s": 0.2403,
+   "error": null,
+   "checks": {
+    "HTTP 200": true,
+    "returned model id equals the configured model id": true,
+    "finish_reason is 'stop' (not cut by the 300-token cap)": true,
+    "non-empty answer": true,
+    "no reasoning text and no reasoning tokens": true,
+    "completion tokens <= 300": true,
+    "answer states 'second Tuesday' and cites [syn-001]": true
+   },
+   "started_at_utc": "2026-10-18T11:39:41+00:00"
+  },
+  {
+   "name": "S2 unanswerable",
+   "question": "Who chairs the Orchard Committee of Varnholt?",
+   "answer": "The provided context does not contain the answer.",
+   "http_status": 200,
+   "finish_reason": "stop",
+   "model_returned": "qwen/qwen3.8-27b",
+   "usage": {
+    "queue_time": 0.047636129,
+    "prompt_tokens": 161,
+    "prompt_time": 0.011136459,
+    "completion_tokens": 10,
+    "completion_time": 0.019259717,
+    "total_tokens": 171,
+    "total_time": 0.030396176
+   },
+   "reasoning_tokens": 0,
+   "latency_s": 0.5297,
+   "error": null,
+   "checks": {
+    "HTTP 200": true,
+    "returned model id equals the configured model id": true,
+    "finish_reason is 'stop' (not cut by the 300-token cap)": true,
+    "non-empty answer": true,
+    "no reasoning text and no reasoning tokens": true,
+    "completion tokens <= 300": true,
+    "unanswerable question gets the exact refusal sentence": true
+   },
+   "started_at_utc": "2026-10-18T11:39:43+00:00"
+  },
+  {
+   "name": "S3 repeat of S1",
+   "question": "When does the Orchard Committee of Varnholt meet?",
+   "answer": "The Orchard Committee of Varnholt meets on the second Tuesday of every month [syn-001].",
+   "http_status": 200,
+   "finish_reason": "stop",
+   "model_returned": "qwen/qwen3.8-27b",
+   "usage": {
+    "queue_time": 0.100073347,
+    "prompt_tokens": 162,
+    "prompt_time": 0.011703669,
+    "completion_tokens": 23,
+    "completion_time": 0.043869201,
+    "total_tokens": 185,
+    "total_time": 0.05557287
+   },
+   "reasoning_tokens": 0,
+   "latency_s": 0.2824,
+   "error": null,
+   "checks": {
+    "HTTP 200": true,
+    "returned model id equals the configured model id": true,
+    "finish_reason is 'stop' (not cut by the 300-token cap)": true,
+    "non-empty answer": true,
+    "no reasoning text and no reasoning tokens": true,
+    "completion tokens <= 300": true,
+    "repeating the prompt returns the identical text (determinism at temperature 0 with a fixed seed)": true
+   },
+   "started_at_utc": "2026-10-18T11:39:45+00:00"
+  }
+ ],
+ "all_checks_passed": true,
+ "totals": {
+  "requests": 3,
+  "prompt_tokens": 485,
+  "completion_tokens": 56
+ },
+ "rate_limit_headers_seen": {
+  "x-ratelimit-limit-requests": "1000",
+  "x-ratelimit-remaining-requests": "997",
+  "x-ratelimit-limit-tokens": "8000",
+  "x-ratelimit-remaining-tokens": "7822",
+  "x-ratelimit-reset-requests": "4m19.2s",
+  "x-ratelimit-reset-tokens": "1.335s",
+  "x-request-id": "req_01m57cz1t3e2srcmrkewd098ak",
+  "date": "Sun, 18 Oct 2026 11:39:46 GMT"
+ },
+ "observed_chars_per_token": 3.8,
+ "free_tier_projection_for_the_48_evaluation_answers": {
+  "documented_free_limits": {
+   "rpm": 30,
+   "rpd": 1000,
+   "tpm": 8000,
+   "tpd": 200000
+  },
+  "estimated_input_tokens": 34913,
+  "output_tokens_upper_bound": 14400,
+  "total_upper_bound": 49313,
+  "share_of_daily_token_limit": 0.247,
+  "requests_vs_daily_request_limit": "48 of 1000",
+  "paced_minutes_at_80pct_of_the_per_minute_limit": 7.7
+ }
+}

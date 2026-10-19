@@ -1,0 +1,305 @@
+{
+ "stage": "N7 latency of retrieval and re-ranking (local, single-threaded CPU); LLM latency is reported separately from the recorded calls",
+ "measured_at_utc": "2026-10-18T11:25:05+00:00",
+ "protocol": {
+  "timer": "time.perf_counter (wall clock)",
+  "warmup_passes": 3,
+  "timed_passes": 20,
+  "queries_per_pass": 24,
+  "samples_per_component": 480,
+  "batch_size_top10": 10,
+  "batch_size_full_collection": 32,
+  "percentile": "nearest-rank 95th",
+  "pipeline1": "query embedding + FAISS exact Top-10",
+  "pipeline2": "pipeline 1 + Cross-Encoder scoring of 10 pairs + sort",
+  "overhead": "pipeline 2 minus pipeline 1 (pair building + Cross-Encoder + sort)"
+ },
+ "machine_before": {
+  "cpu": "Apple M5",
+  "logical_cpus": 10,
+  "memory_gb": 16.0,
+  "os": "macOS-26.6-arm64-arm-64bit-Mach-O",
+  "python": "3.14.7",
+  "omp_num_threads": "1",
+  "torch_threads": 1,
+  "faiss_threads": 1,
+  "device": "cpu",
+  "load_average_1_5_15": [
+   2.32,
+   2.16,
+   1.91
+  ],
+  "caveat": "a general-purpose laptop/desktop with other processes running; thermal state and background load were not controlled"
+ },
+ "machine_after": {
+  "load_average_1_5_15": [
+   2.16,
+   2.13,
+   1.95
+  ]
+ },
+ "one_time_initialisation_not_in_steady_state": {
+  "load_bi_encoder_s": 0.029,
+  "load_cross_encoder_s": 0.022,
+  "read_faiss_index_s": 0.001,
+  "embed_305_chunks_s": 1.711
+ },
+ "first_call_of_block_ms": {
+  "embed": 2.87,
+  "search": 0.04,
+  "ce_score": 94.17,
+  "sort": 0.01,
+  "pipeline1": 2.91,
+  "pipeline2": 97.12,
+  "overhead": 94.21
+ },
+ "steady_state_ms": {
+  "embed": {
+   "n": 480,
+   "mean_ms": 2.87,
+   "median_ms": 2.83,
+   "stdev_ms": 0.28,
+   "p95_ms": 3.1,
+   "min_ms": 2.58,
+   "max_ms": 7.84
+  },
+  "search": {
+   "n": 480,
+   "mean_ms": 0.02,
+   "median_ms": 0.02,
+   "stdev_ms": 0.0,
+   "p95_ms": 0.03,
+   "min_ms": 0.02,
+   "max_ms": 0.1
+  },
+  "ce_score": {
+   "n": 480,
+   "mean_ms": 92.6,
+   "median_ms": 93.03,
+   "stdev_ms": 12.34,
+   "p95_ms": 108.2,
+   "min_ms": 47.96,
+   "max_ms": 141.68
+  },
+  "sort": {
+   "n": 480,
+   "mean_ms": 0.0,
+   "median_ms": 0.0,
+   "stdev_ms": 0.0,
+   "p95_ms": 0.01,
+   "min_ms": 0.0,
+   "max_ms": 0.01
+  },
+  "pipeline1": {
+   "n": 480,
+   "mean_ms": 2.89,
+   "median_ms": 2.85,
+   "stdev_ms": 0.28,
+   "p95_ms": 3.13,
+   "min_ms": 2.6,
+   "max_ms": 7.87
+  },
+  "pipeline2": {
+   "n": 480,
+   "mean_ms": 95.51,
+   "median_ms": 95.95,
+   "stdev_ms": 12.4,
+   "p95_ms": 111.1,
+   "min_ms": 50.89,
+   "max_ms": 144.52
+  },
+  "overhead": {
+   "n": 480,
+   "mean_ms": 92.62,
+   "median_ms": 93.04,
+   "stdev_ms": 12.34,
+   "p95_ms": 108.21,
+   "min_ms": 47.98,
+   "max_ms": 141.7
+  }
+ },
+ "variability_between_passes": {
+  "note": "coefficient of variation (stdev/mean) of the 20 per-pass means, per component",
+  "cv": {
+   "embed": 0.0328,
+   "search": 0.0969,
+   "ce_score": 0.0166,
+   "sort": 0.1476,
+   "pipeline1": 0.0332,
+   "pipeline2": 0.0169,
+   "overhead": 0.0166
+  }
+ },
+ "per_query_median_ms": {
+  "A1": {
+   "ce_score": 94.76,
+   "pipeline1": 2.95,
+   "pipeline2": 97.7,
+   "overhead": 94.78
+  },
+  "A2": {
+   "ce_score": 85.21,
+   "pipeline1": 2.79,
+   "pipeline2": 88.02,
+   "overhead": 85.22
+  },
+  "A3": {
+   "ce_score": 48.55,
+   "pipeline1": 2.9,
+   "pipeline2": 51.47,
+   "overhead": 48.57
+  },
+  "A4": {
+   "ce_score": 99.45,
+   "pipeline1": 3.02,
+   "pipeline2": 102.49,
+   "overhead": 99.46
+  },
+  "A5": {
+   "ce_score": 93.63,
+   "pipeline1": 2.86,
+   "pipeline2": 96.55,
+   "overhead": 93.65
+  },
+  "A6": {
+   "ce_score": 94.57,
+   "pipeline1": 2.83,
+   "pipeline2": 97.42,
+   "overhead": 94.58
+  },
+  "E1": {
+   "ce_score": 83.66,
+   "pipeline1": 2.73,
+   "pipeline2": 86.45,
+   "overhead": 83.68
+  },
+  "E2": {
+   "ce_score": 93.01,
+   "pipeline1": 2.96,
+   "pipeline2": 95.94,
+   "overhead": 93.03
+  },
+  "E3": {
+   "ce_score": 99.17,
+   "pipeline1": 2.91,
+   "pipeline2": 102.08,
+   "overhead": 99.18
+  },
+  "E4": {
+   "ce_score": 87.32,
+   "pipeline1": 2.83,
+   "pipeline2": 90.16,
+   "overhead": 87.33
+  },
+  "E5": {
+   "ce_score": 88.91,
+   "pipeline1": 2.86,
+   "pipeline2": 91.85,
+   "overhead": 88.93
+  },
+  "E6": {
+   "ce_score": 88.16,
+   "pipeline1": 2.91,
+   "pipeline2": 91.06,
+   "overhead": 88.18
+  },
+  "N1": {
+   "ce_score": 86.58,
+   "pipeline1": 2.82,
+   "pipeline2": 89.45,
+   "overhead": 86.6
+  },
+  "N2": {
+   "ce_score": 107.39,
+   "pipeline1": 2.82,
+   "pipeline2": 110.2,
+   "overhead": 107.4
+  },
+  "N3": {
+   "ce_score": 92.83,
+   "pipeline1": 2.87,
+   "pipeline2": 95.71,
+   "overhead": 92.85
+  },
+  "N4": {
+   "ce_score": 95.69,
+   "pipeline1": 2.84,
+   "pipeline2": 98.56,
+   "overhead": 95.7
+  },
+  "N5": {
+   "ce_score": 83.98,
+   "pipeline1": 2.74,
+   "pipeline2": 86.7,
+   "overhead": 84.0
+  },
+  "N6": {
+   "ce_score": 92.84,
+   "pipeline1": 2.76,
+   "pipeline2": 95.63,
+   "overhead": 92.85
+  },
+  "O1": {
+   "ce_score": 104.92,
+   "pipeline1": 2.68,
+   "pipeline2": 107.61,
+   "overhead": 104.93
+  },
+  "O2": {
+   "ce_score": 89.82,
+   "pipeline1": 2.83,
+   "pipeline2": 92.63,
+   "overhead": 89.84
+  },
+  "O3": {
+   "ce_score": 83.22,
+   "pipeline1": 2.74,
+   "pipeline2": 85.93,
+   "overhead": 83.24
+  },
+  "O4": {
+   "ce_score": 107.8,
+   "pipeline1": 2.82,
+   "pipeline2": 110.61,
+   "overhead": 107.82
+  },
+  "O5": {
+   "ce_score": 99.92,
+   "pipeline1": 2.87,
+   "pipeline2": 102.8,
+   "overhead": 99.93
+  },
+  "O6": {
+   "ce_score": 93.03,
+   "pipeline1": 2.84,
+   "pipeline2": 95.91,
+   "overhead": 93.04
+  }
+ },
+ "outputs_identical_to_persisted_results": {
+  "timed_outputs_checked": 480,
+  "mismatches": 0
+ },
+ "supplementary_cross_encoder_over_entire_collection": {
+  "chunks_scored_per_query": 305,
+  "passes": 3,
+  "n": 72,
+  "ms": {
+   "n": 72,
+   "mean_ms": 1956.02,
+   "median_ms": 1951.83,
+   "stdev_ms": 60.99,
+   "p95_ms": 2064.83,
+   "min_ms": 1852.85,
+   "max_ms": 2097.32
+  },
+  "median_ms_per_pair": 6.399,
+  "ratio_vs_scoring_only_top10": 21.0,
+  "projections_NOT_MEASURED": {
+   "basis": "linear extrapolation of the measured median per-pair cost; ignores memory effects and batching changes",
+   "seconds_per_query_for_10_000_chunks": 64.0,
+   "seconds_per_query_for_1_000_000_chunks": 6399.4
+  }
+ },
+ "what_this_does_not_show": "absolute speeds on other hardware, multi-threaded or GPU speed, or LLM latency"
+}
